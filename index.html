@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verbos — Parte 1</title>
+
+  <meta name="theme-color" content="#070b18" />
+  <meta name="description" content="Pratique os verbos principais com áudio e frases exemplo." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="background-layer"></div>
+  <div class="background-glow glow-left"></div>
+  <div class="background-glow glow-right"></div>
+
+  <main class="page-shell">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+      <a href="#" class="back-link">
+        <span class="back-arrow">←</span>
+        <span>Voltar ao portal</span>
+      </a>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero-section">
+
+      <div class="hero-left">
+
+        <div class="title-wrapper">
+
+          <h1 class="hero-title">
+            VERBOS
+          </h1>
+
+          <div class="part-badge">
+            PARTE 1
+          </div>
+
+        </div>
+
+        <p class="hero-subtitle">
+          Ouça, repita e use no seu dia a dia.
+        </p>
+
+      </div>
+
+      <aside class="instructions-card">
+
+        <div class="instructions-header">
+
+          <div class="instructions-icon">
+            🕘
+          </div>
+
+          <div class="instructions-title">
+            Como usar
+          </div>
+
+        </div>
+
+        <p class="instructions-text">
+          Ouça a pronúncia da palavra (lenta e normal)
+          e depois ouça a frase exemplo.
+          Repita em voz alta!
+        </p>
+
+      </aside>
+
+    </section>
+
+    <!-- TABLE -->
+
+    <section class="verbs-table">
+
+      <!-- HEAD -->
+
+      <div class="table-head">
+
+        <div class="head-empty"></div>
+        <div>VERBO</div>
+        <div>PRONÚNCIA</div>
+        <div>OUVIR</div>
+        <div>EXEMPLO</div>
+        <div>TRADUÇÃO</div>
+
+      </div>
+
+      <!-- VERB -->
+
+      <article class="verb-row">
+
+        <div class="verb-number">
+          1
+        </div>
+
+        <div class="verb-column">
+          <h2>Ask</h2>
+        </div>
+
+        <div class="pronunciation-column">
+          <span class="pronunciation">(ásk)</span>
+        </div>
+
+        <div class="audio-column">
+
+          <button
+            class="audio-button word-button"
+            onclick="playAudio('audio/word/ask-word.mp3', this)"
+            aria-label="Ouvir pronúncia da palavra Ask"
+          >
+
+            <span class="audio-label">
+              🔊 Palavra
+            </span>
+
+            <span class="audio-subtitle">
+              lenta e normal
+            </span>
+
+          </button>
+
+          <button
+            class="audio-button example-button"
+            onclick="playAudio('audio/example/ask-example.mp3', this)"
+            aria-label="Ouvir frase exemplo do verbo Ask"
+          >
+
+            <span class="audio-label">
+              🎧 Exemplo
+            </span>
+
+            <span class="audio-subtitle">
+              frase
+            </span>
+
+          </button>
+
+        </div>
+
+        <div class="example-column">
+          <p>
+            I ask many questions.
+          </p>
+        </div>
+
+        <div class="translation-column">
+
+          <button
+            class="translation-button"
+            onclick="toggleTranslation(this)"
+            aria-expanded="false"
+          >
+            Mostrar tradução
+          </button>
+
+          <div class="translation-text">
+            Eu faço muitas perguntas.
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- VERB -->
+
+      <article class="verb-row">
+
+        <div class="verb-number">
+          2
+        </div>
+
+        <div class="verb-column">
+          <h2>Be</h2>
+        </div>
+
+        <div class="pronunciation-column">
+          <span class="pronunciation">(bí)</span>
+        </div>
+
+        <div class="audio-column">
+
+          <button
+            class="audio-button word-button"
+            onclick="playAudio('audio/word/be-word.mp3', this)"
+            aria-label="Ouvir pronúncia da palavra Be"
+          >
+
+            <span class="audio-label">
+              🔊 Palavra
+            </span>
+
+            <span class="audio-subtitle">
+              lenta e normal
+            </span>
+
+          </button>
+
+          <button
+            class="audio-button example-button"
+            onclick="playAudio('audio/example/be-example.mp3', this)"
+            aria-label="Ouvir frase exemplo do verbo Be"
+          >
+
+            <span class="audio-label">
+              🎧 Exemplo
+            </span>
+
+            <span class="audio-subtitle">
+              frase
+            </span>
+
+          </button>
+
+        </div>
+
+        <div class="example-column">
+          <p>
+            He is so tired.
+          </p>
+        </div>
+
+        <div class="translation-column">
+
+          <button
+            class="translation-button"
+            onclick="toggleTranslation(this)"
+            aria-expanded="false"
+          >
+            Mostrar tradução
+          </button>
+
+          <div class="translation-text">
+            Ele está muito cansado.
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- VERB -->
+
+      <article class="verb-row">
+
+        <div class="verb-number">
+          3
+        </div>
+
+        <div class="verb-column">
+          <h2>Begin</h2>
+        </div>
+
+        <div class="pronunciation-column">
+          <span class="pronunciation">(bigín)</span>
+        </div>
+
+        <div class="audio-column">
+
+          <button
+            class="audio-button word-button"
+            onclick="playAudio('audio/word/begin-word.mp3', this)"
+            aria-label="Ouvir pronúncia da palavra Begin"
+          >
+
+            <span class="audio-label">
+              🔊 Palavra
+            </span>
+
+            <span class="audio-subtitle">
+              lenta e normal
+            </span>
+
+          </button>
+
+          <button
+            class="audio-button example-button"
+            onclick="playAudio('audio/example/begin-example.mp3', this)"
+            aria-label="Ouvir frase exemplo do verbo Begin"
+          >
+
+            <span class="audio-label">
+              🎧 Exemplo
+            </span>
+
+            <span class="audio-subtitle">
+              frase
+            </span>
+
+          </button>
+
+        </div>
+
+        <div class="example-column">
+          <p>
+            Classes begin at 7.
+          </p>
+        </div>
+
+        <div class="translation-column">
+
+          <button
+            class="translation-button"
+            onclick="toggleTranslation(this)"
+            aria-expanded="false"
+          >
+            Mostrar tradução
+          </button>
+
+          <div class="translation-text">
+            As aulas começam às 7.
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- VERB -->
+
+      <article class="verb-row">
+
+        <div class="verb-number">
+          4
+        </div>
+
+        <div class="verb-column">
+          <h2>Believe</h2>
+        </div>
+
+        <div class="pronunciation-column">
+          <span class="pronunciation">(bilíiv)</span>
+        </div>
+
+        <div class="audio-column">
+
+          <button
+            class="audio-button word-button"
+            onclick="playAudio('audio/word/believe-word.mp3', this)"
+            aria-label="Ouvir pronúncia da palavra Believe"
+          >
+
+            <span class="audio-label">
+              🔊 Palavra
+            </span>
+
+            <span class="audio-subtitle">
+              lenta e normal
+            </span>
+
+          </button>
+
+          <button
+            class="audio-button example-button"
+            onclick="playAudio('audio/example/believe-example.mp3', this)"
+            aria-label="Ouvir frase exemplo do verbo Believe"
+          >
+
+            <span class="audio-label">
+              🎧 Exemplo
+            </span>
+
+            <span class="audio-subtitle">
+              frase
+            </span>
+
+          </button>
+
+        </div>
+
+        <div class="example-column">
+          <p>
+            I believe in you.
+          </p>
+        </div>
+
+        <div class="translation-column">
+
+          <button
+            class="translation-button"
+            onclick="toggleTranslation(this)"
+            aria-expanded="false"
+          >
+            Mostrar tradução
+          </button>
+
+          <div class="translation-text">
+            Eu acredito em você.
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- DUPLICAR PADRÃO -->
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer-card">
+
+      <div class="footer-left">
+
+        <div class="footer-icon">
+          💡
+        </div>
+
+        <div>
+
+          <div class="footer-title">
+            DICA
+          </div>
+
+          <p class="footer-text">
+            Ouça, repita em voz alta e pratique todos os dias.
+            Pequenas práticas geram grandes resultados!
+          </p>
+
+        </div>
+
+      </div>
+
+      <button class="motivation-button">
+        ⭐ Você consegue!
+      </button>
+
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
