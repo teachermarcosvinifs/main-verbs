@@ -1,6 +1,6 @@
-/* =========================================
+/* =========================================================
    RESET
-========================================= */
+========================================================= */
 
 *{
   margin:0;
@@ -17,11 +17,12 @@ body{
   background:#02040f;
   color:#fff;
   overflow-x:hidden;
+  min-height:100vh;
 }
 
-/* =========================================
+/* =========================================================
    BACKGROUND
-========================================= */
+========================================================= */
 
 .background-glow{
   position:fixed;
@@ -30,181 +31,192 @@ body{
 
   background:
     radial-gradient(circle at top left,
-      rgba(132,76,255,.45),
-      transparent 28%),
+      rgba(132,76,255,.42),
+      transparent 24%),
 
     radial-gradient(circle at top right,
-      rgba(0,89,255,.12),
-      transparent 30%),
+      rgba(0,119,255,.10),
+      transparent 26%),
+
+    radial-gradient(circle at bottom center,
+      rgba(114,0,255,.08),
+      transparent 34%),
 
     linear-gradient(
       180deg,
-      #06081c 0%,
+      #050816 0%,
       #02040f 100%
     );
 }
 
-/* =========================================
+/* =========================================================
    CONTAINER
-========================================= */
+========================================================= */
 
 .container{
-  width:min(1700px,95%);
+  width:min(1700px,94%);
   margin:auto;
-  padding:24px 0 80px;
+  padding:24px 0 70px;
 }
 
-/* =========================================
+/* =========================================================
    HERO
-========================================= */
+========================================================= */
 
 .hero{
   display:flex;
   justify-content:space-between;
   align-items:flex-start;
-  gap:40px;
-  margin-bottom:40px;
+  gap:34px;
+
+  margin-bottom:34px;
 }
 
 .hero-left{
   display:flex;
   flex-direction:column;
-  gap:18px;
+  gap:14px;
 }
 
 .title-row{
   display:flex;
   align-items:center;
-  gap:20px;
+  gap:16px;
 }
 
 .hero h1{
-  font-size:120px;
-  line-height:.9;
+  font-size:88px;
+  line-height:.92;
   font-weight:900;
-  letter-spacing:-5px;
+  letter-spacing:-4px;
 }
 
 .part-badge{
-  padding:12px 18px;
+  padding:10px 16px;
+
   border-radius:14px;
 
   background:
     linear-gradient(
       180deg,
-      rgba(165,110,255,.22),
-      rgba(120,60,255,.12)
+      rgba(167,115,255,.22),
+      rgba(120,60,255,.10)
     );
 
-  border:1px solid rgba(196,145,255,.25);
+  border:1px solid rgba(198,150,255,.20);
 
-  color:#d9c0ff;
+  color:#d9c7ff;
 
-  font-size:24px;
+  font-size:18px;
   font-weight:800;
 }
 
 .subtitle{
-  color:#b9a8ff;
-  font-size:24px;
+  color:#b5a8ff;
+  font-size:18px;
   font-weight:500;
 }
 
 .hero-card{
-  width:420px;
+  width:370px;
 
-  padding:34px;
+  padding:28px;
 
-  border-radius:32px;
+  border-radius:28px;
 
   background:
     linear-gradient(
       180deg,
-      rgba(255,255,255,.06),
-      rgba(255,255,255,.03)
+      rgba(255,255,255,.05),
+      rgba(255,255,255,.025)
     );
 
-  border:1px solid rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.05);
 
-  backdrop-filter:blur(20px);
+  backdrop-filter:blur(18px);
 
   box-shadow:
-    0 0 60px rgba(102,0,255,.12);
+    0 0 50px rgba(86,0,255,.10);
 }
 
 .hero-card h3{
-  font-size:32px;
-  margin-bottom:18px;
-  color:#dcc9ff;
+  font-size:24px;
+  margin-bottom:14px;
+  color:#e0d0ff;
 }
 
 .hero-card p{
   line-height:1.8;
-  font-size:22px;
+  font-size:17px;
   color:#fff;
 }
 
-/* =========================================
+/* =========================================================
    TABLE
-========================================= */
+========================================================= */
 
 .verbs-table{
   overflow:hidden;
 
-  border-radius:36px;
+  border-radius:34px;
 
   background:
     linear-gradient(
       90deg,
-      rgba(12,15,45,.96),
-      rgba(2,5,26,.96)
+      rgba(10,14,42,.96),
+      rgba(2,5,24,.96)
     );
 
   border:1px solid rgba(255,255,255,.05);
 
   backdrop-filter:blur(20px);
+
+  box-shadow:
+    0 0 60px rgba(82,0,255,.08);
 }
 
 .table-header{
   display:grid;
 
   grid-template-columns:
-    90px
-    1.2fr
+    74px
     1fr
+    .8fr
     2.2fr
-    2.4fr
-    1.5fr;
+    2.2fr
+    1.2fr;
 
-  padding:30px 34px;
+  align-items:center;
 
-  color:#9ea8d4;
-
-  font-size:16px;
-  font-weight:700;
-  letter-spacing:2px;
+  padding:22px 28px;
 
   border-bottom:1px solid rgba(255,255,255,.05);
+
+  color:#95a2d8;
+
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:2px;
 }
 
 .verb-row{
   display:grid;
 
   grid-template-columns:
-    90px
-    1.2fr
+    74px
     1fr
+    .8fr
     2.2fr
-    2.4fr
-    1.5fr;
+    2.2fr
+    1.2fr;
 
   align-items:center;
 
-  gap:24px;
+  gap:18px;
 
-  min-height:150px;
+  min-height:118px;
 
-  padding:0 34px;
+  padding:0 28px;
 
   border-bottom:1px solid rgba(255,255,255,.04);
 
@@ -215,45 +227,45 @@ body{
   background:rgba(255,255,255,.018);
 }
 
-/* =========================================
+/* =========================================================
    NUMBER
-========================================= */
+========================================================= */
 
 .verb-number{
-  width:58px;
-  height:58px;
+  width:46px;
+  height:46px;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  border-radius:18px;
+  border-radius:14px;
 
   background:
     linear-gradient(
       180deg,
-      #a661ff,
-      #6d3cff
+      #9d5cff,
+      #6938ff
     );
 
-  font-size:22px;
+  font-size:17px;
   font-weight:800;
 
   box-shadow:
-    0 0 35px rgba(140,76,255,.4);
+    0 0 28px rgba(132,76,255,.35);
 }
 
-/* =========================================
+/* =========================================================
    VERB
-========================================= */
+========================================================= */
 
 .verb-name{
-  font-size:38px;
+  font-size:28px;
   font-weight:800;
 }
 
 .pronunciation{
-  font-size:24px;
+  font-size:17px;
   font-weight:800;
   color:#4ab8ff;
 }
@@ -262,14 +274,14 @@ body{
   opacity:0;
 }
 
-/* =========================================
-   AUDIO
-========================================= */
+/* =========================================================
+   AUDIO BUTTONS
+========================================================= */
 
 .audio-buttons{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:10px;
   flex-wrap:wrap;
 }
 
@@ -277,18 +289,18 @@ body{
   border:none;
   cursor:pointer;
 
-  min-width:180px;
+  min-width:130px;
 
-  padding:16px 22px;
+  padding:12px 16px;
 
-  border-radius:18px;
+  border-radius:16px;
 
   color:#fff;
 
-  font-size:17px;
+  font-size:14px;
   font-weight:800;
 
-  transition:.25s;
+  transition:.22s;
 }
 
 .btn-word{
@@ -296,11 +308,11 @@ body{
     linear-gradient(
       135deg,
       #8244ff,
-      #d45cff
+      #cb5eff
     );
 
   box-shadow:
-    0 0 35px rgba(145,77,255,.25);
+    0 0 26px rgba(145,77,255,.22);
 }
 
 .btn-example{
@@ -308,11 +320,11 @@ body{
     linear-gradient(
       135deg,
       #0f63ff,
-      #4ab8ff
+      #48b9ff
     );
 
   box-shadow:
-    0 0 35px rgba(44,144,255,.22);
+    0 0 26px rgba(44,144,255,.18);
 }
 
 .btn-audio:hover{
@@ -320,37 +332,45 @@ body{
     translateY(-2px)
     scale(1.03);
 }
-/* =========================================
+
+.btn-audio.playing{
+  transform:scale(1.05);
+
+  box-shadow:
+    0 0 40px rgba(255,255,255,.18);
+}
+
+/* =========================================================
    EXAMPLE
-========================================= */
+========================================================= */
 
 .example-text{
-  font-size:28px;
-  line-height:1.5;
+  font-size:19px;
+  line-height:1.6;
   color:#fff;
 }
 
-/* =========================================
+/* =========================================================
    TRANSLATION
-========================================= */
+========================================================= */
 
 .translation-area{
   display:flex;
   flex-direction:column;
-  gap:12px;
+  gap:10px;
 }
 
 .btn-translation{
   border:none;
   cursor:pointer;
 
-  padding:16px 24px;
+  padding:12px 18px;
 
-  border-radius:18px;
+  border-radius:16px;
 
   color:#7de1ff;
 
-  font-size:18px;
+  font-size:14px;
   font-weight:700;
 
   background:
@@ -362,7 +382,7 @@ body{
 
   border:1px solid rgba(0,174,255,.18);
 
-  transition:.25s;
+  transition:.22s;
 }
 
 .btn-translation:hover{
@@ -372,22 +392,22 @@ body{
 .translation{
   display:none;
 
-  font-size:24px;
-  font-weight:700;
-
   color:#fff;
+
+  font-size:18px;
+  font-weight:700;
 }
 
 .translation.show{
   display:block;
 }
 
-/* =========================================
-   TIP
-========================================= */
+/* =========================================================
+   BOTTOM TIP
+========================================================= */
 
 .bottom-tip{
-  margin-top:30px;
+  margin-top:24px;
 
   display:flex;
   justify-content:space-between;
@@ -395,14 +415,14 @@ body{
 
   gap:20px;
 
-  padding:28px 34px;
+  padding:24px 28px;
 
-  border-radius:28px;
+  border-radius:26px;
 
   background:
     linear-gradient(
       90deg,
-      rgba(132,76,255,.18),
+      rgba(132,76,255,.16),
       rgba(100,50,255,.08)
     );
 
@@ -412,15 +432,15 @@ body{
 .tip-left{
   display:flex;
   align-items:center;
-  gap:18px;
+  gap:16px;
 }
 
 .tip-icon{
-  font-size:30px;
+  font-size:26px;
 }
 
 .tip-left p{
-  font-size:22px;
+  font-size:17px;
   line-height:1.7;
 }
 
@@ -428,13 +448,13 @@ body{
   border:none;
   cursor:pointer;
 
-  padding:18px 28px;
+  padding:16px 22px;
 
-  border-radius:22px;
+  border-radius:18px;
 
   color:#fff;
 
-  font-size:20px;
+  font-size:16px;
   font-weight:800;
 
   background:
@@ -444,18 +464,18 @@ body{
       #c365ff
     );
 
-  transition:.25s;
+  transition:.22s;
 }
 
 .btn-finish:hover{
   transform:scale(1.04);
 }
 
-/* =========================================
+/* =========================================================
    RESPONSIVE
-========================================= */
+========================================================= */
 
-@media(max-width:1500px){
+@media(max-width:1450px){
 
   .table-header{
     display:none;
@@ -464,11 +484,11 @@ body{
   .verb-row{
     grid-template-columns:1fr;
 
-    gap:18px;
+    gap:14px;
 
     min-height:auto;
 
-    padding:28px;
+    padding:26px;
   }
 
   .hero{
@@ -483,20 +503,40 @@ body{
 
 @media(max-width:768px){
 
+  .container{
+    width:94%;
+  }
+
   .hero h1{
-    font-size:72px;
+    font-size:58px;
   }
 
   .subtitle{
+    font-size:16px;
+  }
+
+  .hero-card{
+    padding:22px;
+  }
+
+  .hero-card h3{
     font-size:20px;
   }
 
+  .hero-card p{
+    font-size:15px;
+  }
+
   .verb-name{
-    font-size:32px;
+    font-size:24px;
+  }
+
+  .pronunciation{
+    font-size:16px;
   }
 
   .example-text{
-    font-size:22px;
+    font-size:17px;
   }
 
   .audio-buttons{
