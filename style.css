@@ -13,9 +13,9 @@ html{
 }
 
 body{
-  font-family:Inter, sans-serif;
-  background:#030512;
-  color:#ffffff;
+  font-family:'Inter',sans-serif;
+  background:#02040f;
+  color:#fff;
   overflow-x:hidden;
 }
 
@@ -30,11 +30,11 @@ body{
 
   background:
     radial-gradient(circle at top left,
-      rgba(133,67,255,.45),
-      transparent 30%),
+      rgba(132,76,255,.45),
+      transparent 28%),
 
     radial-gradient(circle at top right,
-      rgba(0,102,255,.15),
+      rgba(0,89,255,.12),
       transparent 30%),
 
     linear-gradient(
@@ -49,9 +49,9 @@ body{
 ========================================= */
 
 .container{
-  width:min(1800px, 96%);
+  width:min(1700px,95%);
   margin:auto;
-  padding:32px 0 80px;
+  padding:24px 0 80px;
 }
 
 /* =========================================
@@ -63,7 +63,7 @@ body{
   justify-content:space-between;
   align-items:flex-start;
   gap:40px;
-  margin-bottom:48px;
+  margin-bottom:40px;
 }
 
 .hero-left{
@@ -75,44 +75,47 @@ body{
 .title-row{
   display:flex;
   align-items:center;
-  gap:18px;
+  gap:20px;
 }
 
 .hero h1{
-  font-size:96px;
-  line-height:1;
+  font-size:120px;
+  line-height:.9;
   font-weight:900;
-  letter-spacing:-4px;
+  letter-spacing:-5px;
 }
 
 .part-badge{
   padding:12px 18px;
   border-radius:14px;
 
-  border:1px solid rgba(165,122,255,.35);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(165,110,255,.22),
+      rgba(120,60,255,.12)
+    );
 
-  background:rgba(137,91,255,.12);
+  border:1px solid rgba(196,145,255,.25);
 
-  color:#d3b8ff;
+  color:#d9c0ff;
 
-  font-size:20px;
-  font-weight:700;
+  font-size:24px;
+  font-weight:800;
 }
 
 .subtitle{
+  color:#b9a8ff;
   font-size:24px;
-  color:#bcaeff;
   font-weight:500;
 }
 
 .hero-card{
   width:420px;
 
-  padding:28px;
+  padding:34px;
 
-  border-radius:28px;
-
-  border:1px solid rgba(255,255,255,.08);
+  border-radius:32px;
 
   background:
     linear-gradient(
@@ -121,25 +124,24 @@ body{
       rgba(255,255,255,.03)
     );
 
-  backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,.06);
+
+  backdrop-filter:blur(20px);
 
   box-shadow:
-    0 0 40px rgba(122,66,255,.12);
+    0 0 60px rgba(102,0,255,.12);
 }
 
 .hero-card h3{
+  font-size:32px;
   margin-bottom:18px;
-
-  color:#d9c5ff;
-
-  font-size:38px;
-  font-weight:800;
+  color:#dcc9ff;
 }
 
 .hero-card p{
-  color:#ffffff;
   line-height:1.8;
-  font-size:24px;
+  font-size:22px;
+  color:#fff;
 }
 
 /* =========================================
@@ -147,19 +149,18 @@ body{
 ========================================= */
 
 .verbs-table{
-
-  border-radius:34px;
-
   overflow:hidden;
 
-  border:1px solid rgba(255,255,255,.06);
+  border-radius:36px;
 
   background:
     linear-gradient(
       90deg,
-      rgba(17,21,55,.96),
-      rgba(4,8,35,.96)
+      rgba(12,15,45,.96),
+      rgba(2,5,26,.96)
     );
+
+  border:1px solid rgba(255,255,255,.05);
 
   backdrop-filter:blur(20px);
 }
@@ -171,19 +172,19 @@ body{
     90px
     1.2fr
     1fr
-    1.4fr
-    2fr
+    2.2fr
+    2.4fr
     1.5fr;
 
-  padding:28px 34px;
+  padding:30px 34px;
 
-  border-bottom:1px solid rgba(255,255,255,.05);
+  color:#9ea8d4;
 
-  color:#a5add1;
-
-  font-size:17px;
+  font-size:16px;
   font-weight:700;
   letter-spacing:2px;
+
+  border-bottom:1px solid rgba(255,255,255,.05);
 }
 
 .verb-row{
@@ -193,15 +194,15 @@ body{
     90px
     1.2fr
     1fr
-    1.4fr
-    2fr
+    2.2fr
+    2.4fr
     1.5fr;
 
   align-items:center;
 
-  gap:20px;
+  gap:24px;
 
-  min-height:140px;
+  min-height:150px;
 
   padding:0 34px;
 
@@ -211,7 +212,7 @@ body{
 }
 
 .verb-row:hover{
-  background:rgba(255,255,255,.025);
+  background:rgba(255,255,255,.018);
 }
 
 /* =========================================
@@ -231,15 +232,15 @@ body{
   background:
     linear-gradient(
       180deg,
-      #a05eff,
-      #6b38ff
+      #a661ff,
+      #6d3cff
     );
 
-  font-weight:800;
   font-size:22px;
+  font-weight:800;
 
   box-shadow:
-    0 0 26px rgba(130,76,255,.45);
+    0 0 35px rgba(140,76,255,.4);
 }
 
 /* =========================================
@@ -247,14 +248,14 @@ body{
 ========================================= */
 
 .verb-name{
-  font-size:48px;
+  font-size:38px;
   font-weight:800;
 }
 
 .pronunciation{
-  font-size:28px;
+  font-size:24px;
   font-weight:800;
-  color:#af73ff;
+  color:#4ab8ff;
 }
 
 .pronunciation.empty{
@@ -262,43 +263,44 @@ body{
 }
 
 /* =========================================
-   AUDIO BUTTONS
+   AUDIO
 ========================================= */
 
 .audio-buttons{
   display:flex;
   align-items:center;
-  gap:16px;
+  gap:14px;
+  flex-wrap:wrap;
 }
 
 .btn-audio{
   border:none;
   cursor:pointer;
 
-  transition:.25s;
+  min-width:180px;
 
   padding:16px 22px;
 
   border-radius:18px;
 
-  color:#ffffff;
+  color:#fff;
 
-  font-size:18px;
-  font-weight:700;
+  font-size:17px;
+  font-weight:800;
 
-  min-width:180px;
+  transition:.25s;
 }
 
 .btn-word{
   background:
     linear-gradient(
       135deg,
-      #7e44ff,
-      #c45cff
+      #8244ff,
+      #d45cff
     );
 
   box-shadow:
-    0 0 30px rgba(149,86,255,.28);
+    0 0 35px rgba(145,77,255,.25);
 }
 
 .btn-example{
@@ -306,26 +308,26 @@ body{
     linear-gradient(
       135deg,
       #0f63ff,
-      #4db7ff
+      #4ab8ff
     );
 
   box-shadow:
-    0 0 30px rgba(64,146,255,.28);
+    0 0 35px rgba(44,144,255,.22);
 }
 
 .btn-audio:hover{
-  transform:translateY(-2px) scale(1.03);
+  transform:
+    translateY(-2px)
+    scale(1.03);
 }
-
 /* =========================================
    EXAMPLE
 ========================================= */
 
 .example-text{
-  font-size:34px;
+  font-size:28px;
   line-height:1.5;
-  color:#ffffff;
-  font-weight:500;
+  color:#fff;
 }
 
 /* =========================================
@@ -335,7 +337,6 @@ body{
 .translation-area{
   display:flex;
   flex-direction:column;
-  align-items:flex-start;
   gap:12px;
 }
 
@@ -347,19 +348,19 @@ body{
 
   border-radius:18px;
 
-  background:
-    linear-gradient(
-      180deg,
-      rgba(0,174,255,.14),
-      rgba(0,89,255,.09)
-    );
-
-  border:1px solid rgba(0,174,255,.22);
-
-  color:#7ce3ff;
+  color:#7de1ff;
 
   font-size:18px;
   font-weight:700;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,149,255,.14),
+      rgba(0,60,255,.08)
+    );
+
+  border:1px solid rgba(0,174,255,.18);
 
   transition:.25s;
 }
@@ -371,10 +372,10 @@ body{
 .translation{
   display:none;
 
-  color:#ffffff;
-
-  font-size:28px;
+  font-size:24px;
   font-weight:700;
+
+  color:#fff;
 }
 
 .translation.show{
@@ -386,23 +387,23 @@ body{
 ========================================= */
 
 .bottom-tip{
-  margin-top:28px;
+  margin-top:30px;
 
   display:flex;
-  align-items:center;
   justify-content:space-between;
+  align-items:center;
 
   gap:20px;
 
   padding:28px 34px;
 
-  border-radius:30px;
+  border-radius:28px;
 
   background:
     linear-gradient(
       90deg,
-      rgba(140,84,255,.18),
-      rgba(100,50,255,.1)
+      rgba(132,76,255,.18),
+      rgba(100,50,255,.08)
     );
 
   border:1px solid rgba(255,255,255,.05);
@@ -415,34 +416,33 @@ body{
 }
 
 .tip-icon{
-  font-size:34px;
+  font-size:30px;
 }
 
 .tip-left p{
-  font-size:24px;
+  font-size:22px;
   line-height:1.7;
-  color:#ffffff;
 }
 
 .btn-finish{
   border:none;
   cursor:pointer;
 
-  padding:20px 28px;
+  padding:18px 28px;
 
   border-radius:22px;
+
+  color:#fff;
+
+  font-size:20px;
+  font-weight:800;
 
   background:
     linear-gradient(
       135deg,
-      #7c43ff,
-      #be66ff
+      #8445ff,
+      #c365ff
     );
-
-  color:#ffffff;
-
-  font-size:22px;
-  font-weight:800;
 
   transition:.25s;
 }
@@ -455,15 +455,7 @@ body{
    RESPONSIVE
 ========================================= */
 
-@media(max-width:1400px){
-
-  .hero{
-    flex-direction:column;
-  }
-
-  .hero-card{
-    width:100%;
-  }
+@media(max-width:1500px){
 
   .table-header{
     display:none;
@@ -474,21 +466,17 @@ body{
 
     gap:18px;
 
-    padding:30px;
-
     min-height:auto;
+
+    padding:28px;
   }
 
-  .verb-name{
-    font-size:38px;
+  .hero{
+    flex-direction:column;
   }
 
-  .example-text{
-    font-size:28px;
-  }
-
-  .audio-buttons{
-    flex-wrap:wrap;
+  .hero-card{
+    width:100%;
   }
 
 }
@@ -496,31 +484,24 @@ body{
 @media(max-width:768px){
 
   .hero h1{
-    font-size:64px;
+    font-size:72px;
   }
 
   .subtitle{
     font-size:20px;
   }
 
-  .hero-card h3{
-    font-size:28px;
-  }
-
-  .hero-card p{
-    font-size:18px;
-  }
-
   .verb-name{
     font-size:32px;
   }
 
-  .pronunciation{
-    font-size:24px;
-  }
-
   .example-text{
     font-size:22px;
+  }
+
+  .audio-buttons{
+    flex-direction:column;
+    align-items:stretch;
   }
 
   .btn-audio{
