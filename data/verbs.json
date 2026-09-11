@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "language": "en-US",
   "status": "approved",
   "source": "editorial-audit-2026-09-11",
@@ -21,6 +21,7 @@
   ],
   "extrasChunks": [
     "data/extras-b2-01.json",
-    "data/extras-b2-02.json"
+    "data/extras-b2-02.json",
+    "data/extras-b2-03.json"
   ]
 }
