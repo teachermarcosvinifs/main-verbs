@@ -178,8 +178,39 @@ if (payload.counts) {
   if (verbs.length !== payload.counts.cumulative) errors.push(`contagem cumulativa divergente: ${verbs.length} != ${payload.counts.cumulative}`);
 }
 
+function validateAudioDirectory(dir, suffix, label) {
+  if (!fs.existsSync(dir)) {
+    errors.push(`${label}: pasta ausente: ${dir}`);
+    return;
+  }
+
+  const actual = fs.readdirSync(dir).filter((name) => name.endsWith('.wav'));
+  const actualSet = new Set(actual);
+  const expected = verbs.map((verb) => `${verb.verb}${suffix}`);
+  const expectedSet = new Set(expected);
+
+  const missing = expected.filter((name) => !actualSet.has(name));
+  const extra = actual.filter((name) => !expectedSet.has(name));
+
+  if (actual.length !== verbs.length) {
+    errors.push(`${label}: quantidade de WAVs divergente: ${actual.length} != ${verbs.length}`);
+  }
+  if (missing.length) errors.push(`${label}: faltando ${missing.join(', ')}`);
+  if (extra.length) errors.push(`${label}: extras ${extra.join(', ')}`);
+
+  for (const name of actual) {
+    const size = fs.statSync(path.join(dir, name)).size;
+    if (size < 1000) errors.push(`${label}: arquivo suspeito ou vazio: ${name} (${size} bytes)`);
+  }
+}
+
+const audioBase = payload.audioBase || path.join('audio', 'advanced');
+validateAudioDirectory(path.join(audioBase, 'word'), '-word.wav', 'áudio de palavras');
+validateAudioDirectory(path.join(audioBase, 'example'), '-example.wav', 'áudio de frases');
+
 console.log(`Verbos analisados: ${verbs.length}`);
 console.log(`B2: ${tierCounts.B2} | C1-C2: ${tierCounts['C1-C2']}`);
+console.log(`Áudio esperado: ${verbs.length} palavras + ${verbs.length} frases = ${verbs.length * 2} WAVs`);
 
 if (warnings.length) {
   console.log('\nAVISOS');
@@ -192,4 +223,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log('\nValidação estrutural concluída sem erros');
+console.log('\nValidação estrutural e de áudio concluída sem erros');
