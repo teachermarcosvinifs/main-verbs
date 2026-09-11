@@ -1,13 +1,11 @@
 (() => {
   'use strict';
 
-  const PAGE_SIZE = 16;
   const state = {
     all: [],
     filtered: [],
     search: '',
     filter: 'all',
-    page: 1,
     openId: null,
     audioBase: 'audio/advanced',
   };
@@ -15,12 +13,14 @@
   const pageTier = document.body.dataset.tier || 'B2';
   const listEl = document.querySelector('[data-verbs-list]');
   const searchEl = document.querySelector('[data-verb-search]');
+  const jumpFormEl = document.querySelector('[data-jump-form]');
+  const jumpEl = document.querySelector('[data-verb-jump]');
+  const jumpListEl = document.querySelector('[data-verb-options]');
   const filterEls = [...document.querySelectorAll('[data-filter]')];
   const resultsCountEl = document.querySelector('[data-results-count]');
   const totalCountEl = document.querySelector('[data-total-count]');
   const extraCountEl = document.querySelector('[data-extra-count]');
   const pageSummaryEl = document.querySelector('[data-page-summary]');
-  const paginationEl = document.querySelector('[data-pagination]');
 
   const audioPlayer = new Audio();
   let activeAudioButton = null;
@@ -40,6 +40,10 @@
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
 
+  const slugify = (value = '') => normalize(value)
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
   const qaApproved = (verb) => {
     const qa = verb.qa || {};
     if (verb.approved === true) return true;
@@ -57,6 +61,11 @@
     return verb.tier === 'B2';
   };
 
+  const visibleExtras = (verb) => (Array.isArray(verb.extras) ? verb.extras : [])
+    .filter(Boolean)
+    .filter((block) => block.type !== 'register')
+    .slice(0, 4);
+
   const isIrregular = (verb) => {
     const type = normalize(verb.verbType);
     return type === 'irregular' || type === 'special';
@@ -67,14 +76,14 @@
       case 'tier-b2': return verb.tier === 'B2';
       case 'tier-c1': return verb.tier === 'C1-C2';
       case 'irregular': return isIrregular(verb);
-      case 'extras': return Array.isArray(verb.extras) && verb.extras.length > 0;
+      case 'extras': return visibleExtras(verb).length > 0;
       default: return true;
     }
   };
 
   const matchesSearch = (verb) => {
     if (!state.search) return true;
-    const extrasText = (verb.extras || [])
+    const extrasText = visibleExtras(verb)
       .flatMap((block) => [block.title, block.text, ...(block.items || [])])
       .join(' ');
     const haystack = normalize([
@@ -102,19 +111,19 @@
     `;
   };
 
-  const renderRow = (verb, indexOnPage) => {
-    const absoluteIndex = ((state.page - 1) * PAGE_SIZE) + indexOnPage + 1;
+  const renderRow = (verb, index) => {
     const verbId = verb.id || `${verb.tier}-${verb.verb}`;
-    const extras = Array.isArray(verb.extras) ? verb.extras.filter(Boolean).slice(0, 4) : [];
+    const extras = visibleExtras(verb);
     const hasExtras = extras.length > 0;
     const expanded = hasExtras && state.openId === verbId;
     const audioWord = verb.audio?.word || `${state.audioBase}/word/${verb.verb}-word.wav`;
     const audioExample = verb.audio?.example || `${state.audioBase}/example/${verb.verb}-example.wav`;
+    const anchorId = `verb-${slugify(verb.verb)}`;
 
     return `
-      <article class="advanced-verb ${expanded ? 'is-expanded' : ''}" data-verb-id="${escapeHtml(verbId)}">
+      <article class="advanced-verb ${expanded ? 'is-expanded' : ''}" id="${anchorId}" data-verb-id="${escapeHtml(verbId)}" data-verb-name="${escapeHtml(verb.verb)}">
         <div class="advanced-row">
-          <div class="verb-index">${absoluteIndex}</div>
+          <div class="verb-index">${index + 1}</div>
           <div class="verb-cell verb-main" data-label="Verbo">${escapeHtml(verb.verb)}</div>
           <div class="verb-cell form-cell" data-label="Passado">${escapeHtml(verb.past || '—')}</div>
           <div class="verb-cell form-cell" data-label="Particípio">${escapeHtml(verb.participle || '—')}</div>
@@ -133,61 +142,26 @@
     `;
   };
 
-  const pageCount = () => Math.max(1, Math.ceil(state.filtered.length / PAGE_SIZE));
-  const getPageItems = () => {
-    const start = (state.page - 1) * PAGE_SIZE;
-    return state.filtered.slice(start, start + PAGE_SIZE);
-  };
-
-  const paginationTokens = (current, total) => {
-    if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
-    const tokens = [1];
-    const start = Math.max(2, current - 1);
-    const end = Math.min(total - 1, current + 1);
-    if (start > 2) tokens.push('…');
-    for (let i = start; i <= end; i += 1) tokens.push(i);
-    if (end < total - 1) tokens.push('…');
-    tokens.push(total);
-    return tokens;
-  };
-
-  const renderPagination = () => {
-    if (!paginationEl) return;
-    const total = pageCount();
-    if (state.page > total) state.page = total;
-    const buttons = paginationTokens(state.page, total).map((token) => {
-      if (token === '…') return '<span class="page-ellipsis">…</span>';
-      const active = token === state.page;
-      return `<button class="page-button ${active ? 'is-active' : ''}" data-page="${token}" ${active ? 'aria-current="page"' : ''}>${token}</button>`;
-    }).join('');
-    paginationEl.innerHTML = `
-      <button class="page-button page-arrow" data-page="${state.page - 1}" ${state.page <= 1 ? 'disabled' : ''} aria-label="Página anterior">‹</button>
-      ${buttons}
-      <button class="page-button page-arrow" data-page="${state.page + 1}" ${state.page >= total ? 'disabled' : ''} aria-label="Próxima página">›</button>
-    `;
-  };
-
   const render = () => {
     if (!listEl) return;
-    const pageItems = getPageItems();
-    listEl.innerHTML = pageItems.length
-      ? pageItems.map(renderRow).join('')
+    listEl.innerHTML = state.filtered.length
+      ? state.filtered.map(renderRow).join('')
       : '<div class="empty-state"><strong>Nenhum verbo encontrado</strong><span>Tente outra busca ou filtro</span></div>';
 
     if (resultsCountEl) resultsCountEl.textContent = state.filtered.length.toString();
-    const start = state.filtered.length ? ((state.page - 1) * PAGE_SIZE) + 1 : 0;
-    const end = Math.min(state.page * PAGE_SIZE, state.filtered.length);
-    if (pageSummaryEl) pageSummaryEl.textContent = state.filtered.length ? `Mostrando ${start}–${end} de ${state.filtered.length}` : '0 verbos';
-    renderPagination();
+    if (pageSummaryEl) {
+      pageSummaryEl.textContent = state.filtered.length === 1
+        ? '1 verbo nesta página'
+        : `${state.filtered.length} verbos nesta página`;
+    }
   };
 
-  const applyFilters = ({ resetPage = true } = {}) => {
+  const applyFilters = () => {
     state.filtered = state.all
       .filter(eligibleForPage)
       .filter(matchesFilter)
       .filter(matchesSearch)
       .sort((a, b) => a.verb.localeCompare(b.verb, 'en'));
-    if (resetPage) state.page = 1;
     state.openId = null;
     render();
   };
@@ -195,7 +169,53 @@
   const updateHeroCounts = () => {
     const eligible = state.all.filter(eligibleForPage);
     if (totalCountEl) totalCountEl.textContent = eligible.length.toString();
-    if (extraCountEl) extraCountEl.textContent = eligible.filter((verb) => Array.isArray(verb.extras) && verb.extras.length).length.toString();
+    if (extraCountEl) extraCountEl.textContent = eligible.filter((verb) => visibleExtras(verb).length > 0).length.toString();
+  };
+
+  const populateJumpOptions = () => {
+    if (!jumpListEl) return;
+    jumpListEl.innerHTML = state.all
+      .filter(eligibleForPage)
+      .sort((a, b) => a.verb.localeCompare(b.verb, 'en'))
+      .map((verb) => `<option value="${escapeHtml(verb.verb)}"></option>`)
+      .join('');
+  };
+
+  const resetForJump = () => {
+    state.filter = 'all';
+    state.search = '';
+    if (searchEl) searchEl.value = '';
+    filterEls.forEach((el) => el.classList.toggle('is-active', el.dataset.filter === 'all'));
+    applyFilters();
+  };
+
+  const highlightTarget = (verb) => {
+    const anchorId = `verb-${slugify(verb.verb)}`;
+    const targetEl = document.getElementById(anchorId);
+    if (!targetEl) return;
+    targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    targetEl.classList.add('is-target');
+    window.history.replaceState(null, '', `#${anchorId}`);
+    window.setTimeout(() => targetEl.classList.remove('is-target'), 2200);
+  };
+
+  const goToVerb = (value) => {
+    const wanted = normalize(value);
+    if (!wanted) return;
+
+    const eligible = state.all.filter(eligibleForPage);
+    const target = eligible.find((verb) => normalize(verb.verb) === wanted)
+      || eligible.find((verb) => normalize(verb.verb).startsWith(wanted));
+
+    if (!target) {
+      jumpEl?.classList.add('has-error');
+      window.setTimeout(() => jumpEl?.classList.remove('has-error'), 1400);
+      return;
+    }
+
+    if (jumpEl) jumpEl.value = target.verb;
+    resetForJump();
+    window.requestAnimationFrame(() => highlightTarget(target));
   };
 
   const stopAudio = () => {
@@ -242,24 +262,17 @@
       const id = expandButton.dataset.expand;
       state.openId = state.openId === id ? null : id;
       render();
-      return;
-    }
-
-    const pageButton = event.target.closest('[data-page]');
-    if (pageButton && !pageButton.disabled) {
-      const nextPage = Number(pageButton.dataset.page);
-      if (!Number.isNaN(nextPage) && nextPage >= 1 && nextPage <= pageCount()) {
-        state.page = nextPage;
-        state.openId = null;
-        render();
-        document.querySelector('.advanced-controls')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
     }
   });
 
   searchEl?.addEventListener('input', (event) => {
     state.search = normalize(event.target.value);
     applyFilters();
+  });
+
+  jumpFormEl?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    goToVerb(jumpEl?.value || '');
   });
 
   filterEls.forEach((button) => {
@@ -289,11 +302,7 @@
     const chunks = await Promise.all(manifest.chunks.map(fetchJson));
     const verbs = chunks.flatMap((chunk) => Array.isArray(chunk) ? chunk : (chunk.verbs || []));
     const expected = manifest.counts?.cumulative;
-
-    if (expected && verbs.length !== expected) {
-      throw new Error(`Base incompleta: ${verbs.length}/${expected}`);
-    }
-
+    if (expected && verbs.length !== expected) throw new Error(`Base incompleta: ${verbs.length}/${expected}`);
     return verbs;
   };
 
@@ -301,7 +310,14 @@
     .then((verbs) => {
       state.all = verbs;
       updateHeroCounts();
+      populateJumpOptions();
       applyFilters();
+
+      const hash = window.location.hash.replace('#verb-', '');
+      if (hash) {
+        const target = state.all.find((verb) => slugify(verb.verb) === hash && eligibleForPage(verb));
+        if (target) window.setTimeout(() => highlightTarget(target), 120);
+      }
     })
     .catch((error) => {
       console.error('Erro ao carregar a base de verbos:', error);
