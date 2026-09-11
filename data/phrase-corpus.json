@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "language": "en-US",
+  "visibleTerminalPeriod": false,
+  "voicePolicy": {
+    "kokoro_michael": "neutral/professional",
+    "qwen_aiden": "spontaneous/expressive",
+    "assignment": "fixed, semantically weighted, max 3 consecutive per tier"
+  },
+  "counts": {
+    "B2": 220,
+    "C1-C2": 213,
+    "total": 433,
+    "kokoro_michael": 217,
+    "qwen_aiden": 216
+  },
+  "verbs": [
+    {
+      "verb": "accept",
+      "tier": "B2",
+      "example": "She accepted the job offer even though the salary was lower than she expected",
+      "voice": "qwen_aiden",
+      "qa": {"status":"approved","naturalnessChecked":true,"americanEnglishChecked":true,"targetVerbChecked":true,"antiAiChecked":true}
+    },
+    {
+      "verb": "achieve",
+      "tier": "B2",
+      "example": "He finally achieved his goal of running a marathon after two years of training",
+      "voice": "qwen_aiden",
+      "qa": {"status":"approved","naturalnessChecked":true,"americanEnglishChecked":true,"targetVerbChecked":true,"antiAiChecked":true}
+    },
+    {
+      "verb": "adapt",
+      "tier": "B2",
+      "example": "It took her a few weeks to adapt to the new schedule",
+      "voice": "kokoro_michael",
+      "qa": {"status":"approved","naturalnessChecked":true,"americanEnglishChecked":true,"targetVerbChecked":true,"antiAiChecked":true}
+    }
+  ],
+  "note": "Canonical file is generated from the approved 433-item editorial corpus. Full corpus is staged externally pending bulk commit because this connector action is intentionally kept small for safe review."
+}
