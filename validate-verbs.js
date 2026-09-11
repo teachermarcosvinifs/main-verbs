@@ -1,8 +1,22 @@
 const fs = require('fs');
+const path = require('path');
 
-const payload = JSON.parse(fs.readFileSync('data/verbs.json', 'utf8'));
-const verbs = Array.isArray(payload) ? payload : (payload.verbs || []);
+const manifestPath = path.join('data', 'verbs.json');
+const payload = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 
+function loadVerbs(source) {
+  if (Array.isArray(source)) return source;
+  if (Array.isArray(source.verbs)) return source.verbs;
+  if (Array.isArray(source.chunks) && source.chunks.length) {
+    return source.chunks.flatMap((chunkPath) => {
+      const chunk = JSON.parse(fs.readFileSync(chunkPath, 'utf8'));
+      return Array.isArray(chunk) ? chunk : (chunk.verbs || []);
+    });
+  }
+  return [];
+}
+
+const verbs = loadVerbs(payload);
 const allowedTiers = new Set(['B2', 'C1-C2']);
 const allowedExtraTypes = new Set([
   'structure',
@@ -42,12 +56,12 @@ const britishMarkers = [
 
 const errors = [];
 const warnings = [];
-const keys = new Set();
+const lexemes = new Set();
 const examples = new Map();
 const openings = new Map();
+const tierCounts = { B2: 0, 'C1-C2': 0 };
 
 const words = (text = '') => text.trim().split(/\s+/).filter(Boolean);
-
 const visibleTextEndsWithPeriod = (value) =>
   typeof value === 'string' && value.trim().endsWith('.');
 
@@ -68,20 +82,19 @@ for (const [index, verb] of verbs.entries()) {
     }
   }
 
-  const key = `${verb.tier || ''}:${verb.verb || ''}`.toLowerCase();
-  if (keys.has(key)) errors.push(`${label}: registro duplicado`);
-  keys.add(key);
+  const lexeme = String(verb.verb || '').toLowerCase();
+  if (lexeme && lexemes.has(lexeme)) errors.push(`${label}: verbo duplicado entre níveis`);
+  if (lexeme) lexemes.add(lexeme);
 
   if (verb.tier && !allowedTiers.has(verb.tier)) {
     errors.push(`${label}: tier inválido: ${verb.tier}`);
+  } else if (verb.tier) {
+    tierCounts[verb.tier] += 1;
   }
 
   const qa = verb.qa || {};
   const approved = verb.approved === true || qa.status === 'approved';
-
-  if (!approved) {
-    errors.push(`${label}: registro ainda não aprovado`);
-  }
+  if (!approved) errors.push(`${label}: registro ainda não aprovado`);
 
   if (qa.status === 'approved') {
     if (!qa.patternChecked) errors.push(`${label}: aprovado sem patternChecked`);
@@ -133,8 +146,7 @@ for (const [index, verb] of verbs.entries()) {
       warnings.push(`${label}: exemplo com ${count} palavras; revisar tamanho`);
     }
 
-    const britishHits = britishMarkers.filter((pattern) => pattern.test(example));
-    if (britishHits.length) {
+    if (britishMarkers.some((pattern) => pattern.test(example))) {
       warnings.push(`${label}: possível forma britânica no exemplo; padrão é American English`);
     }
   }
@@ -160,7 +172,14 @@ for (const [opening, labels] of openings.entries()) {
   }
 }
 
+if (payload.counts) {
+  if (tierCounts.B2 !== payload.counts.B2) errors.push(`contagem B2 divergente: ${tierCounts.B2} != ${payload.counts.B2}`);
+  if (tierCounts['C1-C2'] !== payload.counts['C1-C2']) errors.push(`contagem C1-C2 divergente: ${tierCounts['C1-C2']} != ${payload.counts['C1-C2']}`);
+  if (verbs.length !== payload.counts.cumulative) errors.push(`contagem cumulativa divergente: ${verbs.length} != ${payload.counts.cumulative}`);
+}
+
 console.log(`Verbos analisados: ${verbs.length}`);
+console.log(`B2: ${tierCounts.B2} | C1-C2: ${tierCounts['C1-C2']}`);
 
 if (warnings.length) {
   console.log('\nAVISOS');
