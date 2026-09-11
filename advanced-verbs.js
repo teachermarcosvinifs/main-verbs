@@ -41,6 +41,7 @@
 
   const qaApproved = (verb) => {
     const qa = verb.qa || {};
+    if (verb.approved === true) return true;
     return qa.status === 'approved'
       && qa.patternChecked === true
       && qa.naturalnessChecked === true
@@ -108,14 +109,15 @@
 
   const renderRow = (verb, indexOnPage) => {
     const absoluteIndex = ((state.page - 1) * PAGE_SIZE) + indexOnPage + 1;
+    const verbId = verb.id || `${verb.tier}-${verb.verb}`;
     const extras = Array.isArray(verb.extras) ? verb.extras.filter(Boolean).slice(0, 4) : [];
     const hasExtras = extras.length > 0;
-    const expanded = hasExtras && state.openId === verb.id;
-    const audioWord = verb.audio?.word || '';
-    const audioExample = verb.audio?.example || '';
+    const expanded = hasExtras && state.openId === verbId;
+    const audioWord = verb.audio?.word || `audio/advanced/word/${verb.verb}-word.wav`;
+    const audioExample = verb.audio?.example || `audio/advanced/example/${verb.verb}-example.wav`;
 
     return `
-      <article class="advanced-verb ${expanded ? 'is-expanded' : ''}" data-verb-id="${escapeHtml(verb.id)}">
+      <article class="advanced-verb ${expanded ? 'is-expanded' : ''}" data-verb-id="${escapeHtml(verbId)}">
         <div class="advanced-row">
           <div class="verb-index">${absoluteIndex}</div>
           <div class="verb-cell verb-main" data-label="Verbo">${escapeHtml(verb.verb)}</div>
@@ -133,7 +135,7 @@
           <div class="verb-cell meaning-cell" data-label="Significado">${escapeHtml(verb.meaning || '—')}</div>
           <div class="verb-cell expand-cell">
             ${hasExtras ? `
-              <button class="expand-button" data-expand="${escapeHtml(verb.id)}" aria-expanded="${expanded}" aria-label="${expanded ? 'Fechar' : 'Abrir'} informações extras sobre ${escapeHtml(verb.verb)}">
+              <button class="expand-button" data-expand="${escapeHtml(verbId)}" aria-expanded="${expanded}" aria-label="${expanded ? 'Fechar' : 'Abrir'} informações extras sobre ${escapeHtml(verb.verb)}">
                 ${expanded ? '⌃' : '⌄'}
               </button>
             ` : ''}
