@@ -300,9 +300,18 @@
     }
 
     const chunks = await Promise.all(manifest.chunks.map(fetchJson));
-    const verbs = chunks.flatMap((chunk) => Array.isArray(chunk) ? chunk : (chunk.verbs || []));
+    let verbs = chunks.flatMap((chunk) => Array.isArray(chunk) ? chunk : (chunk.verbs || []));
     const expected = manifest.counts?.cumulative;
     if (expected && verbs.length !== expected) throw new Error(`Base incompleta: ${verbs.length}/${expected}`);
+
+    if (Array.isArray(manifest.extrasChunks) && manifest.extrasChunks.length) {
+      const supplements = await Promise.all(manifest.extrasChunks.map(fetchJson));
+      const extrasByVerb = Object.assign({}, ...supplements);
+      verbs = verbs.map((verb) => Object.prototype.hasOwnProperty.call(extrasByVerb, verb.verb)
+        ? { ...verb, extras: extrasByVerb[verb.verb] }
+        : verb);
+    }
+
     return verbs;
   };
 
