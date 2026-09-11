@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "language": "en-US",
   "status": "approved",
   "source": "editorial-audit-2026-09-11",
@@ -18,5 +18,8 @@
     "data/verbs-c1-02.json",
     "data/verbs-c1-03.json",
     "data/verbs-c1-04.json"
+  ],
+  "extrasChunks": [
+    "data/extras-b2-01.json"
   ]
 }
