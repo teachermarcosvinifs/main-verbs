@@ -315,13 +315,28 @@
     });
   });
 
-  fetch('data/verbs.json', { cache: 'no-store' })
-    .then((response) => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.json();
-    })
-    .then((payload) => {
-      state.all = Array.isArray(payload) ? payload : (payload.verbs || []);
+  const fetchJson = (path) => fetch(path, { cache: 'no-store' }).then((response) => {
+    if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+    return response.json();
+  });
+
+  const loadVerbData = async () => {
+    const payload = await fetchJson('data/verbs.json');
+
+    if (Array.isArray(payload)) return payload;
+    if (Array.isArray(payload.verbs)) return payload.verbs;
+
+    if (Array.isArray(payload.chunks) && payload.chunks.length) {
+      const chunks = await Promise.all(payload.chunks.map(fetchJson));
+      return chunks.flatMap((chunk) => Array.isArray(chunk) ? chunk : (chunk.verbs || []));
+    }
+
+    return [];
+  };
+
+  loadVerbData()
+    .then((verbs) => {
+      state.all = verbs;
       updateHeroCounts();
       applyFilters();
     })
