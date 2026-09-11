@@ -50,11 +50,17 @@
       </div>
     </section>
 
-    <section class="advanced-controls" aria-label="Busca e filtros">
+    <section class="advanced-controls" aria-label="Busca, acesso direto e filtros">
       <label class="search-box">
         <span class="search-icon" aria-hidden="true">⌕</span>
         <input data-verb-search type="search" autocomplete="off" placeholder="Buscar verbo, exemplo ou significado" aria-label="Buscar verbo, exemplo ou significado" />
       </label>
+
+      <form class="jump-box" data-jump-form>
+        <input data-verb-jump list="verb-options-b2" autocomplete="off" placeholder="Ir direto para um verbo" aria-label="Ir direto para um verbo" />
+        <datalist id="verb-options-b2" data-verb-options></datalist>
+        <button class="jump-button" type="submit">Ir</button>
+      </form>
 
       <div class="filter-group" aria-label="Filtros">
         <button class="filter-chip is-active" data-filter="all">Todos</button>
@@ -84,7 +90,6 @@
 
     <footer class="advanced-footer">
       <span data-page-summary>0 verbos</span>
-      <nav class="pagination" data-pagination aria-label="Paginação"></nav>
     </footer>
   </main>
 </body>
