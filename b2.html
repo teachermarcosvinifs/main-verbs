@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050816" />
   <title>Verbos B2+</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="advanced-verbs.css" />
@@ -10,26 +11,81 @@
 </head>
 <body class="advanced-page" data-tier="B2">
   <div class="background-glow"></div>
-  <main class="container">
-    <section class="hero">
-      <div class="hero-left">
-        <div class="title-row"><h1>VERBOS</h1><span class="level-badge">B2+</span></div>
-        <p class="subtitle">Uso geral, trabalho e conversação</p>
+
+  <main class="container advanced-shell">
+    <nav class="level-switcher" aria-label="Listas de verbos">
+      <a href="index.html">Parte 1</a>
+      <a href="b2.html" class="is-current" aria-current="page">B2+</a>
+      <a href="c1-c2.html">C1–C2</a>
+    </nav>
+
+    <section class="advanced-hero">
+      <div class="advanced-hero-copy">
+        <div class="advanced-title-row">
+          <h1>VERBOS</h1>
+          <span class="level-badge">B2+</span>
+        </div>
+        <p class="advanced-subtitle">Uso geral, trabalho e conversação</p>
+
+        <div class="hero-stats" aria-label="Resumo da lista">
+          <div class="hero-stat">
+            <strong data-total-count>220</strong>
+            <span>verbos</span>
+          </div>
+          <div class="hero-stat">
+            <strong>2</strong>
+            <span>áudios por verbo</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-extra-count>0</strong>
+            <span>com informações extras</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-level-card" aria-hidden="true">
+        <span class="hero-level-kicker">B2+</span>
+        <strong>220 verbos</strong>
+        <span>passado, particípio, exemplo e áudio</span>
       </div>
     </section>
-    <section class="advanced-toolbar" aria-label="Filtros da lista">
-      <div class="filter-group">
+
+    <section class="advanced-controls" aria-label="Busca e filtros">
+      <label class="search-box">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input data-verb-search type="search" autocomplete="off" placeholder="Buscar verbo, exemplo ou significado" aria-label="Buscar verbo, exemplo ou significado" />
+      </label>
+
+      <div class="filter-group" aria-label="Filtros">
         <button class="filter-chip is-active" data-filter="all">Todos</button>
-        <button class="filter-chip" data-filter="uso geral">Uso geral</button>
-        <button class="filter-chip" data-filter="trabalho">Trabalho</button>
-        <button class="filter-chip" data-filter="conversação">Conversação</button>
+        <button class="filter-chip" data-filter="irregular">Irregulares</button>
+        <button class="filter-chip" data-filter="extras">Com extras</button>
       </div>
-      <input class="advanced-search" data-verb-search type="search" placeholder="Buscar verbo ou significado" aria-label="Buscar verbo ou significado" />
+
+      <div class="results-summary" aria-live="polite">
+        <strong data-results-count>0</strong>
+        <span>resultados</span>
+      </div>
     </section>
-    <section class="advanced-table">
-      <div class="advanced-header"><span></span><span>Verbo</span><span>Passado</span><span>Particípio</span><span>Ouvir</span><span>Exemplo</span><span>Significado</span><span></span></div>
+
+    <section class="advanced-table" aria-label="Lista de verbos B2+">
+      <div class="advanced-header" aria-hidden="true">
+        <span>#</span>
+        <span>Verbo</span>
+        <span>Passado</span>
+        <span>Particípio</span>
+        <span>Ouvir</span>
+        <span>Exemplo</span>
+        <span>Significado</span>
+        <span></span>
+      </div>
       <div data-verbs-list></div>
     </section>
+
+    <footer class="advanced-footer">
+      <span data-page-summary>0 verbos</span>
+      <nav class="pagination" data-pagination aria-label="Paginação"></nav>
+    </footer>
   </main>
 </body>
 </html>
