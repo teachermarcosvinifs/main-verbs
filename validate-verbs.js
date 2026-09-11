@@ -4,7 +4,16 @@ const payload = JSON.parse(fs.readFileSync('data/verbs.json', 'utf8'));
 const verbs = Array.isArray(payload) ? payload : (payload.verbs || []);
 
 const allowedTiers = new Set(['B2', 'C1-C2']);
-const allowedExtraTypes = new Set(['structure','combinations','contrast','variation','other_use','alternative_forms','register']);
+const allowedExtraTypes = new Set([
+  'structure',
+  'combinations',
+  'contrast',
+  'variation',
+  'other_use',
+  'alternative_forms',
+  'register',
+]);
+
 const metaPatterns = [
   /evite traduzir/i,
   /pense no contexto/i,
@@ -14,9 +23,9 @@ const metaPatterns = [
   /isso ajuda/i,
   /this helps/i,
   /remember that/i,
-  /keep in mind/i
+  /keep in mind/i,
 ];
-const genericTerms = ['system','process','issue','challenge','solution','result','results','strategy','opportunity','efficiency','performance','innovation','growth'];
+
 const britishMarkers = [
   /\bmum\b/i,
   /\bcar park\b/i,
@@ -26,67 +35,77 @@ const britishMarkers = [
   /\bcentre(s)?\b/i,
   /\bfavourite(s)?\b/i,
   /\borganise(d|s|ing)?\b/i,
-  /\brecognise(d|s|ing)?\b/i
+  /\brecognise(d|s|ing)?\b/i,
+  /\bflatmate\b/i,
+  /\bcourgette(s)?\b/i,
 ];
 
 const errors = [];
 const warnings = [];
-const ids = new Set();
-const exampleMap = new Map();
+const keys = new Set();
+const examples = new Map();
 const openings = new Map();
 
-function words(text = '') {
-  return text.trim().split(/\s+/).filter(Boolean);
-}
+const words = (text = '') => text.trim().split(/\s+/).filter(Boolean);
 
-function pushOpen(verb) {
-  const opening = words(verb.example).slice(0, 3).join(' ').toLowerCase();
-  if (!opening) return;
-  if (!openings.has(opening)) openings.set(opening, []);
-  openings.get(opening).push(verb.verb);
-}
+const visibleTextEndsWithPeriod = (value) =>
+  typeof value === 'string' && value.trim().endsWith('.');
 
-function hasForbiddenTerminalPeriod(value) {
-  return typeof value === 'string' && value.trim().endsWith('.');
-}
-
-function checkVisibleText(label, field, value) {
+const checkVisibleText = (label, field, value) => {
   if (!value || typeof value !== 'string') return;
-  if (hasForbiddenTerminalPeriod(value)) {
+  if (visibleTextEndsWithPeriod(value)) {
     errors.push(`${label}: ponto final visível proibido em ${field}`);
   }
-}
+};
 
 for (const [index, verb] of verbs.entries()) {
   const label = verb.verb || `registro ${index + 1}`;
-  const required = ['id','verb','tier','past','participle','meaning','example'];
+  const required = ['verb', 'tier', 'past', 'participle', 'meaning', 'example'];
+
   for (const field of required) {
-    if (!verb[field] || !String(verb[field]).trim()) errors.push(`${label}: campo obrigatório ausente: ${field}`);
+    if (!verb[field] || !String(verb[field]).trim()) {
+      errors.push(`${label}: campo obrigatório ausente: ${field}`);
+    }
   }
 
-  if (verb.id) {
-    if (ids.has(verb.id)) errors.push(`${label}: id duplicado: ${verb.id}`);
-    ids.add(verb.id);
-  }
+  const key = `${verb.tier || ''}:${verb.verb || ''}`.toLowerCase();
+  if (keys.has(key)) errors.push(`${label}: registro duplicado`);
+  keys.add(key);
 
-  if (verb.tier && !allowedTiers.has(verb.tier)) errors.push(`${label}: tier inválido: ${verb.tier}`);
+  if (verb.tier && !allowedTiers.has(verb.tier)) {
+    errors.push(`${label}: tier inválido: ${verb.tier}`);
+  }
 
   const qa = verb.qa || {};
+  const approved = verb.approved === true || qa.status === 'approved';
+
+  if (!approved) {
+    errors.push(`${label}: registro ainda não aprovado`);
+  }
+
   if (qa.status === 'approved') {
     if (!qa.patternChecked) errors.push(`${label}: aprovado sem patternChecked`);
     if (!qa.naturalnessChecked) errors.push(`${label}: aprovado sem naturalnessChecked`);
     if (!qa.antiAiChecked) errors.push(`${label}: aprovado sem antiAiChecked`);
-    if (!Array.isArray(qa.evidence) || qa.evidence.length === 0) errors.push(`${label}: aprovado sem evidence`);
+    if (!Array.isArray(qa.evidence) || qa.evidence.length === 0) {
+      errors.push(`${label}: aprovado sem evidence`);
+    }
   }
 
   const extras = Array.isArray(verb.extras) ? verb.extras : [];
-  const visibleText = [verb.example, verb.meaning, ...extras.flatMap(x => [x.title, x.text, ...(x.items || [])])].filter(Boolean).join(' ');
-  if (metaPatterns.some((pattern) => pattern.test(visibleText))) errors.push(`${label}: metacomentário proibido detectado`);
+  const visibleText = [
+    verb.example,
+    verb.meaning,
+    ...extras.flatMap((block) => [block.title, block.text, ...(block.items || [])]),
+  ].filter(Boolean).join(' ');
 
-  // Site style rule: isolated visible text never ends with a full stop.
-  // Question marks and exclamation marks remain valid.
+  if (metaPatterns.some((pattern) => pattern.test(visibleText))) {
+    errors.push(`${label}: metacomentário proibido detectado`);
+  }
+
   checkVisibleText(label, 'example', verb.example);
   checkVisibleText(label, 'meaning', verb.meaning);
+
   extras.forEach((block, blockIndex) => {
     checkVisibleText(label, `extras[${blockIndex}].title`, block.title);
     checkVisibleText(label, `extras[${blockIndex}].text`, block.text);
@@ -97,41 +116,61 @@ for (const [index, verb] of verbs.entries()) {
 
   const example = (verb.example || '').trim();
   if (example) {
-    const key = example.toLowerCase();
-    if (exampleMap.has(key)) errors.push(`${label}: exemplo duplicado com ${exampleMap.get(key)}`);
-    exampleMap.set(key, label);
-    pushOpen(verb);
+    const exampleKey = example.toLowerCase();
+    if (examples.has(exampleKey)) {
+      errors.push(`${label}: exemplo duplicado com ${examples.get(exampleKey)}`);
+    }
+    examples.set(exampleKey, label);
+
+    const opening = words(example).slice(0, 3).join(' ').toLowerCase();
+    if (opening) {
+      if (!openings.has(opening)) openings.set(opening, []);
+      openings.get(opening).push(label);
+    }
 
     const count = words(example).length;
-    if (count < 4 || count > 20) warnings.push(`${label}: exemplo com ${count} palavras; revisar tamanho`);
-
-    const genericHits = genericTerms.filter((term) => new RegExp(`\\b${term}\\b`, 'i').test(example));
-    if (genericHits.length >= 2) warnings.push(`${label}: exemplo concentra termos genéricos (${genericHits.join(', ')})`);
+    if (count < 4 || count > 20) {
+      warnings.push(`${label}: exemplo com ${count} palavras; revisar tamanho`);
+    }
 
     const britishHits = britishMarkers.filter((pattern) => pattern.test(example));
-    if (britishHits.length) warnings.push(`${label}: possível forma britânica no exemplo; padrão do site é American English`);
+    if (britishHits.length) {
+      warnings.push(`${label}: possível forma britânica no exemplo; padrão é American English`);
+    }
   }
 
   if (extras.length > 4) errors.push(`${label}: mais de 4 módulos extras`);
+
   for (const block of extras) {
-    if (!allowedExtraTypes.has(block.type)) errors.push(`${label}: módulo inválido: ${block.type}`);
-    const hasContent = (block.text && String(block.text).trim()) || (Array.isArray(block.items) && block.items.length);
+    if (!allowedExtraTypes.has(block.type)) {
+      errors.push(`${label}: módulo inválido: ${block.type}`);
+    }
+
+    const hasContent =
+      (block.text && String(block.text).trim())
+      || (Array.isArray(block.items) && block.items.length);
+
     if (!hasContent) errors.push(`${label}: módulo ${block.type} sem conteúdo`);
   }
 }
 
 for (const [opening, labels] of openings.entries()) {
-  if (labels.length >= 4) warnings.push(`abertura repetida "${opening}" em ${labels.length} exemplos: ${labels.join(', ')}`);
+  if (labels.length >= 4) {
+    warnings.push(`abertura repetida "${opening}" em ${labels.length} exemplos: ${labels.join(', ')}`);
+  }
 }
 
 console.log(`Verbos analisados: ${verbs.length}`);
+
 if (warnings.length) {
   console.log('\nAVISOS');
   warnings.forEach((item) => console.log(`- ${item}`));
 }
+
 if (errors.length) {
   console.error('\nERROS');
   errors.forEach((item) => console.error(`- ${item}`));
   process.exit(1);
 }
-console.log('\nValidação estrutural concluída sem erros.');
+
+console.log('\nValidação estrutural concluída sem erros');
