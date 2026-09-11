@@ -17,6 +17,17 @@ const metaPatterns = [
   /keep in mind/i
 ];
 const genericTerms = ['system','process','issue','challenge','solution','result','results','strategy','opportunity','efficiency','performance','innovation','growth'];
+const britishMarkers = [
+  /\bmum\b/i,
+  /\bcar park\b/i,
+  /\bprogramme(s)?\b/i,
+  /\bneighbour(s|hood)?\b/i,
+  /\bcolour(s|ed|ing)?\b/i,
+  /\bcentre(s)?\b/i,
+  /\bfavourite(s)?\b/i,
+  /\borganise(d|s|ing)?\b/i,
+  /\brecognise(d|s|ing)?\b/i
+];
 
 const errors = [];
 const warnings = [];
@@ -33,6 +44,17 @@ function pushOpen(verb) {
   if (!opening) return;
   if (!openings.has(opening)) openings.set(opening, []);
   openings.get(opening).push(verb.verb);
+}
+
+function hasForbiddenTerminalPeriod(value) {
+  return typeof value === 'string' && value.trim().endsWith('.');
+}
+
+function checkVisibleText(label, field, value) {
+  if (!value || typeof value !== 'string') return;
+  if (hasForbiddenTerminalPeriod(value)) {
+    errors.push(`${label}: ponto final visível proibido em ${field}`);
+  }
 }
 
 for (const [index, verb] of verbs.entries()) {
@@ -57,8 +79,21 @@ for (const [index, verb] of verbs.entries()) {
     if (!Array.isArray(qa.evidence) || qa.evidence.length === 0) errors.push(`${label}: aprovado sem evidence`);
   }
 
-  const visibleText = [verb.example, verb.meaning, ...(verb.extras || []).flatMap(x => [x.title, x.text, ...(x.items || [])])].filter(Boolean).join(' ');
+  const extras = Array.isArray(verb.extras) ? verb.extras : [];
+  const visibleText = [verb.example, verb.meaning, ...extras.flatMap(x => [x.title, x.text, ...(x.items || [])])].filter(Boolean).join(' ');
   if (metaPatterns.some((pattern) => pattern.test(visibleText))) errors.push(`${label}: metacomentário proibido detectado`);
+
+  // Site style rule: isolated visible text never ends with a full stop.
+  // Question marks and exclamation marks remain valid.
+  checkVisibleText(label, 'example', verb.example);
+  checkVisibleText(label, 'meaning', verb.meaning);
+  extras.forEach((block, blockIndex) => {
+    checkVisibleText(label, `extras[${blockIndex}].title`, block.title);
+    checkVisibleText(label, `extras[${blockIndex}].text`, block.text);
+    (block.items || []).forEach((item, itemIndex) => {
+      checkVisibleText(label, `extras[${blockIndex}].items[${itemIndex}]`, item);
+    });
+  });
 
   const example = (verb.example || '').trim();
   if (example) {
@@ -72,9 +107,11 @@ for (const [index, verb] of verbs.entries()) {
 
     const genericHits = genericTerms.filter((term) => new RegExp(`\\b${term}\\b`, 'i').test(example));
     if (genericHits.length >= 2) warnings.push(`${label}: exemplo concentra termos genéricos (${genericHits.join(', ')})`);
+
+    const britishHits = britishMarkers.filter((pattern) => pattern.test(example));
+    if (britishHits.length) warnings.push(`${label}: possível forma britânica no exemplo; padrão do site é American English`);
   }
 
-  const extras = Array.isArray(verb.extras) ? verb.extras : [];
   if (extras.length > 4) errors.push(`${label}: mais de 4 módulos extras`);
   for (const block of extras) {
     if (!allowedExtraTypes.has(block.type)) errors.push(`${label}: módulo inválido: ${block.type}`);
