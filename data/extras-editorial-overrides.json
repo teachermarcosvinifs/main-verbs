@@ -91,5 +91,108 @@
     {"type":"structure","title":"Estrutura","items":["hire + person","hire someone to + verb"]},
     {"type":"combinations","title":"Combinações","items":["hire staff","hire a contractor","hire an expert"]},
     {"type":"contrast","title":"Contraste","items":["hire = employ a person or pay a professional to do work","rent = pay to use a car, apartment or equipment temporarily","In American English, rent a car is standard; hire a car is mainly British English"]}
+  ],
+  "know": [
+    {"type":"structure","title":"Estrutura","items":["know + noun/person","know that + clause","know how to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["know the answer","know for sure","get to know"]},
+    {"type":"contrast","title":"Contraste","items":["know someone = be familiar or acquainted with that person","meet someone = encounter or be introduced to that person, often for the first time","get to know someone = become familiar with the person over time"]}
+  ],
+  "lend": [
+    {"type":"structure","title":"Estrutura","items":["lend someone something","lend something to + person"]},
+    {"type":"combinations","title":"Combinações","items":["lend money","lend support","lend a hand"]},
+    {"type":"prepositions","title":"Preposições","items":["lend something to + person"]},
+    {"type":"contrast","title":"Contraste","items":["lend = give something temporarily; the subject is the giver","borrow = receive something temporarily; the subject is the receiver","lend something to someone / borrow something from someone"]}
+  ],
+  "let": [
+    {"type":"structure","title":"Estrutura","items":["let someone + verb","let + object + adjective"]},
+    {"type":"combinations","title":"Combinações","items":["let someone decide","let it happen","let someone know"]},
+    {"type":"contrast","title":"Contraste","items":["let someone do uses the verb without to","allow someone to do uses to and is often more neutral or formal","For passive permission, use be allowed to rather than be let to"]}
+  ],
+  "make": [
+    {"type":"structure","title":"Estrutura","items":["make + noun","make someone + verb","make something + adjective"]},
+    {"type":"combinations","title":"Combinações","items":["make a decision","make progress","make a mistake"]},
+    {"type":"contrast","title":"Contraste","items":["make commonly goes with creating, producing or causing a result: make a plan, make progress, make a mistake","do commonly goes with tasks, work and activities: do research, do the work, do your best","Many make/do combinations are fixed collocations, so meaning alone does not always predict the verb"]}
+  ],
+  "manage": [
+    {"type":"structure","title":"Estrutura","items":["manage + noun","manage to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["manage a team","manage time","manage to finish"]},
+    {"type":"contrast","title":"Contraste","items":["manage to do = actually succeed in doing something, often despite difficulty","can/could = express ability or possibility and do not by themselves say that the action was completed","In a specific past situation, managed to often makes the successful outcome explicit"]}
+  ],
+  "matter": [
+    {"type":"structure","title":"Estrutura","items":["it matters","it doesn't matter","what matters is + noun/clause"]},
+    {"type":"combinations","title":"Combinações","items":["really matter","matter to someone","matter most"]},
+    {"type":"prepositions","title":"Preposições","items":["matter to + person"]}
+  ],
+  "move": [
+    {"type":"structure","title":"Estrutura","items":["move + noun","move to + place","move from A to B"]},
+    {"type":"combinations","title":"Combinações","items":["move to a new city","move quickly","move forward"]},
+    {"type":"prepositions","title":"Preposições","items":["move to + place","move from + place"]}
+  ],
+  "need": [
+    {"type":"structure","title":"Estrutura","items":["need + noun","need to + verb","need someone to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["need help","need time","really need"]},
+    {"type":"contrast","title":"Contraste","items":["need to and have to can both express necessity and often overlap","have to often presents a requirement or circumstance; need to often focuses on what is necessary, but this is a tendency rather than a strict rule","don't have to and don't need to mean there is no necessity; mustn't expresses prohibition"]}
+  ],
+  "offer": [
+    {"type":"structure","title":"Estrutura","items":["offer + noun","offer someone something","offer to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["offer help","offer a discount","offer an explanation"]},
+    {"type":"contrast","title":"Contraste","items":["offer something = make it available for someone to accept","offer to do = volunteer to perform an action","suggest something / suggest doing = propose an idea or course of action rather than make something available"]}
+  ],
+  "order": [
+    {"type":"structure","title":"Estrutura","items":["order + noun","order something for + person","order someone to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["order food","order online","order a replacement"]},
+    {"type":"prepositions","title":"Preposições","items":["order something for + person"]},
+    {"type":"contrast","title":"Contraste","items":["order food/drink = request it as a customer from a menu or service","ask for something = make a general request and does not necessarily involve buying or placing an order","order someone to do = command someone to perform an action"]}
+  ],
+  "produce": [
+    {"type":"structure","title":"Estrutura","items":["produce + noun/result"]},
+    {"type":"combinations","title":"Combinações","items":["produce results","produce electricity","produce food"]},
+    {"type":"contrast","title":"Contraste","items":["produce = create or generate an output, result or goods","make = broader everyday verb for creating, preparing or causing something","manufacture = produce goods through an industrial process"]}
+  ],
+  "realize": [
+    {"type":"structure","title":"Estrutura","items":["realize + noun","realize that + clause"]},
+    {"type":"combinations","title":"Combinações","items":["suddenly realize","realize your mistake","realize the importance"]},
+    {"type":"contrast","title":"Contraste","items":["realize = become mentally aware of or understand something","notice = become aware through seeing, hearing or paying attention","realize often introduces a new understanding; notice often starts from something observed"]}
+  ],
+  "say": [
+    {"type":"structure","title":"Estrutura","items":["say + words","say that + clause","say something to + person"]},
+    {"type":"combinations","title":"Combinações","items":["say hello","say nothing","say it clearly"]},
+    {"type":"contrast","title":"Contraste","items":["say focuses on the words or message; the person is usually introduced with to","tell is normally followed directly by the person receiving the information","say something to someone / tell someone something"]}
+  ],
+  "see": [
+    {"type":"structure","title":"Estrutura","items":["see + noun/person","see someone + verb/-ing","see that + clause"]},
+    {"type":"combinations","title":"Combinações","items":["see a doctor","see the difference","clearly see"]},
+    {"type":"contrast","title":"Contraste","items":["see = perceive visually, often without deliberate effort, or understand something","look at = deliberately direct your eyes toward something","watch = keep looking at something over a period, especially movement, activity or change"]}
+  ],
+  "suggest": [
+    {"type":"structure","title":"Estrutura","items":["suggest + noun","suggest + -ing","suggest that + clause"]},
+    {"type":"combinations","title":"Combinações","items":["strongly suggest","suggest an alternative","suggest waiting"]},
+    {"type":"contrast","title":"Contraste","items":["suggest doing = propose an activity: I suggest waiting","suggest that someone do = standard American English pattern: I suggest that he wait","suggest someone to do and suggest to do are generally not used for this meaning"]}
+  ],
+  "tell": [
+    {"type":"structure","title":"Estrutura","items":["tell someone something","tell someone that + clause","tell someone to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["tell the truth","tell a story","tell someone clearly"]},
+    {"type":"contrast","title":"Contraste","items":["tell is normally followed directly by the person receiving the information","say focuses on the words or message; use say something to someone when naming the listener","tell someone something / say something to someone"]}
+  ],
+  "wait": [
+    {"type":"structure","title":"Estrutura","items":["wait + duration","wait for + noun/person","wait to + verb","wait until + clause/time"]},
+    {"type":"combinations","title":"Combinações","items":["wait patiently","wait a minute","wait your turn"]},
+    {"type":"prepositions","title":"Preposições","items":["wait for + noun/person","wait until + time/clause"]}
+  ],
+  "watch": [
+    {"type":"structure","title":"Estrutura","items":["watch + noun/person","watch someone + verb/-ing"]},
+    {"type":"combinations","title":"Combinações","items":["watch TV","watch carefully","watch a movie"]},
+    {"type":"contrast","title":"Contraste","items":["watch = keep looking at something over a period, especially movement, activity or change","look at = deliberately direct your eyes toward something","see = perceive something visually, often without deliberate effort"]}
+  ],
+  "win": [
+    {"type":"structure","title":"Estrutura","items":["win + competition/prize","win something by + margin"]},
+    {"type":"combinations","title":"Combinações","items":["win a game","win a prize","win easily"]},
+    {"type":"prepositions","title":"Preposições","items":["win by + margin"]},
+    {"type":"contrast","title":"Contraste","items":["win + game/match/competition/prize = be successful in the event or receive the prize","beat + person/team/opponent = defeat the other side","We won the game / We beat them"]}
+  ],
+  "work": [
+    {"type":"structure","title":"Estrutura","items":["work as + role","work on + task/project","work for + company","work with + person/team"]},
+    {"type":"combinations","title":"Combinações","items":["work hard","work well","work from home"]},
+    {"type":"prepositions","title":"Preposições","items":["work as + role","work on + task/project","work for + company","work with + person/team"]}
   ]
 }
