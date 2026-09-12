@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "verbs": {
+    "get": [
+      {"particle":"up","form":"get up","meaning":"levantar-se","pattern":"get up","example":"I usually get up around seven on weekdays","note":"Normalmente não leva objeto"},
+      {"particle":"back","form":"get back","meaning":"voltar; recuperar algo","pattern":"get back / get + object + back","example":"What time did you get back last night?","note":"Com objeto: get your money back"},
+      {"particle":"in","form":"get in","meaning":"entrar ou chegar","pattern":"get in / get into + place","example":"We got in just before the rain started","note":"Para carro pequeno ou táxi, get in / get into é muito comum"},
+      {"particle":"out","form":"get out","meaning":"sair; livrar-se de uma situação","pattern":"get out / get out of + place or obligation","example":"We need to get out of the building now","note":"get out of também pode significar escapar de uma obrigação"},
+      {"particle":"over","form":"get over","meaning":"superar ou se recuperar","pattern":"get over + problem / illness / person","example":"It took her a week to get over the flu","note":"Não é separável: get over it"},
+      {"particle":"off","form":"get off","meaning":"sair de transporte; terminar o trabalho","pattern":"get off + transport / get off work","example":"We got off the train at the next stop","note":"Também: get off work at six"}
+    ],
+    "go": [
+      {"particle":"back","form":"go back","meaning":"voltar; retomar algo anterior","pattern":"go back to + place / topic / situation","example":"I need to go back to the office for my keys","note":"go back to a topic = retomar um assunto"},
+      {"particle":"down","form":"go down","meaning":"descer; diminuir; parar de funcionar","pattern":"go down / price or level + go down","example":"Gas prices went down again this week","note":"Para sistemas e internet, go down pode significar ficar indisponível"},
+      {"particle":"around","form":"go around","meaning":"circular; espalhar-se; contornar","pattern":"go around / go around + place","example":"There's a cold going around the office","note":"Também pode significar circular por um lugar ou contornar algo"},
+      {"particle":"on","form":"go on","meaning":"continuar; acontecer","pattern":"go on / go on + -ing","example":"She went on talking even after the meeting had ended","note":"What's going on? = O que está acontecendo?"},
+      {"particle":"out","form":"go out","meaning":"sair; apagar-se","pattern":"go out","example":"We went out for dinner after work","note":"Para luz ou fogo: The lights went out"},
+      {"particle":"over","form":"go over","meaning":"revisar ou examinar","pattern":"go over + material / details","example":"Let's go over the numbers one more time","note":"Muito útil para revisão de informações e documentos"}
+    ],
+    "look": [
+      {"particle":"for","form":"look for","meaning":"procurar","pattern":"look for + person / thing","example":"I'm looking for my keys","note":"Não é separável"},
+      {"particle":"like","form":"look like","meaning":"parecer-se; ter determinada aparência","pattern":"look like + noun / clause","example":"It looks like we're going to need more time","note":"look like pode introduzir um substantivo ou uma ideia completa"},
+      {"particle":"back","form":"look back","meaning":"olhar para trás; recordar o passado","pattern":"look back / look back on + period or experience","example":"She looks back on those years with a lot of affection","note":"look back on é muito comum para recordar experiências"},
+      {"particle":"after","form":"look after","meaning":"cuidar de","pattern":"look after + person / thing","example":"Can you look after the kids for an hour?","note":"Não é separável"},
+      {"particle":"into","form":"look into","meaning":"investigar ou examinar","pattern":"look into + problem / possibility","example":"The company is looking into the complaint","note":"Não é separável"},
+      {"particle":"up","form":"look up","meaning":"procurar informação; melhorar","pattern":"look + information + up / situation + look up","example":"I looked the address up online","note":"Com pronome: look it up; Things are looking up = a situação está melhorando"}
+    ],
+    "put": [
+      {"particle":"down","form":"put down","meaning":"colocar em uma superfície; abaixar","pattern":"put + object + down","example":"Put the box down next to the door","note":"Com pronome: put it down, não put down it"},
+      {"particle":"away","form":"put away","meaning":"guardar ou colocar de volta no lugar","pattern":"put + object + away","example":"Please put the dishes away after dinner","note":"Com pronome: put them away"},
+      {"particle":"in","form":"put in","meaning":"inserir, instalar ou dedicar tempo e esforço","pattern":"put in + object / time / effort","example":"She put in three hours of overtime yesterday","note":"Muito comum com time, effort, work e instalações"},
+      {"particle":"on","form":"put on","meaning":"vestir; colocar; ligar ou reproduzir algo","pattern":"put + object + on","example":"Put your jacket on before you go outside","note":"Com pronome: put it on; também pode ser usado com música ou aparelhos"},
+      {"particle":"off","form":"put off","meaning":"adiar; causar rejeição ou desânimo","pattern":"put + object + off","example":"They put the meeting off until Friday","note":"Com pronome: put it off; put someone off = desanimar ou causar rejeição"},
+      {"particle":"out","form":"put out","meaning":"apagar; disponibilizar ou publicar","pattern":"put + object + out","example":"Please put the candle out before you leave","note":"Com pronome: put it out"}
+    ]
+  }
+}
