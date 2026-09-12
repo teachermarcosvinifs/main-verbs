@@ -265,12 +265,18 @@
   const observer = new MutationObserver(scheduleEnhance);
   observer.observe(listEl, { childList: true });
 
+  const markRelationsReady = () => {
+    ready = true;
+    document.documentElement.dataset.multiwordReady = 'true';
+    document.dispatchEvent(new CustomEvent('advanced-relations-ready'));
+    scheduleEnhance();
+  };
+
   loadData()
-    .then(() => {
-      ready = true;
-      document.documentElement.dataset.multiwordReady = 'true';
-      document.dispatchEvent(new CustomEvent('advanced-relations-ready'));
-      scheduleEnhance();
-    })
-    .catch((error) => console.error('Erro ao carregar combinações multiword:', error));
+    .then(markRelationsReady)
+    .catch((error) => {
+      console.error('Erro ao carregar combinações multiword:', error);
+      data = {};
+      markRelationsReady();
+    });
 })();
