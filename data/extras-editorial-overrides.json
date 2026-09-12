@@ -46,5 +46,50 @@
     {"type":"structure","title":"Estrutura","items":["control + noun","control how/what + clause"]},
     {"type":"combinations","title":"Combinações","items":["control costs","control access","control the temperature"]},
     {"type":"contrast","title":"Contraste","items":["control = directly determine or limit behavior, access, movement or level","manage = organize, run or handle something; it does not necessarily mean having full control","manage to + verb = succeed in doing something, a separate meaning"]}
+  ],
+  "convince": [
+    {"type":"structure","title":"Estrutura","items":["convince someone to + verb","convince someone that + clause"]},
+    {"type":"combinations","title":"Combinações","items":["convince a customer","convince yourself","convince someone otherwise"]},
+    {"type":"contrast","title":"Contraste","items":["convince often focuses on changing what someone believes or accepts as true","persuade often focuses on influencing someone to take an action","The verbs overlap in some contexts, especially before someone to + verb"]}
+  ],
+  "cost": [
+    {"type":"structure","title":"Estrutura","items":["cost + amount","cost someone + amount","cost someone + time/opportunity"]},
+    {"type":"combinations","title":"Combinações","items":["cost a fortune","cost less","cost someone time"]},
+    {"type":"contrast","title":"Contraste","items":["Something costs an amount; a person spends an amount on something","cost can also mean cause a loss: The mistake cost us time","spend also works with time: spend two hours on something / doing something"]}
+  ],
+  "discover": [
+    {"type":"structure","title":"Estrutura","items":["discover + noun","discover that + clause","discover how/why + clause"]},
+    {"type":"combinations","title":"Combinações","items":["discover a problem","discover the truth","discover evidence"]},
+    {"type":"contrast","title":"Contraste","items":["discover = become aware of something previously unknown, sometimes unexpectedly","find = locate something or reach an answer/solution","find out = learn information, often after asking, checking or investigating"]}
+  ],
+  "discuss": [
+    {"type":"structure","title":"Estrutura","items":["discuss + noun/topic","discuss whether + clause"]},
+    {"type":"combinations","title":"Combinações","items":["discuss the options","discuss a problem","discuss in detail"]},
+    {"type":"contrast","title":"Contraste","items":["discuss + topic takes no about","talk about + topic is more conversational and uses about","discuss often suggests a more focused exchange of ideas, options or problems"]}
+  ],
+  "do": [
+    {"type":"structure","title":"Estrutura","items":["do + noun/activity","do what/how + clause"]},
+    {"type":"combinations","title":"Combinações","items":["do your best","do the work","do research"]},
+    {"type":"contrast","title":"Contraste","items":["do commonly goes with tasks, work and activities: do research, do the work, do your best","make commonly goes with creating, producing or causing a result: make a plan, make a decision, make a mistake","Many do/make combinations are fixed collocations, so meaning alone does not always predict the verb"]}
+  ],
+  "encourage": [
+    {"type":"structure","title":"Estrutura","items":["encourage someone to + verb","encourage + noun"]},
+    {"type":"combinations","title":"Combinações","items":["encourage participation","strongly encourage","encourage someone"]},
+    {"type":"contrast","title":"Contraste","items":["encourage someone to do = support, motivate or give confidence to take an action","persuade someone to do = try to change their decision so they take the action","encourage does not imply that the person was initially unwilling"]}
+  ],
+  "get": [
+    {"type":"structure","title":"Estrutura","items":["get + noun","get + adjective","get someone to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["get a message","get ready","get permission"]},
+    {"type":"contrast","title":"Contraste","items":["get is a broad conversational verb that can mean receive, obtain, become, arrive or understand, among other uses","obtain specifically means acquire or secure something and is more formal","obtain works with things such as permission, information or approval, but it cannot replace get in get tired, get home or get it"]}
+  ],
+  "have": [
+    {"type":"structure","title":"Estrutura","items":["have + noun","have someone + verb","have something + past participle"]},
+    {"type":"combinations","title":"Combinações","items":["have a problem","have time","have a chance"]},
+    {"type":"contrast","title":"Contraste","items":["have + noun expresses possession, experience or a relationship: have a car, have a problem, have a meeting","there is/are introduces existence or presence: There is a problem","Portuguese tem may correspond to have or there is/are depending on whether someone has it or it simply exists"]}
+  ],
+  "hire": [
+    {"type":"structure","title":"Estrutura","items":["hire + person","hire someone to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["hire staff","hire a contractor","hire an expert"]},
+    {"type":"contrast","title":"Contraste","items":["hire = employ a person or pay a professional to do work","rent = pay to use a car, apartment or equipment temporarily","In American English, rent a car is standard; hire a car is mainly British English"]}
   ]
 }
