@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "language": "en-US",
   "status": "approved",
   "source": "editorial-audit-2026-09-11",
@@ -9,6 +9,8 @@
     "cumulative": 433
   },
   "audioBase": "audio/advanced",
+  "polysemyFile": "data/polysemy.json",
+  "secondaryExamplesFile": "data/secondary-examples.json",
   "chunks": [
     "data/verbs-b2-01.json",
     "data/verbs-b2-02.json",
