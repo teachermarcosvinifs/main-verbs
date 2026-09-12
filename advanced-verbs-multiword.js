@@ -5,6 +5,7 @@
   if (!listEl) return;
 
   const relationFilterEl = document.querySelector('[data-relation-filter]');
+  const jumpFormEl = document.querySelector('[data-jump-form]');
   const resultsCountEl = document.querySelector('[data-results-count]');
   const pageSummaryEl = document.querySelector('[data-page-summary]');
   const MAX_OPTIONS = 6;
@@ -188,6 +189,12 @@
     }
   };
 
+  const clearRelationFilterForNavigation = () => {
+    if (!relationFilterEl || !relationFilterEl.value) return;
+    relationFilterEl.value = '';
+    applyRelationFilter();
+  };
+
   const enhanceVisiblePanels = () => {
     if (!ready) return;
     populateRelationFilter();
@@ -203,6 +210,14 @@
       enhanceVisiblePanels();
     });
   };
+
+  document.addEventListener('click', (event) => {
+    if (event.target.closest('[data-letter], [data-go-verb]')) {
+      clearRelationFilterForNavigation();
+    }
+  }, true);
+
+  jumpFormEl?.addEventListener('submit', clearRelationFilterForNavigation, true);
 
   document.addEventListener('click', (event) => {
     const button = event.target.closest('[data-multiword-particle]');
