@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "verbs": {
     "get": [
       {"particle":"up","form":"get up","meaning":"levantar-se","pattern":"get up","example":"I usually get up around seven on weekdays","note":"Normalmente não leva objeto"},
@@ -48,6 +48,26 @@
       {"particle":"down","form":"turn down","meaning":"diminuir; recusar","pattern":"turn + object + down","example":"She turned the job offer down","note":"Com pronome: turn it down"},
       {"particle":"out","form":"turn out","meaning":"acabar sendo; produzir resultado","pattern":"turn out + adjective / to be","example":"The event turned out better than we expected","note":"Também pode indicar produção ou comparecimento em outros contextos"},
       {"particle":"into","form":"turn into","meaning":"transformar-se em","pattern":"turn into + noun","example":"The conversation turned into an argument","note":"Não é separável"}
+    ],
+    "appeal": [
+      {"particle":"to","form":"appeal to","meaning":"atrair, agradar ou fazer um apelo a alguém","pattern":"appeal to + person/group","example":"The idea appeals to younger customers","note":"Também pode significar fazer um apelo direto"},
+      {"particle":"for","form":"appeal for","meaning":"pedir publicamente ajuda, informação ou recurso","pattern":"appeal for + help/information/funds","example":"The organization appealed for more volunteers","note":"for apresenta aquilo que está sendo solicitado"}
+    ],
+    "assure": [
+      {"particle":"of","form":"assure ... of","meaning":"assegurar a alguém um fato, condição ou apoio","pattern":"assure + person + of + noun","example":"They assured us of their full support","note":"assure normalmente recebe a pessoa antes de of"}
+    ],
+    "clarify": [
+      {"particle":"with","form":"clarify with","meaning":"confirmar ou esclarecer diretamente com alguém","pattern":"clarify + point + with + person","example":"I'll clarify the deadline with the client","note":"with identifica quem pode confirmar a informação"},
+      {"particle":"for","form":"clarify ... for","meaning":"tornar um ponto ou questão mais claro para alguém","pattern":"clarify + point/issue + for + person","example":"Could you clarify that point for me?","note":"for identifica a pessoa que precisa do esclarecimento"}
+    ],
+    "incorporate": [
+      {"particle":"into","form":"incorporate into","meaning":"incorporar como parte de sistema, plano ou estrutura","pattern":"incorporate + thing + into + system/plan","example":"We incorporated the feedback into the final design","note":"into destaca integração ao todo"}
+    ],
+    "infer": [
+      {"particle":"from","form":"infer from","meaning":"deduzir algo a partir de evidência ou indício","pattern":"infer + thing + from + evidence/context","example":"What can we infer from her response?","note":"from apresenta a evidência usada para chegar à inferência"}
+    ],
+    "influence": [
+      {"particle":"by","form":"influenced by","meaning":"ser influenciado por pessoa, fator ou contexto","pattern":"be influenced by + person/factor/context","example":"Consumer choices are influenced by price and convenience","note":"Como verbo ativo, influence normalmente recebe objeto direto: influence a decision"}
     ]
   }
 }
