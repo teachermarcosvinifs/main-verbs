@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050816" />
+  <title>Verbos C1–C2</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="advanced-verbs.css" />
+  <link rel="stylesheet" href="advanced-verbs-single-page.css" />
+  <link rel="stylesheet" href="advanced-verbs-refinement.css" />
+  <link rel="stylesheet" href="advanced-verbs-multiword.css" />
+  <link rel="stylesheet" href="advanced-verbs-form-audio.css" />
+  <script src="advanced-verbs.js" defer></script>
+  <script src="advanced-verbs-form-audio.js" defer></script>
+  <script src="advanced-verbs-multiword.js" defer></script>
+  <script src="advanced-verbs-ready.js" defer></script>
+</head>
+<body class="advanced-page is-loading" data-tier="C1-C2">
+  <div class="site-loader" data-site-loader role="status" aria-label="Carregando lista de verbos">
+    <div class="site-loader-card">
+      <div class="site-loader-brand"><strong>VERBOS</strong><span class="site-loader-level">C1–C2</span></div>
+      <div class="site-loader-track" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="background-glow"></div>
+
+  <main class="container advanced-shell">
+    <section class="advanced-hero">
+      <div class="advanced-hero-copy">
+        <div class="advanced-title-row">
+          <h1>VERBOS</h1>
+          <span class="level-badge">C1–C2</span>
+        </div>
+        <p class="advanced-subtitle">Lista cumulativa B2+ e C1–C2</p>
+
+        <div class="hero-stats" aria-label="Resumo da lista">
+          <div class="hero-stat">
+            <strong data-total-count>433</strong>
+            <span>verbos</span>
+          </div>
+          <div class="hero-stat">
+            <strong>220 + 213</strong>
+            <span>B2+ e C1–C2</span>
+          </div>
+          <div class="hero-stat">
+            <strong>Estrutura</strong>
+            <span>preposições e combinações</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-level-card" aria-hidden="true">
+        <span class="hero-level-kicker">C1–C2</span>
+        <strong>433 verbos</strong>
+        <span>passado, particípio e exemplos com áudio</span>
+      </div>
+    </section>
+
+    <section class="advanced-controls" aria-label="Acesso direto, busca e filtros">
+      <form class="jump-box" data-jump-form>
+        <input data-verb-jump list="verb-options-c1" autocomplete="off" placeholder="Ir direto para um verbo" aria-label="Ir direto para um verbo" />
+        <datalist id="verb-options-c1" data-verb-options></datalist>
+        <button class="jump-button" type="submit">Ir</button>
+      </form>
+
+      <label class="search-box">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input data-verb-search type="search" autocomplete="off" placeholder="Buscar verbo, exemplo ou significado" aria-label="Buscar verbo, exemplo ou significado" />
+      </label>
+
+      <label class="preposition-filter">
+        <span>Preposição / partícula</span>
+        <select data-relation-filter aria-label="Filtrar por preposição ou partícula">
+          <option value="">Todas</option>
+        </select>
+      </label>
+
+      <div class="filter-group" aria-label="Filtros">
+        <button class="filter-chip is-active" data-filter="all">Todos</button>
+        <button class="filter-chip" data-filter="favorites">★ Meus verbos</button>
+        <button class="filter-chip" data-filter="tier-b2">B2+</button>
+        <button class="filter-chip" data-filter="tier-c1">C1–C2</button>
+        <button class="filter-chip" data-filter="irregular">Irregulares</button>
+      </div>
+
+      <div class="results-summary" aria-live="polite">
+        <strong data-results-count>—</strong>
+        <span>resultados</span>
+      </div>
+    </section>
+
+    <nav class="alphabet-index" data-alphabet-index aria-label="Índice alfabético"></nav>
+
+    <section class="advanced-table" aria-label="Lista cumulativa de verbos">
+      <div class="advanced-header" aria-hidden="true">
+        <span>#</span>
+        <span>Verbo</span>
+        <span>Passado</span>
+        <span>Particípio</span>
+        <span>Exemplo</span>
+        <span>Significado</span>
+        <span></span>
+      </div>
+      <div data-verbs-list></div>
+    </section>
+
+    <footer class="advanced-footer">
+      <span data-page-summary></span>
+    </footer>
+  </main>
+</body>
+</html>

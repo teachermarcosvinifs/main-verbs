@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "verbs": {
+    "advocate": [
+      {"particle":"for","form":"advocate for","meaning":"defender publicamente uma ideia, pessoa ou mudança","pattern":"advocate for + cause/person/change","example":"She advocates for better access to public transport","note":"for apresenta aquilo que é defendido"},
+      {"particle":"against","form":"advocate against","meaning":"defender posição contrária a algo","pattern":"advocate against + policy/practice","example":"Several groups advocated against the proposed ban","note":"against marca aquilo a que se faz oposição"}
+    ],
+    "allocate": [
+      {"particle":"to","form":"allocate to","meaning":"destinar recurso a pessoa, equipe ou finalidade","pattern":"allocate + resource + to + person/project","example":"More funding was allocated to rural schools","note":"to identifica quem ou o que recebe o recurso"},
+      {"particle":"for","form":"allocate for","meaning":"reservar recurso para uma finalidade específica","pattern":"allocate + resource + for + purpose","example":"They allocated extra time for testing","note":"for destaca a finalidade planejada"}
+    ],
+    "appeal": [
+      {"particle":"to","form":"appeal to","meaning":"atrair, agradar ou fazer apelo a alguém","pattern":"appeal to + person/group","example":"The idea appeals to younger customers","note":"Também pode significar fazer um apelo direto"},
+      {"particle":"for","form":"appeal for","meaning":"pedir publicamente ajuda, informação ou recurso","pattern":"appeal for + help/information/funds","example":"The organization appealed for more volunteers","note":"for apresenta aquilo que está sendo solicitado"},
+      {"particle":"against","form":"appeal against","meaning":"recorrer formalmente contra decisão","pattern":"appeal against + decision/ruling","example":"The company appealed against the decision","note":"Muito comum em contexto jurídico e administrativo"}
+    ],
+    "appoint": [
+      {"particle":"as","form":"appoint as","meaning":"nomear alguém para função","pattern":"appoint + person + as + role","example":"She was appointed as the new director","note":"as introduz a função atribuída"},
+      {"particle":"to","form":"appoint to","meaning":"nomear alguém para cargo, comitê ou posição","pattern":"appoint + person + to + position/body","example":"He was appointed to the board last year","note":"to destaca a posição ou grupo para o qual houve nomeação"}
+    ],
+    "approve": [
+      {"particle":"of","form":"approve of","meaning":"considerar algo aceitável ou bom","pattern":"approve of + noun / -ing","example":"Her parents didn't approve of the decision","note":"approve of = ter opinião favorável; não significa autorizar formalmente"},
+      {"particle":"for","form":"approve for","meaning":"aprovar alguém ou algo para finalidade específica","pattern":"approve + person/thing + for + purpose/use","example":"The device was approved for medical use","note":"for destaca a finalidade autorizada"}
+    ],
+    "argue": [
+      {"particle":"with","form":"argue with","meaning":"discutir com alguém","pattern":"argue with + person","example":"He argued with the supplier about the delay","note":"with identifica a outra pessoa na discussão"},
+      {"particle":"about","form":"argue about","meaning":"discutir a respeito de um tema","pattern":"argue about + topic/problem","example":"They argued about money for most of the evening","note":"about apresenta o assunto da discussão"},
+      {"particle":"for","form":"argue for","meaning":"defender uma posição ou proposta","pattern":"argue for + idea/change","example":"She argued for a simpler approval process","note":"for indica a posição defendida"},
+      {"particle":"against","form":"argue against","meaning":"argumentar contra uma ideia ou proposta","pattern":"argue against + idea/change","example":"Several members argued against the proposal","note":"against marca a posição rejeitada"}
+    ],
+    "arise": [
+      {"particle":"from","form":"arise from","meaning":"surgir ou resultar de uma causa","pattern":"arise from + cause/situation","example":"Most of the problems arose from poor communication","note":"from introduz a origem do problema"},
+      {"particle":"out of","form":"arise out of","meaning":"surgir de circunstância específica","pattern":"arise out of + situation/event","example":"The dispute arose out of a misunderstanding","note":"Mais formal e frequente em contexto jurídico ou administrativo"}
+    ],
+    "assess": [
+      {"particle":"for","form":"assess for","meaning":"avaliar buscando condição, risco ou característica","pattern":"assess + person/thing + for + risk/condition","example":"The patient was assessed for signs of dehydration","note":"for apresenta aquilo que está sendo verificado"},
+      {"particle":"against","form":"assess against","meaning":"avaliar em comparação com critério ou padrão","pattern":"assess + result/person + against + criteria","example":"Applications are assessed against the same criteria","note":"against introduz a referência usada na avaliação"},
+      {"particle":"as","form":"assess as","meaning":"avaliar ou classificar como determinado nível/estado","pattern":"assess + person/thing + as + category","example":"The risk was assessed as low","note":"as apresenta a conclusão da avaliação"}
+    ],
+    "assign": [
+      {"particle":"to","form":"assign to","meaning":"atribuir tarefa, pessoa ou recurso a alguém/grupo","pattern":"assign + task/person + to + person/team","example":"The case was assigned to a senior analyst","note":"to identifica quem recebe a responsabilidade"},
+      {"particle":"as","form":"assign as","meaning":"designar alguém em determinada função","pattern":"assign + person + as + role","example":"She was assigned as the main point of contact","note":"as apresenta o papel atribuído"}
+    ],
+    "assist": [
+      {"particle":"with","form":"assist with","meaning":"ajudar com tarefa, processo ou problema","pattern":"assist with + task/process","example":"A technician assisted with the installation","note":"with apresenta aquilo em que há ajuda"},
+      {"particle":"in","form":"assist in","meaning":"ajudar na realização de atividade ou processo","pattern":"assist in + noun / -ing","example":"She assisted in preparing the final report","note":"in costuma soar um pouco mais formal"}
+    ],
+    "assure": [
+      {"particle":"of","form":"assure of","meaning":"garantir a alguém determinada condição ou apoio","pattern":"assure + person + of + noun","example":"They assured us of their full support","note":"A pessoa vem antes de of"},
+      {"particle":"about","form":"assure about","meaning":"tranquilizar alguém sobre uma situação","pattern":"assure + person + about + situation","example":"The doctor assured her about the results","note":"Menos comum que reassure someone about; use com cuidado"}
+    ],
+    "attach": [
+      {"particle":"to","form":"attach to","meaning":"anexar, prender ou associar a algo","pattern":"attach + thing + to + thing/place","example":"Attach the receipt to the form","note":"to marca aquilo a que algo fica conectado"},
+      {"particle":"with","form":"attach with","meaning":"prender ou conectar usando determinado item","pattern":"attach + thing + with + fastener/tool","example":"The label was attached with a small clip","note":"with apresenta o meio usado para prender"}
+    ],
+    "attract": [
+      {"particle":"to","form":"attract to","meaning":"atrair alguém para lugar, ideia ou atividade","pattern":"attract + person/group + to + thing/place","example":"Lower prices attracted more customers to the service","note":"to marca o destino da atração"},
+      {"particle":"by","form":"attracted by","meaning":"ser atraído por característica ou fator","pattern":"be attracted by + feature/reason","example":"Visitors were attracted by the building's unusual design","note":"by destaca o fator que causa a atração"}
+    ],
+    "balance": [
+      {"particle":"against","form":"balance against","meaning":"ponderar uma coisa em relação a outra","pattern":"balance + A + against + B","example":"We need to balance the cost against the potential benefit","note":"against introduz o fator usado na comparação"},
+      {"particle":"with","form":"balance with","meaning":"equilibrar algo com outra necessidade ou prioridade","pattern":"balance + A + with + B","example":"She balances work with caring for her children","note":"with destaca coexistência e equilíbrio entre fatores"}
+    ],
+    "bear": [
+      {"particle":"with","form":"bear with","meaning":"ter paciência com alguém ou situação","pattern":"bear with + person","example":"Bear with me while I check the details","note":"Expressão muito comum e geralmente usada como pedido"},
+      {"particle":"on","form":"bear on","meaning":"ter relação ou relevância para um assunto","pattern":"bear on + issue/question","example":"That evidence bears directly on the case","note":"Uso formal; semelhante a relate to"}
+    ],
+    "bind": [
+      {"particle":"to","form":"bind to","meaning":"vincular fisicamente, legalmente ou moralmente","pattern":"bind + person/thing + to + agreement/duty","example":"The contract binds both parties to the same terms","note":"to apresenta a obrigação ou vínculo"},
+      {"particle":"by","form":"bound by","meaning":"estar limitado ou obrigado por regra, acordo ou condição","pattern":"be bound by + rule/agreement","example":"All employees are bound by the confidentiality policy","note":"Forma passiva muito comum"}
+    ],
+    "blame": [
+      {"particle":"for","form":"blame for","meaning":"culpar alguém por problema ou ação","pattern":"blame + person/thing + for + problem/action","example":"They blamed the contractor for the delay","note":"for apresenta o motivo da culpa"},
+      {"particle":"on","form":"blame on","meaning":"atribuir culpa de algo a alguém ou fator","pattern":"blame + problem + on + person/thing","example":"He blamed the mistake on a software error","note":"Compare: blame someone for something × blame something on someone"}
+    ],
+    "calculate": [
+      {"particle":"from","form":"calculate from","meaning":"calcular usando um valor ou dado como base","pattern":"calculate + result + from + data/value","example":"The total is calculated from the monthly figures","note":"from identifica a fonte dos dados"},
+      {"particle":"by","form":"calculate by","meaning":"calcular usando método específico","pattern":"calculate + result + by + method/-ing","example":"The rate is calculated by dividing the total by twelve","note":"by explica o método"},
+      {"particle":"at","form":"calculate at","meaning":"calcular usando determinada taxa ou valor","pattern":"calculate + amount + at + rate","example":"Interest is calculated at a fixed annual rate","note":"at introduz a taxa aplicada"}
+    ],
+    "clarify": [
+      {"particle":"with","form":"clarify with","meaning":"confirmar ou esclarecer diretamente com alguém","pattern":"clarify + point + with + person","example":"I'll clarify the deadline with the client","note":"with identifica quem pode confirmar a informação"},
+      {"particle":"to","form":"clarify to","meaning":"tornar algo claro para alguém","pattern":"clarify + point + to + person","example":"She clarified the policy to the new staff","note":"Em muitos casos explain pode soar mais natural; use clarify quando o foco é remover ambiguidade"}
+    ],
+    "collaborate": [
+      {"particle":"with","form":"collaborate with","meaning":"colaborar com pessoa, equipe ou organização","pattern":"collaborate with + person/group","example":"We collaborated with a local university on the project","note":"with identifica o parceiro"},
+      {"particle":"on","form":"collaborate on","meaning":"colaborar em projeto, tarefa ou produção","pattern":"collaborate on + project/task","example":"The two teams collaborated on a new training program","note":"on apresenta aquilo que é feito em conjunto"}
+    ],
+    "combine": [
+      {"particle":"with","form":"combine with","meaning":"combinar uma coisa com outra","pattern":"combine + A + with + B","example":"The treatment combines exercise with dietary changes","note":"with conecta os elementos combinados"},
+      {"particle":"into","form":"combine into","meaning":"juntar elementos formando unidade maior","pattern":"combine + elements + into + whole","example":"The files were combined into a single document","note":"into destaca o resultado final da combinação"}
+    ],
+    "compensate": [
+      {"particle":"for","form":"compensate for","meaning":"compensar perda, fraqueza ou problema","pattern":"compensate for + loss/problem","example":"Extra lighting helps compensate for the small windows","note":"for apresenta aquilo que está sendo compensado"},
+      {"particle":"with","form":"compensate with","meaning":"compensar usando algo como contrapartida","pattern":"compensate + person + with + money/benefit","example":"The passengers were compensated with travel vouchers","note":"with apresenta a forma de compensação"}
+    ],
+    "compete": [
+      {"particle":"with","form":"compete with","meaning":"competir com pessoa, empresa ou produto","pattern":"compete with + opponent/company","example":"Small stores struggle to compete with large chains","note":"with identifica o concorrente"},
+      {"particle":"against","form":"compete against","meaning":"competir diretamente contra adversário","pattern":"compete against + opponent","example":"She competed against several experienced runners","note":"against enfatiza confronto direto"},
+      {"particle":"for","form":"compete for","meaning":"competir por prêmio, posição ou recurso","pattern":"compete for + prize/job/resource","example":"More than fifty applicants are competing for the role","note":"for apresenta aquilo que se quer conquistar"},
+      {"particle":"in","form":"compete in","meaning":"participar competitivamente de evento ou área","pattern":"compete in + event/market","example":"The company competes in several international markets","note":"in apresenta o contexto da competição"}
+    ],
+    "compromise": [
+      {"particle":"on","form":"compromise on","meaning":"ceder ou chegar a acordo sobre ponto específico","pattern":"compromise on + issue/detail","example":"Neither side wanted to compromise on price","note":"on marca o ponto negociado"},
+      {"particle":"with","form":"compromise with","meaning":"chegar a acordo por concessões com alguém","pattern":"compromise with + person/group","example":"They eventually compromised with the union","note":"with identifica a outra parte"}
+    ],
+    "conclude": [
+      {"particle":"from","form":"conclude from","meaning":"chegar a conclusão com base em evidência","pattern":"conclude + thing + from + evidence","example":"What can we conclude from these results?","note":"from identifica a base da conclusão"},
+      {"particle":"with","form":"conclude with","meaning":"encerrar com determinado item, comentário ou ação","pattern":"conclude with + item/comment/action","example":"The presentation concluded with a short Q&A","note":"with apresenta o elemento final"}
+    ],
+    "confront": [
+      {"particle":"with","form":"confront with","meaning":"confrontar alguém com evidência, fato ou problema","pattern":"confront + person + with + fact/evidence","example":"She confronted him with the missing records","note":"with apresenta aquilo que é colocado diante da pessoa"},
+      {"particle":"about","form":"confront about","meaning":"confrontar alguém a respeito de comportamento ou questão","pattern":"confront + person + about + issue","example":"He confronted the supplier about the repeated delays","note":"about marca o assunto do confronto"}
+    ],
+    "consult": [
+      {"particle":"with","form":"consult with","meaning":"consultar-se ou discutir com alguém","pattern":"consult with + person/expert","example":"We consulted with a lawyer before signing","note":"with destaca troca de orientação"},
+      {"particle":"on","form":"consult on","meaning":"dar ou buscar consultoria sobre assunto","pattern":"consult on + issue/project","example":"She was hired to consult on the redesign","note":"on apresenta o tema da consultoria"}
+    ],
+    "contribute": [
+      {"particle":"to","form":"contribute to","meaning":"contribuir para causa, resultado ou projeto","pattern":"contribute to + cause/result/project","example":"Poor lighting contributed to the accident","note":"to pode indicar contribuição positiva ou negativa"},
+      {"particle":"toward","form":"contribute toward","meaning":"contribuir com parte de recurso para objetivo","pattern":"contribute + amount/effort + toward + goal/cost","example":"Everyone contributed toward the cost of the gift","note":"toward enfatiza contribuição parcial para um objetivo"}
+    ],
+    "coordinate": [
+      {"particle":"with","form":"coordinate with","meaning":"coordenar-se com pessoa, equipe ou organização","pattern":"coordinate with + person/team","example":"Please coordinate with the logistics team before shipping","note":"with identifica a outra parte"},
+      {"particle":"on","form":"coordinate on","meaning":"coordenar esforços sobre tarefa ou projeto","pattern":"coordinate on + project/task","example":"The departments coordinated on the rollout plan","note":"on apresenta aquilo que é coordenado em conjunto"}
+    ],
+    "cope": [
+      {"particle":"with","form":"cope with","meaning":"lidar com dificuldade, pressão ou situação","pattern":"cope with + problem/stress/change","example":"She coped well with the sudden change","note":"É a construção padrão e mais frequente"},
+      {"particle":"without","form":"cope without","meaning":"conseguir lidar sem recurso ou pessoa","pattern":"cope without + noun","example":"Could the team cope without extra staff?","note":"without enfatiza a ausência de suporte"}
+    ],
+    "count": [
+      {"particle":"on","form":"count on","meaning":"contar com alguém ou algo","pattern":"count on + person/thing + to + verb","example":"You can count on me to finish it today","note":"Muito comum para confiança e expectativa"},
+      {"particle":"against","form":"count against","meaning":"ser considerado como fator negativo","pattern":"count against + person/thing","example":"The late submission may count against the application","note":"against indica efeito desfavorável na avaliação"}
+    ],
+    "cover": [
+      {"particle":"for","form":"cover for","meaning":"substituir temporariamente alguém","pattern":"cover for + person","example":"Can you cover for me during lunch?","note":"Muito comum no trabalho"},
+      {"particle":"with","form":"cover with","meaning":"cobrir algo usando material ou substância","pattern":"cover + thing + with + material","example":"Cover the bowl with a clean towel","note":"with apresenta aquilo usado para cobrir"},
+      {"particle":"by","form":"covered by","meaning":"estar coberto, incluído ou protegido por algo","pattern":"be covered by + policy/insurance/material","example":"The repair is covered by the warranty","note":"Forma passiva muito frequente em seguro e garantia"}
+    ],
+    "criticize": [
+      {"particle":"for","form":"criticize for","meaning":"criticar alguém por ação, falha ou decisão","pattern":"criticize + person/thing + for + noun/-ing","example":"The company was criticized for ignoring the warnings","note":"for apresenta o motivo da crítica"},
+      {"particle":"as","form":"criticize as","meaning":"criticar algo classificando-o de determinada forma","pattern":"criticize + thing + as + adjective/noun","example":"The proposal was criticized as unrealistic","note":"as introduz a avaliação negativa"}
+    ],
+    "debate": [
+      {"particle":"with","form":"debate with","meaning":"debater diretamente com alguém","pattern":"debate with + person/group","example":"She debated with several experts on the panel","note":"with identifica o interlocutor"},
+      {"particle":"about","form":"debate about","meaning":"debater a respeito de um assunto","pattern":"debate about + topic","example":"They debated about the issue for over an hour","note":"Em muitos contextos debate + topic sem about também é natural"}
+    ],
+    "define": [
+      {"particle":"as","form":"define as","meaning":"definir ou caracterizar como","pattern":"define + thing + as + noun/adjective","example":"The policy defines misconduct as any deliberate violation","note":"as apresenta a definição atribuída"},
+      {"particle":"by","form":"define by","meaning":"definir com base em característica ou critério","pattern":"define + thing/person + by + feature","example":"The role is defined by a clear set of responsibilities","note":"by apresenta o critério que determina a definição"}
+    ]
+  }
+}

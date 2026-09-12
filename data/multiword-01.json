@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "verbs": {
+    "ask": [
+      {"particle":"for","form":"ask for","meaning":"pedir algo","pattern":"ask for + thing/help/person","example":"She asked for a glass of water","note":"Não é separável"},
+      {"particle":"out","form":"ask out","meaning":"convidar alguém para sair romanticamente/socialmente","pattern":"ask + person + out","example":"He asked her out for dinner","note":"Com pronome: ask her out"},
+      {"particle":"around","form":"ask around","meaning":"perguntar a várias pessoas","pattern":"ask around","example":"I'll ask around and see if anyone knows a good plumber","note":"Normalmente sem objeto direto"},
+      {"particle":"after","form":"ask after","meaning":"perguntar como alguém está","pattern":"ask after + person","example":"She asked after your mother when I saw her","note":"Mais comum em inglês britânico e um pouco menos frequente"}
+    ],
+    "break": [
+      {"particle":"down","form":"break down","meaning":"quebrar/parar de funcionar; perder controle emocional","pattern":"break down","example":"Our car broke down on the highway","note":"Para pessoa: break down in tears"},
+      {"particle":"up","form":"break up","meaning":"terminar relacionamento; separar em partes","pattern":"break up / break + object + up","example":"They broke up after five years together","note":"Com objeto: break it up"},
+      {"particle":"in","form":"break in","meaning":"entrar à força; amaciar algo novo","pattern":"break in / break + object + in","example":"Someone tried to break in last night","note":"break in new shoes = amaciar sapatos novos"},
+      {"particle":"into","form":"break into","meaning":"entrar à força em um local","pattern":"break into + place","example":"Someone broke into the office over the weekend","note":"Não é separável"},
+      {"particle":"out","form":"break out","meaning":"começar de repente, especialmente incêndio, guerra ou doença","pattern":"break out","example":"A fire broke out in the kitchen","note":"Normalmente sem objeto"},
+      {"particle":"off","form":"break off","meaning":"interromper ou separar uma parte","pattern":"break off / break + piece + off","example":"They broke off the negotiations after two days","note":"Também: break a piece off"}
+    ],
+    "bring": [
+      {"particle":"up","form":"bring up","meaning":"mencionar; criar uma criança","pattern":"bring + topic/child + up","example":"She brought the issue up during the meeting","note":"Com pronome: bring it up"},
+      {"particle":"back","form":"bring back","meaning":"trazer de volta; fazer lembrar","pattern":"bring + object + back","example":"This song brings back a lot of memories","note":"Com pronome: bring it back"},
+      {"particle":"in","form":"bring in","meaning":"introduzir, contratar ou gerar renda","pattern":"bring + person/system/money + in","example":"They brought in a consultant to review the process","note":"Também: bring in revenue"},
+      {"particle":"out","form":"bring out","meaning":"lançar; destacar ou fazer aparecer uma qualidade","pattern":"bring + object/quality + out","example":"The new lighting brings out the color of the walls","note":"Com pronome: bring it out"}
+    ],
+    "call": [
+      {"particle":"back","form":"call back","meaning":"ligar de volta","pattern":"call + person + back","example":"I'll call you back after the meeting","note":"Com pronome: call him back"},
+      {"particle":"off","form":"call off","meaning":"cancelar","pattern":"call + event + off","example":"They called the game off because of the rain","note":"Com pronome: call it off"},
+      {"particle":"on","form":"call on","meaning":"pedir que alguém participe ou responda; visitar","pattern":"call on + person","example":"The teacher called on Maria to answer the question","note":"Não é separável"},
+      {"particle":"up","form":"call up","meaning":"telefonar; convocar","pattern":"call + person + up","example":"I called him up to ask about the job","note":"Com pronome: call him up"},
+      {"particle":"for","form":"call for","meaning":"exigir, pedir ou tornar necessário","pattern":"call for + noun","example":"The situation calls for a different approach","note":"Não é separável"}
+    ],
+    "carry": [
+      {"particle":"on","form":"carry on","meaning":"continuar","pattern":"carry on + -ing / carry on with + noun","example":"She carried on working despite the noise","note":"Muito comum em inglês britânico; também entendido amplamente"},
+      {"particle":"out","form":"carry out","meaning":"realizar ou executar","pattern":"carry out + task / plan / research","example":"The team carried out a safety inspection","note":"Não costuma ser separado quando o objeto é longo; com pronome: carry it out"},
+      {"particle":"over","form":"carry over","meaning":"transferir ou continuar para outro período","pattern":"carry + amount/issue + over","example":"Unused vacation days can be carried over to next year","note":"Com pronome: carry it over"},
+      {"particle":"through","form":"carry through","meaning":"levar até o fim ou cumprir","pattern":"carry + plan/person + through","example":"She carried the project through despite the delays","note":"Menos comum que carry out, mas útil para ideia de conclusão"}
+    ],
+    "check": [
+      {"particle":"in","form":"check in","meaning":"fazer check-in; registrar chegada","pattern":"check in / check in at + place","example":"We checked in at the hotel around three","note":"Para voo/hotel; também check in online"},
+      {"particle":"out","form":"check out","meaning":"fazer check-out; conferir ou examinar","pattern":"check out / check + object + out","example":"Check out this new café near the office","note":"Com pronome: check it out"},
+      {"particle":"up","form":"check up on","meaning":"verificar como algo/alguém está","pattern":"check up on + person/thing","example":"I'll check up on the repair this afternoon","note":"Não é separável como expressão completa"},
+      {"particle":"on","form":"check on","meaning":"verificar estado ou progresso","pattern":"check on + person/thing","example":"Can you check on the kids before you go to bed?","note":"Não é separável"},
+      {"particle":"over","form":"check over","meaning":"examinar cuidadosamente","pattern":"check + object + over","example":"The mechanic checked the car over before the trip","note":"Com pronome: check it over"}
+    ],
+    "come": [
+      {"particle":"back","form":"come back","meaning":"voltar","pattern":"come back","example":"She came back from lunch around two","note":"Muito comum para retorno ao lugar de referência do falante"},
+      {"particle":"in","form":"come in","meaning":"entrar","pattern":"come in","example":"Come in and take a seat","note":"Também pode significar chegar/estar disponível em certos contextos"},
+      {"particle":"out","form":"come out","meaning":"sair, ser lançado ou tornar-se conhecido","pattern":"come out","example":"The new version comes out next month","note":"Também: The stain came out"},
+      {"particle":"up","form":"come up","meaning":"surgir, aparecer ou ser mencionado","pattern":"come up","example":"That issue came up during the meeting","note":"Normalmente sem objeto direto"},
+      {"particle":"across","form":"come across","meaning":"encontrar por acaso; parecer de determinada forma","pattern":"come across + person/thing / come across as + adjective","example":"I came across an old photo while cleaning","note":"Não é separável"},
+      {"particle":"over","form":"come over","meaning":"vir até a casa/local de alguém","pattern":"come over","example":"Why don't you come over after work?","note":"Uso muito comum em convites informais"}
+    ],
+    "cut": [
+      {"particle":"down","form":"cut down","meaning":"reduzir; derrubar algo vertical","pattern":"cut down on + noun / cut + object + down","example":"I'm trying to cut down on sugar","note":"cut down on = reduzir consumo; cut a tree down = derrubar árvore"},
+      {"particle":"back","form":"cut back","meaning":"reduzir quantidade ou gasto","pattern":"cut back on + noun","example":"We need to cut back on unnecessary spending","note":"Não confundir com cut off"},
+      {"particle":"off","form":"cut off","meaning":"interromper, desconectar ou isolar","pattern":"cut + object/person + off","example":"The storm cut off power to several homes","note":"Com pronome: cut it off"},
+      {"particle":"out","form":"cut out","meaning":"remover; parar de fazer/consumir","pattern":"cut + object + out / cut out + -ing","example":"She cut caffeine out of her diet","note":"Com pronome: cut it out; como comando, Cut it out! = Pare com isso"}
+    ],
+    "drop": [
+      {"particle":"off","form":"drop off","meaning":"deixar alguém/algo; diminuir; adormecer","pattern":"drop + person/thing + off / drop off","example":"I'll drop you off at the station","note":"Com pronome: drop me off"},
+      {"particle":"by","form":"drop by","meaning":"passar rapidamente para visitar","pattern":"drop by + place","example":"I'll drop by after work if you're home","note":"Uso informal e comum"},
+      {"particle":"in","form":"drop in","meaning":"aparecer sem combinar, fazer visita rápida","pattern":"drop in / drop in on + person","example":"She dropped in for coffee yesterday","note":"drop in on someone = visitar alguém sem grande formalidade"},
+      {"particle":"out","form":"drop out","meaning":"abandonar curso, programa ou atividade","pattern":"drop out / drop out of + noun","example":"He dropped out of college after his first year","note":"Use drop out of antes do curso/programa"}
+    ],
+    "fall": [
+      {"particle":"apart","form":"fall apart","meaning":"desmontar-se; entrar em colapso","pattern":"fall apart","example":"The old chair is starting to fall apart","note":"Também usado para planos, relações e estado emocional"},
+      {"particle":"behind","form":"fall behind","meaning":"ficar para trás ou atrasado","pattern":"fall behind / fall behind on + work/payments","example":"I fell behind on my emails while I was away","note":"Muito comum com work, payments, schedule"},
+      {"particle":"for","form":"fall for","meaning":"apaixonar-se por; cair em engano","pattern":"fall for + person/trick","example":"He fell for the scam and lost some money","note":"O contexto distingue paixão de ser enganado"},
+      {"particle":"out","form":"fall out","meaning":"brigar e deixar de ter boa relação","pattern":"fall out with + person","example":"They fell out over money last year","note":"Mais comum no inglês britânico; fall out over + motivo"},
+      {"particle":"through","form":"fall through","meaning":"não acontecer como planejado","pattern":"plan/deal + fall through","example":"The deal fell through at the last minute","note":"Normalmente o plano/acordo é o sujeito"}
+    ],
+    "get": [
+      {"particle":"up","form":"get up","meaning":"levantar-se","pattern":"get up","example":"I usually get up around seven on weekdays","note":"Normalmente não leva objeto"},
+      {"particle":"back","form":"get back","meaning":"voltar; recuperar algo","pattern":"get back / get + object + back","example":"What time did you get back last night?","note":"Com objeto: get your money back"},
+      {"particle":"in","form":"get in","meaning":"entrar ou chegar","pattern":"get in / get into + place","example":"We got in just before the rain started","note":"Para carro pequeno/táxi, é comum get in / get into"},
+      {"particle":"out","form":"get out","meaning":"sair","pattern":"get out / get out of + place","example":"We need to get out of the building now","note":"get out of também pode significar evitar uma obrigação"},
+      {"particle":"on","form":"get on","meaning":"entrar em transporte maior; ter boa relação","pattern":"get on + transport / get on with + person","example":"We got on the bus near the station","note":"get on with someone = dar-se bem com alguém"},
+      {"particle":"off","form":"get off","meaning":"sair de transporte; terminar o trabalho","pattern":"get off + transport / get off work","example":"We got off the train at the next stop","note":"Também: get off work at six"},
+      {"particle":"over","form":"get over","meaning":"superar ou se recuperar","pattern":"get over + problem / illness / person","example":"It took her a week to get over the flu","note":"Não é separável: get over it"},
+      {"particle":"through","form":"get through","meaning":"conseguir terminar, sobreviver ou conseguir contato","pattern":"get through + task / period / to + person","example":"I finally got through all my emails","note":"get through to someone = conseguir contato ou fazê-lo entender"}
+    ],
+    "give": [
+      {"particle":"up","form":"give up","meaning":"desistir; parar um hábito","pattern":"give up + noun / -ing","example":"He gave up smoking last year","note":"Com pronome: give it up"},
+      {"particle":"away","form":"give away","meaning":"dar de graça; revelar sem querer","pattern":"give + object + away","example":"They gave away all the old furniture","note":"give away a secret = revelar um segredo"},
+      {"particle":"back","form":"give back","meaning":"devolver","pattern":"give + object + back","example":"Can you give my book back tomorrow?","note":"Com pronome: give it back"},
+      {"particle":"in","form":"give in","meaning":"ceder","pattern":"give in / give in to + pressure/person","example":"She finally gave in and agreed to go","note":"give in to pressure = ceder à pressão"},
+      {"particle":"out","form":"give out","meaning":"distribuir; parar de funcionar","pattern":"give + object + out / give out","example":"They gave out maps at the entrance","note":"Também: My phone battery gave out"}
+    ],
+    "go": [
+      {"particle":"on","form":"go on","meaning":"continuar; acontecer","pattern":"go on / go on + -ing","example":"She went on talking even after the meeting had ended","note":"Também: What's going on? = O que está acontecendo?"},
+      {"particle":"out","form":"go out","meaning":"sair; apagar-se","pattern":"go out","example":"We went out for dinner after work","note":"Para luz/fogo: The lights went out"},
+      {"particle":"off","form":"go off","meaning":"disparar/tocar; estragar; explodir","pattern":"go off","example":"My alarm went off at six this morning","note":"Também usado para comida que estragou"},
+      {"particle":"over","form":"go over","meaning":"revisar ou examinar","pattern":"go over + material / details","example":"Let's go over the numbers one more time","note":"Não é separável nesse uso"},
+      {"particle":"through","form":"go through","meaning":"passar por; examinar detalhadamente","pattern":"go through + experience / material","example":"She went through a difficult period last year","note":"Também: go through the documents = revisar os documentos"},
+      {"particle":"back","form":"go back","meaning":"voltar","pattern":"go back + to + place/topic","example":"I need to go back to the office for my keys","note":"go back to a topic = retomar um assunto"},
+      {"particle":"ahead","form":"go ahead","meaning":"prosseguir ou dar início","pattern":"go ahead / go ahead with + plan","example":"They decided to go ahead with the renovation","note":"Também usado para dar permissão: Go ahead"}
+    ]
+  }
+}

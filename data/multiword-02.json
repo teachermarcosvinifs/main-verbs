@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "verbs": {
+    "hold": [
+      {"particle":"on","form":"hold on","meaning":"esperar; segurar firme","pattern":"hold on","example":"Hold on a second — I'll be right back","note":"Muito comum ao telefone"},
+      {"particle":"back","form":"hold back","meaning":"conter ou impedir avanço","pattern":"hold + person/feeling + back","example":"She tried to hold back her tears","note":"Com pronome: hold them back"},
+      {"particle":"up","form":"hold up","meaning":"atrasar; sustentar; assaltar","pattern":"hold + person/process + up","example":"Traffic held us up for almost an hour","note":"Com pronome: hold us up"},
+      {"particle":"out","form":"hold out","meaning":"resistir; durar; esperar por algo melhor","pattern":"hold out / hold out for + noun","example":"They held out for a better offer","note":"hold out for = recusar enquanto espera algo melhor"}
+    ],
+    "keep": [
+      {"particle":"up","form":"keep up","meaning":"manter ritmo, nível ou desempenho","pattern":"keep up / keep up with + noun","example":"It's hard to keep up with all the changes","note":"keep up with someone = acompanhar o ritmo"},
+      {"particle":"on","form":"keep on","meaning":"continuar fazendo","pattern":"keep on + -ing","example":"He kept on asking the same question","note":"Semelhante a keep + -ing, com ênfase em continuidade"},
+      {"particle":"away","form":"keep away","meaning":"manter-se afastado ou manter algo longe","pattern":"keep away from + noun","example":"Keep away from the edge","note":"Com objeto: keep children away from the fire"},
+      {"particle":"out","form":"keep out","meaning":"impedir entrada ou permanecer fora","pattern":"keep + person/thing + out","example":"Keep the door closed to keep the noise out","note":"Com pronome: keep it out"},
+      {"particle":"back","form":"keep back","meaning":"reter, esconder ou manter distância","pattern":"keep + object/person + back","example":"The police kept the crowd back","note":"Menos comum que hold back, mas útil em controle físico"}
+    ],
+    "leave": [
+      {"particle":"out","form":"leave out","meaning":"omitir ou excluir","pattern":"leave + object/person + out","example":"You left an important detail out of the report","note":"Com pronome: leave it out"},
+      {"particle":"behind","form":"leave behind","meaning":"deixar para trás","pattern":"leave + object/person + behind","example":"I left my umbrella behind at the café","note":"Com pronome: leave it behind"},
+      {"particle":"off","form":"leave off","meaning":"parar em determinado ponto","pattern":"leave off","example":"Let's continue from where we left off yesterday","note":"Muito comum na expressão where we left off"}
+    ],
+    "let": [
+      {"particle":"down","form":"let down","meaning":"decepcionar; baixar","pattern":"let + person/object + down","example":"I don't want to let the team down","note":"Com pronome: let them down"},
+      {"particle":"in","form":"let in","meaning":"deixar entrar","pattern":"let + person/thing + in","example":"Can you let the dog in?","note":"Com pronome: let him in"},
+      {"particle":"out","form":"let out","meaning":"deixar sair; liberar; aumentar roupa","pattern":"let + person/thing + out","example":"She let the cat out before breakfast","note":"Também: let out a scream = soltar um grito"},
+      {"particle":"off","form":"let off","meaning":"não punir ou punir levemente; liberar","pattern":"let + person + off","example":"The teacher let him off with a warning","note":"Com pronome: let him off"}
+    ],
+    "look": [
+      {"particle":"for","form":"look for","meaning":"procurar","pattern":"look for + person/thing","example":"I'm looking for my keys","note":"Não é separável"},
+      {"particle":"after","form":"look after","meaning":"cuidar de","pattern":"look after + person/thing","example":"Can you look after the kids for an hour?","note":"Não é separável"},
+      {"particle":"into","form":"look into","meaning":"investigar ou examinar","pattern":"look into + problem / possibility","example":"The company is looking into the complaint","note":"Não é separável"},
+      {"particle":"over","form":"look over","meaning":"revisar rapidamente","pattern":"look over + document / work","example":"Could you look over this email before I send it?","note":"Pode ser separável: look it over"},
+      {"particle":"up","form":"look up","meaning":"procurar informação","pattern":"look + information + up","example":"I looked the address up online","note":"Com pronome: look it up"},
+      {"particle":"out","form":"look out","meaning":"ter cuidado; ficar atento","pattern":"look out / look out for + noun","example":"Look out! There's a car coming","note":"look out for something = ficar atento a algo"}
+    ],
+    "make": [
+      {"particle":"up","form":"make up","meaning":"inventar; reconciliar-se; compor uma parte","pattern":"make + story/excuse + up / make up with + person","example":"He made up an excuse for being late","note":"Também: make up with someone = fazer as pazes"},
+      {"particle":"out","form":"make out","meaning":"conseguir ver/entender; preencher documento","pattern":"make out + object","example":"I couldn't make out what he was saying","note":"Também usado em outros sentidos informais; contexto é importante"},
+      {"particle":"for","form":"make for","meaning":"dirigir-se a; contribuir para um resultado","pattern":"make for + place/result","example":"As soon as it started raining, we made for the car","note":"Também: Good lighting makes for a better workspace"}
+    ],
+    "move": [
+      {"particle":"in","form":"move in","meaning":"mudar-se para um lugar","pattern":"move in / move into + place","example":"They're moving in next weekend","note":"Com destino: move into a new apartment"},
+      {"particle":"out","form":"move out","meaning":"mudar-se para fora","pattern":"move out / move out of + place","example":"He moved out of the apartment last month","note":"Use move out of antes do lugar"},
+      {"particle":"on","form":"move on","meaning":"seguir adiante ou passar para outro assunto","pattern":"move on / move on to + topic/stage","example":"Let's move on to the next question","note":"Muito comum em reuniões e apresentações"},
+      {"particle":"over","form":"move over","meaning":"mover-se para dar espaço","pattern":"move over","example":"Could you move over a little?","note":"Normalmente sem objeto"},
+      {"particle":"up","form":"move up","meaning":"subir de posição, nível ou lugar","pattern":"move up / move up to + level","example":"She moved up to a management role last year","note":"Pode ser literal ou profissional"}
+    ],
+    "pass": [
+      {"particle":"away","form":"pass away","meaning":"falecer","pattern":"pass away","example":"Her grandfather passed away last winter","note":"Forma mais suave e indireta de dizer die"},
+      {"particle":"out","form":"pass out","meaning":"desmaiar; distribuir","pattern":"pass out / pass + objects + out","example":"He nearly passed out from the heat","note":"Com objeto: pass the forms out"},
+      {"particle":"on","form":"pass on","meaning":"transmitir, repassar ou recusar","pattern":"pass + information/object + on","example":"Please pass the message on to everyone","note":"Também: I'll pass on dessert = vou recusar"},
+      {"particle":"up","form":"pass up","meaning":"deixar passar uma oportunidade","pattern":"pass up + opportunity/chance","example":"I couldn't pass up the chance to travel","note":"Não é separável na prática com esses objetos"},
+      {"particle":"over","form":"pass over","meaning":"ignorar alguém para promoção/oportunidade","pattern":"pass + person + over","example":"He was passed over for promotion again","note":"Muito comum na voz passiva: be passed over for"}
+    ],
+    "pull": [
+      {"particle":"over","form":"pull over","meaning":"encostar o veículo","pattern":"pull over","example":"The police officer asked me to pull over","note":"Normalmente sem objeto"},
+      {"particle":"off","form":"pull off","meaning":"conseguir fazer algo difícil","pattern":"pull off + achievement/plan","example":"I don't know how they pulled off the event in two weeks","note":"Com pronome: pull it off"},
+      {"particle":"through","form":"pull through","meaning":"sobreviver ou se recuperar de situação difícil","pattern":"pull through","example":"The doctors think he'll pull through","note":"Normalmente sem objeto direto"},
+      {"particle":"out","form":"pull out","meaning":"retirar-se; sair; remover","pattern":"pull out / pull + object + out","example":"The company pulled out of the deal","note":"pull out of + agreement/market = retirar-se"},
+      {"particle":"back","form":"pull back","meaning":"recuar ou reduzir envolvimento","pattern":"pull back / pull back from + noun","example":"The company pulled back from the expansion plan","note":"Também pode ser literal"}
+    ],
+    "push": [
+      {"particle":"back","form":"push back","meaning":"adiar; resistir; empurrar para trás","pattern":"push + object + back / push back against + noun","example":"They pushed the deadline back by a week","note":"Com pronome: push it back"},
+      {"particle":"through","form":"push through","meaning":"forçar aprovação ou concluir apesar de dificuldade","pattern":"push + plan/change + through","example":"They pushed the proposal through despite strong opposition","note":"Com pronome: push it through"},
+      {"particle":"on","form":"push on","meaning":"continuar apesar de dificuldade","pattern":"push on","example":"We were tired, but we decided to push on","note":"Normalmente sem objeto"}
+    ],
+    "put": [
+      {"particle":"down","form":"put down","meaning":"colocar no chão, abaixar ou deixar algo em uma superfície","pattern":"put + object + down","example":"Put the box down next to the door","note":"Com pronome: put it down, não put down it"},
+      {"particle":"away","form":"put away","meaning":"guardar ou colocar de volta no lugar","pattern":"put + object + away","example":"Please put the dishes away after dinner","note":"Com pronome: put them away"},
+      {"particle":"in","form":"put in","meaning":"instalar, inserir ou dedicar tempo/esforço","pattern":"put in + object / time / effort","example":"She put in three hours of overtime yesterday","note":"Muito comum com time, effort, work e instalações"},
+      {"particle":"on","form":"put on","meaning":"vestir, colocar ou ligar algo","pattern":"put + object + on","example":"Put your jacket on before you go outside","note":"Com pronome: put it on; também pode significar ligar um aparelho ou música"},
+      {"particle":"off","form":"put off","meaning":"adiar; em outro uso, causar rejeição ou desânimo","pattern":"put + object + off","example":"They put the meeting off until Friday","note":"Com pronome: put it off; put someone off = desanimar ou causar rejeição"},
+      {"particle":"out","form":"put out","meaning":"apagar fogo/luz; também disponibilizar ou publicar","pattern":"put + object + out","example":"Please put the candle out before you leave","note":"Com pronome: put it out"},
+      {"particle":"up","form":"put up","meaning":"levantar, instalar ou colocar algo em posição","pattern":"put + object + up","example":"They put up a new shelf in the kitchen","note":"Também: put someone up = hospedar alguém temporariamente"},
+      {"particle":"back","form":"put back","meaning":"devolver ao lugar ou adiar para uma data posterior","pattern":"put + object + back","example":"Put the milk back in the fridge when you're done","note":"Com pronome: put it back"}
+    ]
+  }
+}

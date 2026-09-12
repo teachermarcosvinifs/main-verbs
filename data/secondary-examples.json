@@ -1,0 +1,22 @@
+{
+  "admit":{"pattern":"admit + -ing","example":"He admitted taking the money without asking"},
+  "advise":{"pattern":"advise + -ing","example":"They advise booking in advance during the summer"},
+  "allow":{"pattern":"allow + -ing","example":"The building doesn't allow smoking anywhere indoors"},
+  "consider":{"pattern":"consider + -ing","example":"They're considering moving closer to work"},
+  "forget":{"pattern":"forget + -ing","example":"I'll never forget seeing snow for the first time"},
+  "hope":{"pattern":"hope that + clause","example":"She hopes that the weather improves by the weekend"},
+  "imagine":{"pattern":"imagine + -ing","example":"I can't imagine living anywhere else now"},
+  "mean":{"pattern":"mean + -ing","example":"Taking the earlier train means getting up before six"},
+  "mind":{"pattern":"mind + -ing","example":"I don't mind waiting a little longer"},
+  "offer":{"pattern":"offer + person + noun","example":"They offered her a refund without any argument"},
+  "permit":{"pattern":"permit + person + to + verb","example":"They permitted him to leave early after the appointment"},
+  "prefer":{"pattern":"prefer + -ing + to + -ing","example":"She prefers working early to staying late"},
+  "promise":{"pattern":"promise to + verb","example":"She promised to call as soon as she landed"},
+  "recommend":{"pattern":"recommend + -ing","example":"The doctor recommended cutting back on caffeine"},
+  "remember":{"pattern":"remember + -ing","example":"I remember meeting her once before"},
+  "require":{"pattern":"require + -ing","example":"The job requires working some weekends"},
+  "stop":{"pattern":"stop to + verb","example":"He stopped to answer a call on the way home"},
+  "suggest":{"pattern":"suggest + -ing","example":"She suggested taking a taxi instead"},
+  "try":{"pattern":"try + -ing","example":"She tried restarting the router before calling support"},
+  "wonder":{"pattern":"wonder whether / if + clause","example":"He wondered whether he should say anything at all"}
+}

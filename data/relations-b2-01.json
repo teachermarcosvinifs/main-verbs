@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "verbs": {
+    "accept": [
+      {"particle":"from","form":"accept from","meaning":"aceitar ou receber de uma fonte/pessoa","pattern":"accept + thing + from + person/source","example":"She accepted the offer from a smaller company","note":"Use from para marcar de quem ou de onde vem aquilo que foi aceito"},
+      {"particle":"as","form":"accept as","meaning":"aceitar ou reconhecer como","pattern":"accept + person/thing + as + noun/adjective","example":"They accepted him as part of the team","note":"as apresenta o papel, status ou classificação atribuída"}
+    ],
+    "adapt": [
+      {"particle":"to","form":"adapt to","meaning":"adaptar-se a uma situação, ambiente ou mudança","pattern":"adapt to + noun / -ing","example":"It took her a while to adapt to working from home","note":"Quando o sujeito muda para lidar com uma nova realidade"},
+      {"particle":"for","form":"adapt for","meaning":"adaptar algo para uma finalidade ou público","pattern":"adapt + thing + for + purpose/person","example":"The course was adapted for younger learners","note":"for destaca a finalidade ou o público da adaptação"}
+    ],
+    "adjust": [
+      {"particle":"to","form":"adjust to","meaning":"acostumar-se ou adaptar-se gradualmente","pattern":"adjust to + noun / -ing","example":"He's still adjusting to the new schedule","note":"Muito comum para rotina, ambiente, horário e mudança de contexto"},
+      {"particle":"for","form":"adjust for","meaning":"fazer uma correção levando um fator em conta","pattern":"adjust + figure/setting + for + factor","example":"The figures were adjusted for inflation","note":"Uso frequente em dados, cálculos e configurações"}
+    ],
+    "admit": [
+      {"particle":"to","form":"admit to","meaning":"admitir uma ação, erro ou responsabilidade","pattern":"admit to + noun / -ing","example":"He admitted to using the account without permission","note":"to aqui é preposição, então vem noun ou -ing"},
+      {"particle":"into","form":"admit into","meaning":"permitir entrada ou ingresso","pattern":"admit + person + into + place/program","example":"Only ticket holders were admitted into the venue","note":"Com pessoas, costuma aparecer na voz passiva"}
+    ],
+    "advise": [
+      {"particle":"against","form":"advise against","meaning":"aconselhar alguém a não fazer algo","pattern":"advise against + noun / -ing","example":"The doctor advised against driving for a few days","note":"Muito útil para recomendações negativas"},
+      {"particle":"on","form":"advise on","meaning":"dar orientação sobre um assunto","pattern":"advise + person + on + topic","example":"She advises small businesses on tax issues","note":"on marca o assunto sobre o qual a orientação é dada"}
+    ],
+    "agree": [
+      {"particle":"with","form":"agree with","meaning":"concordar com uma pessoa, opinião ou ideia","pattern":"agree with + person/opinion","example":"I agree with you on that point","note":"with costuma ligar agree à pessoa ou à opinião"},
+      {"particle":"on","form":"agree on","meaning":"chegar a acordo sobre um tema ou decisão","pattern":"agree on + topic/decision","example":"We finally agreed on a date for the meeting","note":"on destaca aquilo que foi decidido em conjunto"},
+      {"particle":"to","form":"agree to","meaning":"aceitar uma proposta, condição ou ação","pattern":"agree to + noun / verb","example":"They agreed to the new terms yesterday","note":"agree to a proposal e agree to do something são padrões muito frequentes"}
+    ],
+    "allow": [
+      {"particle":"for","form":"allow for","meaning":"levar algo em consideração","pattern":"allow for + factor/time/problem","example":"We need to allow for extra travel time","note":"Não significa simplesmente permitir; significa prever ou considerar"},
+      {"particle":"into","form":"allow into","meaning":"permitir que alguém entre","pattern":"allow + person + into + place","example":"Security wouldn't allow anyone into the room","note":"O objeto pessoa normalmente vem entre allow e into"}
+    ],
+    "apologize": [
+      {"particle":"to","form":"apologize to","meaning":"pedir desculpas a alguém","pattern":"apologize to + person","example":"She apologized to the customer immediately","note":"to identifica quem recebe o pedido de desculpas"},
+      {"particle":"for","form":"apologize for","meaning":"pedir desculpas por uma ação ou problema","pattern":"apologize for + noun / -ing","example":"He apologized for arriving late","note":"for identifica o motivo; depois de for use noun ou -ing"}
+    ],
+    "appear": [
+      {"particle":"in","form":"appear in","meaning":"aparecer em um lugar, publicação, filme ou registro","pattern":"appear in + place/media/document","example":"Her name appears in the final report","note":"Muito comum com documentos, mídia e eventos"},
+      {"particle":"as","form":"appear as","meaning":"aparecer ou atuar como algo/alguém","pattern":"appear as + role/character","example":"He appears as a guest in the final episode","note":"as apresenta o papel ou função em que a pessoa aparece"}
+    ],
+    "apply": [
+      {"particle":"for","form":"apply for","meaning":"candidatar-se ou solicitar algo","pattern":"apply for + job/course/permission","example":"She's applying for a position in marketing","note":"for indica aquilo que se quer obter"},
+      {"particle":"to","form":"apply to","meaning":"candidatar-se a uma instituição; também ser aplicável a algo","pattern":"apply to + organization/person/situation","example":"The same rule applies to everyone","note":"apply to pode falar tanto de candidatura quanto de abrangência de uma regra"}
+    ],
+    "arrange": [
+      {"particle":"for","form":"arrange for","meaning":"providenciar algo ou alguém","pattern":"arrange for + noun/person + to + verb","example":"We arranged for a taxi to pick them up","note":"Muito útil quando você organiza algo para acontecer"},
+      {"particle":"with","form":"arrange with","meaning":"combinar algo com uma pessoa ou organização","pattern":"arrange + something + with + person/company","example":"I arranged the delivery with the store directly","note":"with identifica a outra parte envolvida no acordo"}
+    ],
+    "arrive": [
+      {"particle":"at","form":"arrive at","meaning":"chegar a um local específico; também chegar a uma decisão","pattern":"arrive at + specific place / decision","example":"We arrived at the hotel just before midnight","note":"Use at com pontos específicos e também em arrive at a decision"},
+      {"particle":"in","form":"arrive in","meaning":"chegar a cidade, país ou área maior","pattern":"arrive in + city/country/region","example":"They arrived in Mexico City on Monday","note":"in é preferido com áreas geográficas maiores"}
+    ],
+    "book": [
+      {"particle":"for","form":"book for","meaning":"reservar para uma data, horário ou pessoa","pattern":"book + thing + for + date/time/person","example":"I booked a table for eight o'clock","note":"for marca para quando ou para quem vale a reserva"},
+      {"particle":"through","form":"book through","meaning":"fazer uma reserva por meio de um serviço ou agência","pattern":"book + thing + through + service/agency","example":"We booked the hotel through a travel site","note":"through identifica o intermediário usado para a reserva"}
+    ],
+    "borrow": [
+      {"particle":"from","form":"borrow from","meaning":"pegar emprestado de uma pessoa ou fonte","pattern":"borrow + thing + from + person/place","example":"I borrowed the charger from a coworker","note":"borrow aponta para quem recebe temporariamente"},
+      {"particle":"against","form":"borrow against","meaning":"tomar empréstimo usando um ativo como garantia","pattern":"borrow against + asset/value","example":"They borrowed against the value of the property","note":"Uso financeiro mais avançado; o ativo serve como base da garantia"}
+    ],
+    "buy": [
+      {"particle":"from","form":"buy from","meaning":"comprar de uma pessoa, loja ou fornecedor","pattern":"buy + thing + from + seller/source","example":"I bought the laptop from a local store","note":"from identifica o vendedor ou a origem da compra"},
+      {"particle":"for","form":"buy for","meaning":"comprar para alguém ou por determinado valor","pattern":"buy + thing + for + person/amount","example":"She bought the tickets for her parents","note":"O contexto mostra se for indica beneficiário ou preço"},
+      {"particle":"into","form":"buy into","meaning":"aceitar uma ideia; adquirir participação","pattern":"buy into + idea/company","example":"Not everyone bought into the new strategy","note":"Como phrasal, buy into pode significar acreditar/aderir a uma ideia"}
+    ],
+    "challenge": [
+      {"particle":"to","form":"challenge to","meaning":"desafiar alguém a fazer algo","pattern":"challenge + person + to + verb","example":"She challenged him to explain the decision","note":"A pessoa vem antes de to"},
+      {"particle":"on","form":"challenge on","meaning":"questionar alguém sobre um ponto específico","pattern":"challenge + person + on + claim/issue","example":"The interviewer challenged him on the numbers","note":"on destaca exatamente o ponto que está sendo contestado"}
+    ],
+    "change": [
+      {"particle":"into","form":"change into","meaning":"transformar-se ou trocar para outra forma/roupa","pattern":"change into + noun/clothes","example":"The rain changed into snow during the night","note":"Também: change into dry clothes"},
+      {"particle":"from","form":"change from","meaning":"mudar a partir de um estado ou opção","pattern":"change from + A + to + B","example":"We changed from monthly billing to annual billing","note":"from normalmente aparece com to para mostrar origem e destino da mudança"},
+      {"particle":"to","form":"change to","meaning":"mudar para uma nova opção, formato ou sistema","pattern":"change to + new option/system","example":"They changed to a different supplier last year","note":"to marca o novo destino da mudança"}
+    ],
+    "charge": [
+      {"particle":"for","form":"charge for","meaning":"cobrar por produto, serviço ou item","pattern":"charge + person + for + thing","example":"The hotel charged us for an extra night","note":"for marca aquilo pelo qual houve cobrança"},
+      {"particle":"with","form":"charge with","meaning":"acusar formalmente de um crime","pattern":"charge + person + with + offense","example":"He was charged with fraud last month","note":"Muito comum na voz passiva em contexto jurídico"},
+      {"particle":"to","form":"charge to","meaning":"lançar uma despesa em conta ou cartão","pattern":"charge + amount/item + to + account/card","example":"Please charge the meal to my room","note":"to identifica a conta que receberá a cobrança"}
+    ],
+    "choose": [
+      {"particle":"between","form":"choose between","meaning":"escolher entre opções definidas","pattern":"choose between + A + and + B","example":"We had to choose between two different plans","note":"between é natural quando as alternativas estão claramente delimitadas"},
+      {"particle":"from","form":"choose from","meaning":"escolher dentro de um conjunto","pattern":"choose from + set/list/options","example":"You can choose from more than twenty designs","note":"from destaca o conjunto do qual a escolha será feita"}
+    ],
+    "communicate": [
+      {"particle":"with","form":"communicate with","meaning":"comunicar-se com alguém","pattern":"communicate with + person/group","example":"She communicates with clients every day","note":"with destaca interação entre as partes"},
+      {"particle":"to","form":"communicate to","meaning":"transmitir algo a uma pessoa ou grupo","pattern":"communicate + message/idea + to + person/group","example":"The changes were communicated to the whole team","note":"to é usado quando algo específico é transmitido"},
+      {"particle":"about","form":"communicate about","meaning":"comunicar-se a respeito de um assunto","pattern":"communicate about + topic","example":"We need to communicate more clearly about deadlines","note":"about marca o tema da comunicação"}
+    ],
+    "compare": [
+      {"particle":"with","form":"compare with","meaning":"comparar para examinar semelhanças e diferenças","pattern":"compare + A + with + B","example":"Compare this month's figures with last month's","note":"with é muito comum em comparação analítica direta"},
+      {"particle":"to","form":"compare to","meaning":"comparar; frequentemente aproximar por semelhança","pattern":"compare + A + to + B","example":"People often compare the new model to the older one","note":"Na prática há sobreposição com with, mas to aparece muito em analogias"}
+    ],
+    "complain": [
+      {"particle":"about","form":"complain about","meaning":"reclamar de um problema, situação ou pessoa","pattern":"complain about + problem/person/situation","example":"Several customers complained about the delay","note":"about marca o motivo da reclamação"},
+      {"particle":"to","form":"complain to","meaning":"fazer a reclamação a alguém ou organização","pattern":"complain to + person/company","example":"She complained to the manager immediately","note":"to identifica quem recebe a reclamação"},
+      {"particle":"of","form":"complain of","meaning":"relatar desconforto ou sintoma","pattern":"complain of + symptom/pain","example":"He complained of severe back pain","note":"Uso particularmente comum em contexto médico e mais formal"}
+    ],
+    "complete": [
+      {"particle":"by","form":"complete by","meaning":"concluir até um prazo","pattern":"complete + task + by + deadline","example":"Please complete the form by Friday","note":"by indica o limite máximo de tempo"},
+      {"particle":"with","form":"complete with","meaning":"vir acompanhado de algo","pattern":"complete with + feature/item","example":"The apartment comes complete with a small balcony","note":"complete with funciona como expressão para indicar item incluído"}
+    ],
+    "confirm": [
+      {"particle":"with","form":"confirm with","meaning":"confirmar algo diretamente com alguém","pattern":"confirm + detail + with + person/company","example":"I'll confirm the time with the clinic","note":"with identifica a fonte com quem você verifica"},
+      {"particle":"by","form":"confirm by","meaning":"confirmar por um meio específico","pattern":"confirm + something + by + method/time","example":"They confirmed the booking by email","note":"by pode indicar o meio usado para a confirmação"}
+    ],
+    "connect": [
+      {"particle":"to","form":"connect to","meaning":"conectar-se a sistema, rede, dispositivo ou lugar","pattern":"connect to + device/network/service","example":"The laptop won't connect to the Wi-Fi","note":"to costuma marcar a conexão técnica ou o destino"},
+      {"particle":"with","form":"connect with","meaning":"criar conexão com pessoa, ideia ou público","pattern":"connect with + person/idea/audience","example":"The speaker connected with the audience immediately","note":"with é comum para conexão humana ou conceitual"}
+    ],
+    "continue": [
+      {"particle":"with","form":"continue with","meaning":"continuar uma tarefa, assunto ou plano","pattern":"continue with + noun/task","example":"Let's continue with the next section","note":"with introduz aquilo que continua"},
+      {"particle":"on","form":"continue on","meaning":"prosseguir adiante, especialmente em trajeto ou sequência","pattern":"continue on + route/path/course","example":"Continue on this road for another mile","note":"Mais natural quando há ideia de percurso ou progressão"}
+    ],
+    "convince": [
+      {"particle":"of","form":"convince of","meaning":"convencer alguém da verdade ou validade de algo","pattern":"convince + person + of + noun","example":"The evidence convinced her of his innocence","note":"of introduz a ideia cuja veracidade foi aceita"},
+      {"particle":"to","form":"convince to","meaning":"convencer alguém a fazer algo","pattern":"convince + person + to + verb","example":"They convinced me to apply for the job","note":"A pessoa deve aparecer entre convince e to"}
+    ],
+    "decide": [
+      {"particle":"on","form":"decide on","meaning":"escolher depois de considerar opções","pattern":"decide on + option/date/plan","example":"We decided on the earlier flight","note":"on introduz a opção finalmente escolhida"},
+      {"particle":"against","form":"decide against","meaning":"decidir não fazer ou não escolher algo","pattern":"decide against + noun / -ing","example":"They decided against moving this year","note":"Muito útil para decisões negativas"},
+      {"particle":"between","form":"decide between","meaning":"decidir entre alternativas","pattern":"decide between + A + and + B","example":"I can't decide between the two apartments","note":"between apresenta as alternativas em disputa"}
+    ],
+    "deliver": [
+      {"particle":"to","form":"deliver to","meaning":"entregar a pessoa, endereço ou destino","pattern":"deliver + thing + to + person/place","example":"The package was delivered to the wrong address","note":"to marca o destino da entrega"},
+      {"particle":"from","form":"deliver from","meaning":"entregar a partir de uma origem; também livrar de algo em uso formal","pattern":"deliver + thing + from + source / deliver + person + from + danger","example":"The order was delivered from a local warehouse","note":"O uso de 'livrar' é mais formal e menos comum"},
+      {"particle":"by","form":"deliver by","meaning":"entregar até um prazo ou por um meio","pattern":"deliver + thing + by + deadline/method","example":"They promised to deliver the parts by Tuesday","note":"by frequentemente marca o prazo final"}
+    ],
+    "depend": [
+      {"particle":"on","form":"depend on","meaning":"depender de pessoa, condição ou fator","pattern":"depend on + noun / -ing / whether-clause","example":"It depends on how much time we have","note":"É a construção padrão e mais frequente"},
+      {"particle":"upon","form":"depend upon","meaning":"depender de; variante mais formal de depend on","pattern":"depend upon + noun/clause","example":"The final decision depends upon the results","note":"upon é mais formal; on é normalmente mais natural na conversa"}
+    ],
+    "describe": [
+      {"particle":"as","form":"describe as","meaning":"descrever ou classificar como","pattern":"describe + person/thing + as + noun/adjective","example":"She described the experience as exhausting","note":"as introduz a caracterização"},
+      {"particle":"to","form":"describe to","meaning":"descrever algo para alguém","pattern":"describe + thing + to + person","example":"Can you describe the problem to the technician?","note":"Não use describe someone something; use describe something to someone"}
+    ],
+    "develop": [
+      {"particle":"into","form":"develop into","meaning":"desenvolver-se até se tornar algo","pattern":"develop into + noun/role/problem","example":"The disagreement developed into a serious argument","note":"into marca o estado final da transformação"},
+      {"particle":"from","form":"develop from","meaning":"desenvolver-se a partir de uma origem","pattern":"develop from + source/earlier form","example":"The idea developed from a casual conversation","note":"from destaca a origem do processo"}
+    ],
+    "drive": [
+      {"particle":"to","form":"drive to","meaning":"dirigir até um destino","pattern":"drive to + place","example":"We drove to the airport before sunrise","note":"to marca o destino"},
+      {"particle":"from","form":"drive from","meaning":"dirigir a partir de uma origem","pattern":"drive from + place","example":"She drives from the suburbs every morning","note":"from marca o ponto de partida"},
+      {"particle":"through","form":"drive through","meaning":"atravessar um lugar dirigindo","pattern":"drive through + place/area","example":"We drove through the mountains on the way home","note":"through enfatiza atravessar o interior de uma área"},
+      {"particle":"around","form":"drive around","meaning":"circular de carro sem um único destino","pattern":"drive around + area","example":"We drove around the neighborhood looking for parking","note":"around sugere movimento por diferentes pontos de uma área"}
+    ],
+    "earn": [
+      {"particle":"from","form":"earn from","meaning":"ganhar dinheiro ou benefício de uma fonte","pattern":"earn + money/income + from + source","example":"She earns extra income from freelance work","note":"from identifica a origem da renda"},
+      {"particle":"by","form":"earn by","meaning":"ganhar algo por meio de uma atividade","pattern":"earn + money/respect + by + -ing","example":"He earned their trust by being consistent","note":"by + -ing explica como o resultado foi conquistado"}
+    ],
+    "enter": [
+      {"particle":"into","form":"enter into","meaning":"entrar formalmente em acordo, discussão ou relação","pattern":"enter into + agreement/discussion/relationship","example":"The companies entered into a long-term agreement","note":"Mais formal do que simplesmente enter e muito comum em contratos"},
+      {"particle":"through","form":"enter through","meaning":"entrar por uma abertura ou acesso","pattern":"enter through + door/gate/entrance","example":"Visitors should enter through the main gate","note":"through identifica o ponto de passagem"}
+    ]
+  }
+}

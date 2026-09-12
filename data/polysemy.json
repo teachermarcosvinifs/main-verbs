@@ -1,0 +1,150 @@
+{
+  "get": [
+    {"label":"receber / conseguir","pattern":"get + noun","examples":["get a message","get a ticket","get permission"]},
+    {"label":"ficar","pattern":"get + adjective","examples":["get tired","get nervous","get cold"]},
+    {"label":"chegar","pattern":"get + place","examples":["get home","get there","get to the station"]}
+  ],
+  "take": [
+    {"label":"pegar / levar","pattern":"take + noun","examples":["take the keys","take the kids to school"]},
+    {"label":"levar tempo","pattern":"take + time","examples":["It takes twenty minutes","The repair took two hours"]},
+    {"label":"usar / tomar","pattern":"take + transport / medicine","examples":["take the bus","take medication"]}
+  ],
+  "make": [
+    {"label":"fazer / criar","pattern":"make + noun","examples":["make breakfast","make a plan","make a decision"]},
+    {"label":"causar um estado","pattern":"make + person + adjective","examples":["make me nervous","make them happy"]},
+    {"label":"ganhar / produzir","pattern":"make + money / profit","examples":["make money","make a profit"]}
+  ],
+  "set": [
+    {"label":"definir","pattern":"set + limit / time / goal","examples":["set a limit","set a deadline","set a goal"]},
+    {"label":"ajustar","pattern":"set + device","examples":["set the alarm","set the temperature"]},
+    {"label":"colocar","pattern":"set + object + place","examples":["set the glass on the table"]}
+  ],
+  "run": [
+    {"label":"correr","pattern":"run","examples":["run every morning","run a marathon"]},
+    {"label":"administrar","pattern":"run + business / operation","examples":["run a company","run a restaurant"]},
+    {"label":"funcionar","pattern":"machine / system + run","examples":["The engine is running","The system runs automatically"]}
+  ],
+  "hold": [
+    {"label":"segurar","pattern":"hold + object","examples":["hold the door","hold a glass"]},
+    {"label":"realizar","pattern":"hold + event / meeting","examples":["hold a meeting","hold an election"]},
+    {"label":"manter","pattern":"hold + position / record","examples":["hold a position","hold the record"]}
+  ],
+  "turn": [
+    {"label":"virar","pattern":"turn + direction","examples":["turn left","turn the handle"]},
+    {"label":"tornar-se","pattern":"turn + adjective / age","examples":["turn red","turn 30"]},
+    {"label":"mudar","pattern":"turn + noun + adjective","examples":["turn the room blue"]}
+  ],
+  "pass": [
+    {"label":"ser aprovado","pattern":"pass + exam / test","examples":["pass the exam","pass the driving test"]},
+    {"label":"entregar","pattern":"pass + object + to + person","examples":["pass the salt","pass the note to her"]},
+    {"label":"passar","pattern":"time + pass","examples":["The afternoon passed quickly"]}
+  ],
+  "deal": [
+    {"label":"lidar","pattern":"deal with + noun","examples":["deal with a complaint","deal with stress"]},
+    {"label":"distribuir cartas","pattern":"deal + cards","examples":["deal the cards"]},
+    {"label":"acordo / negócio","pattern":"deal + noun combinations","examples":["make a deal","close a deal"]}
+  ],
+  "keep": [
+    {"label":"guardar / manter","pattern":"keep + noun","examples":["keep the receipt","keep a copy"]},
+    {"label":"continuar em um estado","pattern":"keep + adjective","examples":["keep calm","keep quiet"]},
+    {"label":"continuar fazendo","pattern":"keep + -ing","examples":["keep working","keep asking"]}
+  ],
+  "break": [
+    {"label":"quebrar","pattern":"break + object","examples":["break a glass","break the lock"]},
+    {"label":"violar","pattern":"break + rule / law / promise","examples":["break the rules","break a promise"]},
+    {"label":"bater um recorde","pattern":"break + record","examples":["break a record"]}
+  ],
+  "charge": [
+    {"label":"cobrar","pattern":"charge + person + amount","examples":["charge me $20","charge a fee"]},
+    {"label":"carregar bateria","pattern":"charge + device","examples":["charge the phone","charge the battery"]},
+    {"label":"acusar formalmente","pattern":"charge + person + with + offense","examples":["charge someone with theft"]}
+  ],
+  "control": [
+    {"label":"controlar algo","pattern":"control + noun","examples":["control the temperature","control the machine"]},
+    {"label":"manter domínio","pattern":"control + situation / emotion","examples":["control the situation","control your anger"]}
+  ],
+  "draw": [
+    {"label":"desenhar","pattern":"draw + picture / map","examples":["draw a picture","draw a map"]},
+    {"label":"atrair","pattern":"draw + attention / crowd","examples":["draw attention","draw a crowd"]},
+    {"label":"chegar a uma conclusão","pattern":"draw + conclusion","examples":["draw a conclusion"]}
+  ],
+  "fit": [
+    {"label":"caber","pattern":"fit + place / space","examples":["fit through the door","fit in the drawer"]},
+    {"label":"servir no corpo","pattern":"clothes + fit + person","examples":["The jacket fits me"]},
+    {"label":"encaixar em horário","pattern":"fit + noun + into + schedule","examples":["fit a meeting into the afternoon"]}
+  ],
+  "give": [
+    {"label":"dar algo","pattern":"give + person + thing","examples":["give her the key","give me a minute"]},
+    {"label":"fornecer","pattern":"give + advice / permission / information","examples":["give advice","give permission"]},
+    {"label":"causar / produzir","pattern":"give + result / effect","examples":["give someone a headache","give a good result"]}
+  ],
+  "go": [
+    {"label":"ir","pattern":"go + place","examples":["go home","go to work"]},
+    {"label":"tornar-se","pattern":"go + adjective","examples":["go quiet","go wrong","go bad"]},
+    {"label":"atividade","pattern":"go + -ing","examples":["go shopping","go swimming"]}
+  ],
+  "grow": [
+    {"label":"crescer","pattern":"grow + adjective / amount","examples":["grow bigger","grow quickly"]},
+    {"label":"cultivar","pattern":"grow + plants / food","examples":["grow tomatoes","grow herbs"]},
+    {"label":"desenvolver","pattern":"grow + business / audience","examples":["grow the business","grow an audience"]}
+  ],
+  "leave": [
+    {"label":"sair","pattern":"leave + place","examples":["leave the house","leave work early"]},
+    {"label":"deixar algo","pattern":"leave + object + place","examples":["leave the keys on the table"]},
+    {"label":"deixar em um estado","pattern":"leave + object + adjective","examples":["leave the door open","leave the lights on"]}
+  ],
+  "mean": [
+    {"label":"significar","pattern":"mean + noun / clause","examples":["What does this mean?","It means we have to wait"]},
+    {"label":"ter intenção","pattern":"mean to + verb","examples":["I meant to call you"]},
+    {"label":"envolver","pattern":"mean + -ing","examples":["Moving now means paying more"]}
+  ],
+  "miss": [
+    {"label":"perder","pattern":"miss + transport / event","examples":["miss the bus","miss the meeting"]},
+    {"label":"sentir falta","pattern":"miss + person / place","examples":["miss my family","miss home"]},
+    {"label":"deixar passar","pattern":"miss + chance / detail","examples":["miss an opportunity","miss a detail"]}
+  ],
+  "play": [
+    {"label":"jogar","pattern":"play + sport / game","examples":["play tennis","play chess"]},
+    {"label":"tocar","pattern":"play + instrument / music","examples":["play guitar","play a song"]},
+    {"label":"desempenhar","pattern":"play + role / part","examples":["play a role","play the lead"]}
+  ],
+  "raise": [
+    {"label":"levantar","pattern":"raise + object / hand","examples":["raise your hand","raise the flag"]},
+    {"label":"aumentar","pattern":"raise + price / level / salary","examples":["raise prices","raise the temperature"]},
+    {"label":"criar","pattern":"raise + child","examples":["raise a family","raise three children"]}
+  ],
+  "save": [
+    {"label":"economizar","pattern":"save + money / time","examples":["save money","save time"]},
+    {"label":"salvar arquivo","pattern":"save + file / document","examples":["save the document","save the photo"]},
+    {"label":"resgatar","pattern":"save + person / animal","examples":["save a life","save the dog"]}
+  ],
+  "show": [
+    {"label":"mostrar algo","pattern":"show + person + thing","examples":["show me the photo","show her the message"]},
+    {"label":"ensinar como","pattern":"show + person + how to + verb","examples":["show me how to use it"]},
+    {"label":"indicar","pattern":"show + sign / result","examples":["show signs of damage","The results show a clear difference"]}
+  ],
+  "work": [
+    {"label":"trabalhar","pattern":"work + place / schedule","examples":["work from home","work nights"]},
+    {"label":"funcionar","pattern":"device / plan + work","examples":["The printer works","The plan worked"]},
+    {"label":"produzir efeito","pattern":"work for + person / purpose","examples":["That solution works for me"]}
+  ],
+  "cover": [
+    {"label":"cobrir fisicamente","pattern":"cover + object / surface","examples":["cover the table","cover the wound"]},
+    {"label":"incluir","pattern":"cover + topic / cost / service","examples":["cover the main points","The fee covers breakfast"]},
+    {"label":"substituir","pattern":"cover for + person","examples":["cover for a coworker"]}
+  ],
+  "present": [
+    {"label":"apresentar informação","pattern":"present + findings / idea","examples":["present the results","present a proposal"]},
+    {"label":"entregar / oferecer formalmente","pattern":"present + person + with + noun","examples":["present her with an award"]}
+  ],
+  "settle": [
+    {"label":"resolver","pattern":"settle + dispute / matter","examples":["settle a dispute","settle the matter"]},
+    {"label":"decidir","pattern":"settle on + choice","examples":["settle on a date","settle on a color"]},
+    {"label":"estabelecer-se","pattern":"settle + place / situation","examples":["settle in a new city"]}
+  ],
+  "treat": [
+    {"label":"tratar uma pessoa","pattern":"treat + person + adverb / as + noun","examples":["treat people fairly","treat him as an equal"]},
+    {"label":"tratar condição","pattern":"treat + illness / injury","examples":["treat an infection","treat the injury"]},
+    {"label":"pagar algo especial","pattern":"treat + person + to + noun","examples":["treat yourself to dinner"]}
+  ]
+}

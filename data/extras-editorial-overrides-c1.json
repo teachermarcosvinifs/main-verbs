@@ -1,0 +1,200 @@
+{
+  "appeal": [
+    {"type":"structure","title":"Estrutura","items":["appeal to + person/group","appeal for + help/support","appeal + decision/ruling"]},
+    {"type":"combinations","title":"Combinações","items":["appeal a decision","appeal to voters","appeal for help"]},
+    {"type":"prepositions","title":"Preposições","items":["appeal to + person/group","appeal for + help/support"]},
+    {"type":"contrast","title":"Contraste","items":["In American legal English, appeal a decision or ruling is standard","appeal against a decision is more common in British English and should not be the primary pattern here"]}
+  ],
+  "assure": [
+    {"type":"structure","title":"Estrutura","items":["assure + person","assure someone that + clause","assure someone of + noun"]},
+    {"type":"combinations","title":"Combinações","items":["assure a customer","assure investors","assure someone that everything is ready"]},
+    {"type":"prepositions","title":"Preposições","items":["assure someone of + fact/result"]},
+    {"type":"contrast","title":"Contraste","items":["assure normally takes a person: assure someone that something is true","ensure takes the result or condition: ensure safety, ensure compliance","Use ensure safety, not assure safety"]}
+  ],
+  "attribute": [
+    {"type":"structure","title":"Estrutura","items":["attribute something to + cause/person","be attributed to + cause"]},
+    {"type":"combinations","title":"Combinações","items":["attribute success to experience","attribute the change to demand","be widely attributed to human error"]},
+    {"type":"prepositions","title":"Preposições","items":["attribute something to + cause/person","be attributed to + cause"]}
+  ],
+  "clarify": [
+    {"type":"structure","title":"Estrutura","items":["clarify + noun/point","clarify that + clause","clarify something with + person"]},
+    {"type":"combinations","title":"Combinações","items":["clarify a point","clarify expectations","clarify responsibilities"]},
+    {"type":"prepositions","title":"Preposições","items":["clarify something with + person"]}
+  ],
+  "collapse": [
+    {"type":"structure","title":"Estrutura","items":["collapse","collapse under + pressure/weight","collapse into + state"]},
+    {"type":"combinations","title":"Combinações","items":["collapse suddenly","collapse under pressure","collapse completely"]},
+    {"type":"prepositions","title":"Preposições","items":["collapse under + pressure/weight","collapse into + state"]},
+    {"type":"contrast","title":"Contraste","items":["collapse often suggests a sudden physical, structural or systemic failure","decline usually describes a decrease over time rather than a sudden failure"]}
+  ],
+  "compromise": [
+    {"type":"structure","title":"Estrutura","items":["compromise on + issue","compromise with + person","compromise + security/principles"]},
+    {"type":"combinations","title":"Combinações","items":["compromise on price","compromise your principles","compromise security"]},
+    {"type":"prepositions","title":"Preposições","items":["compromise on + issue","compromise with + person"]},
+    {"type":"contrast","title":"Contraste","items":["compromise on something = accept less than your ideal to reach agreement","compromise something = weaken, endanger or damage it"]}
+  ],
+  "consult": [
+    {"type":"structure","title":"Estrutura","items":["consult + person/expert","consult + document/source","consult with + person/group"]},
+    {"type":"combinations","title":"Combinações","items":["consult a doctor","consult the manual","consult with colleagues"]},
+    {"type":"prepositions","title":"Preposições","items":["consult with + person/group"]},
+    {"type":"contrast","title":"Contraste","items":["consult a doctor or expert = seek advice from that person","consult with colleagues = discuss something together, especially in American English"]}
+  ],
+  "decline": [
+    {"type":"structure","title":"Estrutura","items":["decline + offer/invitation","decline to + verb","decline by + amount","decline to + final level"]},
+    {"type":"combinations","title":"Combinações","items":["decline an offer","decline sharply","politely decline"]},
+    {"type":"prepositions","title":"Preposições","items":["decline by + amount","decline to + final level"]},
+    {"type":"contrast","title":"Contraste","items":["decline an offer = refuse it, often politely or formally","decline by/to = decrease in amount or level","refuse is broader and can sound more direct in refusal contexts"]}
+  ],
+  "dedicate": [
+    {"type":"structure","title":"Estrutura","items":["dedicate + time/resources","dedicate something to + person/purpose","dedicate yourself to + noun/-ing"]},
+    {"type":"combinations","title":"Combinações","items":["dedicate time","dedicate resources","dedicate yourself fully"]},
+    {"type":"prepositions","title":"Preposições","items":["dedicate something to + person/purpose","dedicate yourself to + noun/-ing"]}
+  ],
+  "detect": [
+    {"type":"structure","title":"Estrutura","items":["detect + noun/problem","detect something in + place/sample"]},
+    {"type":"combinations","title":"Combinações","items":["detect a problem","detect movement","detect signs of damage"]},
+    {"type":"prepositions","title":"Preposições","items":["detect something in + place/sample"]}
+  ],
+  "doubt": [
+    {"type":"structure","title":"Estrutura","items":["doubt + noun/claim","doubt that + clause","doubt whether + clause"]},
+    {"type":"combinations","title":"Combinações","items":["seriously doubt","doubt a claim","doubt whether it will work"]},
+    {"type":"contrast","title":"Contraste","items":["doubt = be uncertain that something is true or will happen","suspect = think something may be true, often without enough proof"]}
+  ],
+  "enforce": [
+    {"type":"structure","title":"Estrutura","items":["enforce + law/rule/requirement","be enforced by + authority/system"]},
+    {"type":"combinations","title":"Combinações","items":["enforce the law","enforce a rule","strictly enforce regulations"]},
+    {"type":"prepositions","title":"Preposições","items":["be enforced by + authority/system"]},
+    {"type":"contrast","title":"Contraste","items":["enforce a rule = make sure an existing rule is obeyed","impose a rule/restriction = introduce or place that rule or restriction on someone"]}
+  ],
+  "engage": [
+    {"type":"structure","title":"Estrutura","items":["engage + person/audience","engage with + person/topic","engage in + activity","engage someone in + activity"]},
+    {"type":"combinations","title":"Combinações","items":["engage an audience","engage with customers","engage in discussion"]},
+    {"type":"prepositions","title":"Preposições","items":["engage with + person/topic","engage in + activity","engage someone in + activity"]}
+  ],
+  "gather": [
+    {"type":"structure","title":"Estrutura","items":["gather + noun/information","gather something from + source","gather around + place/person"]},
+    {"type":"combinations","title":"Combinações","items":["gather information","gather evidence","gather information from several sources"]},
+    {"type":"prepositions","title":"Preposições","items":["gather something from + source","gather around + place/person"]}
+  ],
+  "infer": [
+    {"type":"structure","title":"Estrutura","items":["infer something from + evidence","infer that + clause"]},
+    {"type":"combinations","title":"Combinações","items":["reasonably infer","infer meaning from context","infer that something happened"]},
+    {"type":"prepositions","title":"Preposições","items":["infer something from + evidence"]},
+    {"type":"contrast","title":"Contraste","items":["infer = reach a conclusion from evidence or clues","imply = communicate or suggest something indirectly","You draw a conclusion, but you normally infer something rather than infer a conclusion"]}
+  ],
+  "launch": [
+    {"type":"structure","title":"Estrutura","items":["launch + product/campaign/service","launch something in + market/region","launch into + speech/activity"]},
+    {"type":"combinations","title":"Combinações","items":["launch a product","launch a campaign","launch a service in a new market"]},
+    {"type":"prepositions","title":"Preposições","items":["launch something in + market/region","launch into + speech/activity"]},
+    {"type":"contrast","title":"Contraste","items":["launch something in a market = introduce the product or service there","launch into something = begin an activity or speech suddenly or energetically"]}
+  ],
+  "modify": [
+    {"type":"structure","title":"Estrutura","items":["modify + noun","modify something for + purpose/user","modify something to meet + requirement"]},
+    {"type":"combinations","title":"Combinações","items":["modify a plan","modify behavior","modify a design to meet new requirements"]},
+    {"type":"prepositions","title":"Preposições","items":["modify something for + purpose/user","modify something to meet + requirement"]}
+  ],
+  "occur": [
+    {"type":"structure","title":"Estrutura","items":["occur + time/place","occur to + person","it occurs to someone that + clause"]},
+    {"type":"combinations","title":"Combinações","items":["occur naturally","frequently occur","occur to someone"]},
+    {"type":"prepositions","title":"Preposições","items":["occur to + person"]},
+    {"type":"contrast","title":"Contraste","items":["occur = happen, often in more formal or technical contexts","happen is more common in everyday conversation","For an idea entering someone's mind, use it occurs to someone that, not simply it occurs that"]}
+  ],
+  "prove": [
+    {"type":"structure","title":"Estrutura","items":["prove + noun/point","prove that + clause","prove something to + person","prove + adjective / prove to be + noun/adjective"]},
+    {"type":"combinations","title":"Combinações","items":["prove a point","prove useful","prove to be effective"]},
+    {"type":"prepositions","title":"Preposições","items":["prove something to + person"]},
+    {"type":"contrast","title":"Contraste","items":["prove = establish truth or validity with evidence","demonstrate = show something clearly or show how it works","prove useful/difficult/effective means turn out to have that quality"]}
+  ],
+  "react": [
+    {"type":"structure","title":"Estrutura","items":["react to + noun/event","react by + -ing","react with + emotion/action"]},
+    {"type":"combinations","title":"Combinações","items":["react quickly","react badly","react strongly"]},
+    {"type":"prepositions","title":"Preposições","items":["react to + noun/event","react by + -ing","react with + emotion/action"]}
+  ],
+  "refer": [
+    {"type":"structure","title":"Estrutura","items":["refer to + noun/topic","refer someone to + person/service","be referred to + specialist/service"]},
+    {"type":"combinations","title":"Combinações","items":["refer to a document","refer a patient to a specialist","refer someone to support"]},
+    {"type":"prepositions","title":"Preposições","items":["refer to + noun/topic","refer someone to + person/service"]}
+  ],
+  "reflect": [
+    {"type":"structure","title":"Estrutura","items":["reflect + light/image","reflect on + noun/experience","be reflected in + result/data"]},
+    {"type":"combinations","title":"Combinações","items":["reflect reality","reflect on experience","be reflected in the results"]},
+    {"type":"prepositions","title":"Preposições","items":["reflect on + noun/experience","be reflected in + result/data"]}
+  ],
+  "reject": [
+    {"type":"structure","title":"Estrutura","items":["reject + noun/offer","reject something as + adjective/noun"]},
+    {"type":"combinations","title":"Combinações","items":["reject an offer","reject a proposal","firmly reject"]},
+    {"type":"prepositions","title":"Preposições","items":["reject something as + adjective/noun"]},
+    {"type":"contrast","title":"Contraste","items":["reject = refuse to accept, approve or believe something","decline = refuse an offer or invitation, often more politely or formally","refuse can also be followed by to + verb: refuse to cooperate"]}
+  ],
+  "relate": [
+    {"type":"structure","title":"Estrutura","items":["relate to + noun/person","relate A to B","be related to + noun"]},
+    {"type":"combinations","title":"Combinações","items":["relate to someone's experience","relate directly to the issue","be closely related to"]},
+    {"type":"prepositions","title":"Preposições","items":["relate to + noun/person","relate A to B","be related to + noun"]}
+  ],
+  "request": [
+    {"type":"structure","title":"Estrutura","items":["request + noun","request that someone + base verb","request something from + person/organization"]},
+    {"type":"combinations","title":"Combinações","items":["request information","request permission","request that the form be submitted"]},
+    {"type":"prepositions","title":"Preposições","items":["request something from + person/organization"]},
+    {"type":"contrast","title":"Contraste","items":["In standard American English, formal request that clauses commonly use the base verb: request that he attend, request that the form be submitted","request is more formal than ask in many everyday contexts"]}
+  ],
+  "resolve": [
+    {"type":"structure","title":"Estrutura","items":["resolve + issue/dispute/problem","resolve to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["resolve a dispute","resolve an issue","resolve a conflict"]},
+    {"type":"contrast","title":"Contraste","items":["resolve often means bring a difficult issue, dispute or conflict to an end","solve often focuses on finding the answer or method for a problem, puzzle or equation","The verbs overlap with some kinds of problem"]}
+  ],
+  "retain": [
+    {"type":"structure","title":"Estrutura","items":["retain + noun/control","retain something for + period/purpose"]},
+    {"type":"combinations","title":"Combinações","items":["retain information","retain control","retain customers"]},
+    {"type":"prepositions","title":"Preposições","items":["retain something for + period/purpose"]},
+    {"type":"contrast","title":"Contraste","items":["retain = continue to have, keep or preserve something, often in more formal contexts","keep is much broader and more common in everyday English"]}
+  ],
+  "risk": [
+    {"type":"structure","title":"Estrutura","items":["risk + noun","risk + -ing","risk something for + goal"]},
+    {"type":"combinations","title":"Combinações","items":["risk injury","risk losing everything","risk your reputation"]},
+    {"type":"prepositions","title":"Preposições","items":["risk something for + goal"]},
+    {"type":"contrast","title":"Contraste","items":["Use risk doing, not risk to do, for an action that may have a bad consequence","take a risk uses risk as a noun rather than as the target verb"]}
+  ],
+  "separate": [
+    {"type":"structure","title":"Estrutura","items":["separate A from B","separate something into + groups"]},
+    {"type":"combinations","title":"Combinações","items":["separate fact from opinion","separate waste into categories","clearly separate A from B"]},
+    {"type":"prepositions","title":"Preposições","items":["separate A from B","separate something into + groups"]}
+  ],
+  "tend": [
+    {"type":"structure","title":"Estrutura","items":["tend to + verb","tend toward + noun/pattern"]},
+    {"type":"combinations","title":"Combinações","items":["tend to agree","tend to happen","tend to increase"]},
+    {"type":"prepositions","title":"Preposições","items":["tend toward + noun/pattern"]},
+    {"type":"contrast","title":"Contraste","items":["tend to already expresses a general tendency, so generally tend is often unnecessary","tend toward + noun describes movement or inclination in a direction or pattern"]}
+  ],
+  "threaten": [
+    {"type":"structure","title":"Estrutura","items":["threaten + person/safety/system","threaten to + verb","threaten someone with + noun"]},
+    {"type":"combinations","title":"Combinações","items":["threaten legal action","threaten public safety","threaten to resign"]},
+    {"type":"prepositions","title":"Preposições","items":["threaten someone with + noun"]}
+  ],
+  "translate": [
+    {"type":"structure","title":"Estrutura","items":["translate + text/content","translate something into + language","translate something from A into B"]},
+    {"type":"combinations","title":"Combinações","items":["translate a document","translate accurately","translate content automatically"]},
+    {"type":"prepositions","title":"Preposições","items":["translate something into + language","translate something from A into B"]}
+  ],
+  "undergo": [
+    {"type":"structure","title":"Estrutura","items":["undergo + process/procedure/change"]},
+    {"type":"combinations","title":"Combinações","items":["undergo surgery","undergo treatment","undergo major changes"]},
+    {"type":"contrast","title":"Contraste","items":["undergo = experience a process, procedure or change that happens to the subject","experience is broader and can describe events, conditions, feelings or changes"]}
+  ],
+  "undertake": [
+    {"type":"structure","title":"Estrutura","items":["undertake + task/project/research","undertake to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["undertake a project","undertake research","undertake a review"]},
+    {"type":"contrast","title":"Contraste","items":["undertake = accept responsibility for and begin a task, project or piece of work, often in formal contexts","do is much broader and does not carry the same sense of formally taking on a task","undertake to + verb is formal and means commit or promise to do something"]}
+  ],
+  "vary": [
+    {"type":"structure","title":"Estrutura","items":["vary from A to B","vary by + amount/factor","vary according to + factor"]},
+    {"type":"combinations","title":"Combinações","items":["vary considerably","vary from person to person","vary according to demand"]},
+    {"type":"prepositions","title":"Preposições","items":["vary from A to B","vary by + amount/factor","vary according to + factor"]},
+    {"type":"contrast","title":"Contraste","items":["vary from A to B describes a range or difference between endpoints","vary by can describe the amount of difference or the factor that changes","vary according to identifies the factor that determines the variation"]}
+  ],
+  "yield": [
+    {"type":"structure","title":"Estrutura","items":["yield + result/profit/harvest","yield to + pressure/person"]},
+    {"type":"combinations","title":"Combinações","items":["yield results","yield a profit","yield to pressure"]},
+    {"type":"prepositions","title":"Preposições","items":["yield to + pressure/person"]},
+    {"type":"contrast","title":"Contraste","items":["yield + result = produce or generate that result","yield to + pressure/person = stop resisting or give way","produce is a broader verb for creating or generating something"]}
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "verbs": {
+    "expect": [
+      {"particle":"from","form":"expect from","meaning":"esperar algo de uma pessoa, função ou situação","pattern":"expect + thing + from + person/source","example":"What do you expect from the new manager?","note":"from identifica a fonte da expectativa"},
+      {"particle":"of","form":"expect of","meaning":"esperar determinado padrão de alguém","pattern":"expect + thing/behavior + of + person","example":"I expected more of the team after all that preparation","note":"of costuma aparecer quando falamos de padrão, comportamento ou desempenho esperado"}
+    ],
+    "explain": [
+      {"particle":"to","form":"explain to","meaning":"explicar algo para alguém","pattern":"explain + thing + to + person","example":"Can you explain the process to me again?","note":"Não use explain me something; use explain something to me"},
+      {"particle":"away","form":"explain away","meaning":"tentar justificar algo problemático ou fazê-lo parecer menos importante","pattern":"explain + problem/evidence + away","example":"He tried to explain the mistake away as a misunderstanding","note":"Frequentemente sugere uma justificativa pouco convincente"}
+    ],
+    "express": [
+      {"particle":"to","form":"express to","meaning":"expressar algo a uma pessoa ou grupo","pattern":"express + feeling/opinion + to + person","example":"She expressed her concerns to the manager","note":"to identifica quem recebe a opinião ou sentimento"},
+      {"particle":"through","form":"express through","meaning":"expressar-se por meio de uma forma, atividade ou meio","pattern":"express + idea/feeling + through + medium/action","example":"He expresses himself through music","note":"through destaca o meio usado para se expressar"}
+    ],
+    "feel": [
+      {"particle":"about","form":"feel about","meaning":"ter uma opinião ou sentimento a respeito de algo","pattern":"feel about + topic/situation","example":"How do you feel about working weekends?","note":"Muito comum em perguntas de opinião"},
+      {"particle":"for","form":"feel for","meaning":"sentir empatia por alguém; em outro uso, tatear","pattern":"feel for + person / feel for + object","example":"I really feel for anyone dealing with that situation","note":"O contexto distingue empatia de procurar algo pelo tato"},
+      {"particle":"like","form":"feel like","meaning":"estar com vontade; parecer sensação de algo","pattern":"feel like + noun / -ing / clause","example":"I feel like staying home tonight","note":"Depois de feel like, use noun ou -ing, não infinitivo com to"}
+    ],
+    "find": [
+      {"particle":"out","form":"find out","meaning":"descobrir uma informação","pattern":"find out + information / find out that + clause","example":"I found out about the change this morning","note":"Muito comum para descoberta de informação, não para localizar objeto físico"},
+      {"particle":"about","form":"find out about","meaning":"descobrir informações sobre um assunto","pattern":"find out about + topic/person/event","example":"She found out about the vacancy through a friend","note":"about introduz o assunto descoberto"}
+    ],
+    "finish": [
+      {"particle":"with","form":"finish with","meaning":"terminar uma tarefa, pessoa ou item e não precisar mais dele","pattern":"finish with + noun","example":"Let me know when you're finished with the laptop","note":"Muito útil para indicar que algo deixou de ser necessário"},
+      {"particle":"by","form":"finish by","meaning":"terminar até determinado prazo","pattern":"finish + task + by + time/deadline","example":"We need to finish the report by Thursday","note":"by marca o limite máximo de tempo"}
+    ],
+    "fit": [
+      {"particle":"into","form":"fit into","meaning":"caber fisicamente; encaixar-se em grupo, plano ou contexto","pattern":"fit into + place/group/schedule","example":"I don't think another meeting will fit into the schedule","note":"Pode ser literal ou abstrato"},
+      {"particle":"in","form":"fit in","meaning":"encaixar-se socialmente ou encontrar espaço/tempo","pattern":"fit in / fit in with + group/plan","example":"She fitted in quickly with the new team","note":"fit in with pode falar tanto de pessoas quanto de planos"},
+      {"particle":"with","form":"fit with","meaning":"combinar ou ser compatível com algo","pattern":"fit with + plan/style/requirement","example":"That option doesn't fit with our budget","note":"with enfatiza compatibilidade"}
+    ],
+    "fly": [
+      {"particle":"to","form":"fly to","meaning":"voar até um destino","pattern":"fly to + place","example":"We're flying to Chicago next week","note":"to marca o destino"},
+      {"particle":"from","form":"fly from","meaning":"voar a partir de um local","pattern":"fly from + place","example":"The flight leaves from Recife and flies directly to Lisbon","note":"from marca a origem"},
+      {"particle":"over","form":"fly over","meaning":"sobrevoar uma área","pattern":"fly over + place/area","example":"We flew over the coast just before landing","note":"over enfatiza movimento acima de uma área"}
+    ],
+    "follow": [
+      {"particle":"up","form":"follow up","meaning":"dar continuidade, verificar ou retomar algo","pattern":"follow up / follow up on + topic/request","example":"I'll follow up on the request tomorrow","note":"Muito comum em trabalho, atendimento e saúde"},
+      {"particle":"on","form":"follow on","meaning":"vir em sequência ou resultar de algo anterior","pattern":"follow on from + event/point","example":"The second discussion followed on from the first meeting","note":"Mais comum em inglês britânico; follow up é mais frequente em muitos contextos"},
+      {"particle":"through","form":"follow through","meaning":"levar um plano, promessa ou ação até o fim","pattern":"follow through / follow through on + promise/plan","example":"She followed through on everything she promised","note":"follow through on destaca execução real depois da intenção"}
+    ],
+    "hear": [
+      {"particle":"from","form":"hear from","meaning":"receber notícia, mensagem ou contato de alguém","pattern":"hear from + person/company","example":"I haven't heard from him since Monday","note":"Não significa apenas ouvir a voz; pode ser qualquer contato"},
+      {"particle":"about","form":"hear about","meaning":"ficar sabendo sobre algo","pattern":"hear about + event/news/person","example":"Did you hear about the change in schedule?","note":"about apresenta o assunto da notícia"},
+      {"particle":"of","form":"hear of","meaning":"ter conhecimento da existência de alguém ou algo","pattern":"hear of + person/thing","example":"I've heard of the company, but I don't know much about it","note":"hear of costuma indicar conhecimento mais superficial"}
+    ],
+    "help": [
+      {"particle":"with","form":"help with","meaning":"ajudar com tarefa, problema ou assunto","pattern":"help + person + with + noun","example":"Can you help me with this form?","note":"with apresenta aquilo em que a ajuda é necessária"},
+      {"particle":"out","form":"help out","meaning":"ajudar de forma prática, especialmente em necessidade temporária","pattern":"help out / help + person + out","example":"Thanks for helping me out yesterday","note":"Com pronome: help me out"},
+      {"particle":"through","form":"help through","meaning":"ajudar alguém a atravessar uma situação difícil","pattern":"help + person + through + period/problem","example":"Her friends helped her through a difficult year","note":"through sugere apoio ao longo de um processo"}
+    ],
+    "hire": [
+      {"particle":"for","form":"hire for","meaning":"contratar alguém para função, período ou finalidade","pattern":"hire + person + for + role/project","example":"They hired her for a six-month project","note":"for explica a finalidade ou duração da contratação"},
+      {"particle":"as","form":"hire as","meaning":"contratar alguém em determinada função","pattern":"hire + person + as + role","example":"He was hired as a sales assistant","note":"as introduz o cargo ou papel"}
+    ],
+    "identify": [
+      {"particle":"as","form":"identify as","meaning":"identificar ou classificar como","pattern":"identify + person/thing + as + category","example":"The substance was identified as harmless","note":"as apresenta a identificação ou classificação"},
+      {"particle":"with","form":"identify with","meaning":"sentir identificação ou conexão com alguém/ideia","pattern":"identify with + person/group/idea","example":"Many viewers identified with the main character","note":"Não significa reconhecer visualmente; significa sentir afinidade"},
+      {"particle":"by","form":"identify by","meaning":"identificar por meio de uma característica ou método","pattern":"identify + person/thing + by + feature/method","example":"The plants can be identified by their leaves","note":"by apresenta o critério usado na identificação"}
+    ],
+    "improve": [
+      {"particle":"on","form":"improve on","meaning":"fazer melhor do que algo anterior","pattern":"improve on + result/version/performance","example":"This year's results improve on last year's figures","note":"on envolve comparação com uma referência anterior"},
+      {"particle":"by","form":"improve by","meaning":"melhorar em determinada quantidade ou por determinado método","pattern":"improve by + amount / improve by + -ing","example":"Response time improved by nearly twenty percent","note":"by pode indicar quantidade da melhora ou o meio usado"}
+    ],
+    "include": [
+      {"particle":"in","form":"include in","meaning":"incluir pessoa ou item em grupo, plano ou documento","pattern":"include + person/thing + in + group/list/plan","example":"Please include me in the email thread","note":"in identifica onde aquilo passa a fazer parte"},
+      {"particle":"with","form":"include with","meaning":"incluir algo junto de outra coisa","pattern":"include + thing + with + package/order/document","example":"The receipt was included with the package","note":"with destaca que itens são enviados ou fornecidos juntos"}
+    ],
+    "increase": [
+      {"particle":"by","form":"increase by","meaning":"aumentar em uma quantidade","pattern":"increase by + amount/percentage","example":"Prices increased by five percent this month","note":"by indica o tamanho da mudança"},
+      {"particle":"to","form":"increase to","meaning":"aumentar até um nível final","pattern":"increase to + final level/amount","example":"The temperature increased to thirty degrees","note":"to indica o valor final"},
+      {"particle":"from","form":"increase from","meaning":"aumentar a partir de um valor inicial","pattern":"increase from + starting value + to + final value","example":"Sales increased from 200 to 260 units","note":"from costuma aparecer com to para mostrar a mudança completa"}
+    ],
+    "inform": [
+      {"particle":"about","form":"inform about","meaning":"informar alguém sobre um assunto","pattern":"inform + person + about + topic","example":"They informed us about the delay by email","note":"about apresenta o assunto explicado"},
+      {"particle":"of","form":"inform of","meaning":"informar formalmente sobre fato ou decisão","pattern":"inform + person + of + fact/decision","example":"Customers were informed of the change in advance","note":"of costuma soar mais formal do que about"}
+    ],
+    "join": [
+      {"particle":"in","form":"join in","meaning":"participar de atividade ou conversa já em andamento","pattern":"join in / join in with + activity","example":"A few neighbors joined in the discussion","note":"join in enfatiza participação na atividade"},
+      {"particle":"for","form":"join for","meaning":"juntar-se a alguém para atividade, refeição ou evento","pattern":"join + person + for + activity","example":"Would you like to join us for lunch?","note":"for apresenta a atividade compartilhada"},
+      {"particle":"with","form":"join with","meaning":"unir-se a pessoa ou grupo para agir em conjunto","pattern":"join with + person/group","example":"The two teams joined with local volunteers for the project","note":"with enfatiza cooperação entre partes"}
+    ],
+    "know": [
+      {"particle":"about","form":"know about","meaning":"ter informação sobre um assunto","pattern":"know about + topic/event","example":"Do you know about the changes to the schedule?","note":"about indica conhecimento do assunto"},
+      {"particle":"of","form":"know of","meaning":"saber da existência de alguém ou algo","pattern":"know of + person/place/thing","example":"I know of a good mechanic near here","note":"know of costuma ser conhecimento menos profundo"},
+      {"particle":"from","form":"know from","meaning":"conhecer alguém de determinado contexto","pattern":"know + person + from + place/context","example":"I know her from university","note":"from explica de onde vem a relação"}
+    ],
+    "lead": [
+      {"particle":"to","form":"lead to","meaning":"levar a resultado, consequência ou lugar","pattern":"lead to + result/place","example":"Poor communication can lead to unnecessary mistakes","note":"Muito frequente para causa e consequência"},
+      {"particle":"with","form":"lead with","meaning":"começar com a informação ou argumento mais importante","pattern":"lead with + point/story/offer","example":"She led with the strongest argument in the presentation","note":"Uso frequente em comunicação, vendas e jornalismo"},
+      {"particle":"by","form":"lead by","meaning":"liderar por determinado método ou vantagem","pattern":"lead by + example/amount","example":"The manager tries to lead by example","note":"lead by example é uma combinação muito comum"}
+    ],
+    "learn": [
+      {"particle":"about","form":"learn about","meaning":"aprender informações sobre um assunto","pattern":"learn about + topic/person/event","example":"We learned about the new system during training","note":"about introduz o tema estudado"},
+      {"particle":"from","form":"learn from","meaning":"aprender com pessoa, experiência ou erro","pattern":"learn from + person/experience/mistake","example":"We learned a lot from the first attempt","note":"from destaca a fonte do aprendizado"},
+      {"particle":"of","form":"learn of","meaning":"ficar sabendo de algo","pattern":"learn of + news/event","example":"She learned of the decision later that afternoon","note":"Mais formal e menos conversacional do que learn about"}
+    ],
+    "lie": [
+      {"particle":"on","form":"lie on","meaning":"estar deitado ou localizado sobre uma superfície","pattern":"lie on + surface","example":"The keys were lying on the table","note":"on marca a superfície"},
+      {"particle":"in","form":"lie in","meaning":"estar localizado dentro de lugar; também residir em algo abstrato","pattern":"lie in + place/cause/detail","example":"The real problem lies in the lack of communication","note":"lie in também aparece muito em explicações abstratas"},
+      {"particle":"about","form":"lie about","meaning":"mentir sobre um assunto","pattern":"lie about + topic/action","example":"He lied about why he was late","note":"Aqui lie é o verbo 'mentir', não 'estar deitado'"}
+    ],
+    "listen": [
+      {"particle":"to","form":"listen to","meaning":"ouvir com atenção pessoa, som ou conteúdo","pattern":"listen to + person/sound/media","example":"I listened to the whole message twice","note":"listen exige to antes do objeto"},
+      {"particle":"for","form":"listen for","meaning":"prestar atenção esperando ouvir um som específico","pattern":"listen for + expected sound/signal","example":"Listen for the alarm before opening the door","note":"for sugere que você está esperando aquele som"}
+    ],
+    "live": [
+      {"particle":"in","form":"live in","meaning":"morar em lugar ou viver dentro de condição","pattern":"live in + place/environment","example":"They live in a small town near the coast","note":"in é o padrão comum para cidade, país e residência"},
+      {"particle":"with","form":"live with","meaning":"morar com alguém; conviver com condição ou consequência","pattern":"live with + person/condition","example":"He's learned to live with the noise","note":"Pode ser literal ou figurado"},
+      {"particle":"on","form":"live on","meaning":"viver de determinada renda, alimento ou recurso","pattern":"live on + income/food/resource","example":"They managed to live on one salary for a year","note":"on apresenta o recurso do qual a pessoa depende"},
+      {"particle":"by","form":"live by","meaning":"viver segundo regra ou princípio","pattern":"live by + rule/principle","example":"She tries to live by a few simple principles","note":"by introduz o princípio que orienta o comportamento"}
+    ],
+    "lose": [
+      {"particle":"to","form":"lose to","meaning":"perder para um adversário ou concorrente","pattern":"lose to + opponent","example":"They lost to the same team twice","note":"to identifica quem venceu"},
+      {"particle":"by","form":"lose by","meaning":"perder por determinada margem","pattern":"lose by + amount/score","example":"We lost by just one point","note":"by indica a margem da derrota"},
+      {"particle":"out on","form":"lose out on","meaning":"perder oportunidade ou benefício","pattern":"lose out on + opportunity/benefit","example":"We don't want to lose out on the early discount","note":"Expressão fixa e muito útil em contexto de oportunidade"}
+    ],
+    "manage": [
+      {"particle":"with","form":"manage with","meaning":"conseguir lidar usando recursos disponíveis","pattern":"manage with + limited resource/thing","example":"We can manage with one car for a few days","note":"with apresenta aquilo que ainda é suficiente"},
+      {"particle":"without","form":"manage without","meaning":"conseguir lidar sem algo ou alguém","pattern":"manage without + noun","example":"Could you manage without internet for a day?","note":"without destaca a ausência de um recurso"},
+      {"particle":"on","form":"manage on","meaning":"conseguir viver ou funcionar com determinada quantia/recurso","pattern":"manage on + amount/income","example":"They managed on a very tight budget","note":"Muito útil para dinheiro e recursos limitados"}
+    ],
+    "matter": [
+      {"particle":"to","form":"matter to","meaning":"ser importante para alguém","pattern":"matter to + person/group","example":"What matters most to you right now?","note":"to identifica para quem aquilo tem importância"},
+      {"particle":"for","form":"matter for","meaning":"ser relevante para determinado objetivo ou contexto","pattern":"matter for + purpose/context","example":"These details matter for the final decision","note":"Menos comum do que matter to, mas útil quando o foco é relevância funcional"}
+    ],
+    "measure": [
+      {"particle":"in","form":"measure in","meaning":"medir usando determinada unidade","pattern":"measure + thing + in + unit","example":"The distance is measured in kilometers","note":"in introduz a unidade de medida"},
+      {"particle":"by","form":"measure by","meaning":"avaliar segundo determinado critério","pattern":"measure + result/person + by + criterion","example":"Success shouldn't be measured only by money","note":"by apresenta o critério usado na avaliação"},
+      {"particle":"against","form":"measure against","meaning":"comparar com padrão, meta ou referência","pattern":"measure + result + against + benchmark","example":"We measured the results against last year's targets","note":"against é comum em avaliação de desempenho"}
+    ],
+    "meet": [
+      {"particle":"with","form":"meet with","meaning":"reunir-se com alguém","pattern":"meet with + person/group","example":"I'm meeting with the client tomorrow morning","note":"with enfatiza uma reunião, muitas vezes planejada"},
+      {"particle":"at","form":"meet at","meaning":"encontrar-se em local ou horário específico","pattern":"meet at + place/time","example":"Let's meet at the entrance at six","note":"at marca ponto específico"},
+      {"particle":"by","form":"meet by","meaning":"encontrar-se ou cumprir algo até certo prazo","pattern":"meet by + time/deadline","example":"We need to meet by eight if we want to leave early","note":"Mais dependente de contexto; by marca o limite de tempo"}
+    ],
+    "mention": [
+      {"particle":"to","form":"mention to","meaning":"mencionar algo a alguém","pattern":"mention + thing + to + person","example":"Did you mention the problem to your manager?","note":"Não use mention someone about; diga mention something to someone"},
+      {"particle":"in","form":"mention in","meaning":"mencionar em documento, conversa ou mídia","pattern":"mention + thing/person + in + source","example":"The issue was mentioned in the report","note":"in identifica onde a menção aparece"}
+    ],
+    "order": [
+      {"particle":"from","form":"order from","meaning":"pedir/comprar de fornecedor, loja ou restaurante","pattern":"order + thing + from + seller/place","example":"We ordered dinner from a place nearby","note":"from identifica a origem do pedido"},
+      {"particle":"for","form":"order for","meaning":"pedir algo para alguém ou ocasião","pattern":"order + thing + for + person/event","example":"I ordered a coffee for my colleague","note":"for marca quem recebe ou a finalidade"},
+      {"particle":"by","form":"order by","meaning":"pedir por determinado meio","pattern":"order + thing + by + phone/app/mail","example":"You can order the replacement part by phone","note":"by identifica o canal usado para fazer o pedido"}
+    ],
+    "plan": [
+      {"particle":"for","form":"plan for","meaning":"planejar considerando situação, necessidade ou evento","pattern":"plan for + event/problem/future need","example":"We need to plan for possible delays","note":"for destaca aquilo para o qual você se prepara"},
+      {"particle":"with","form":"plan with","meaning":"planejar em conjunto com alguém","pattern":"plan + thing + with + person/team","example":"She planned the event with two coworkers","note":"with identifica quem participa do planejamento"},
+      {"particle":"around","form":"plan around","meaning":"organizar levando uma limitação ou compromisso em conta","pattern":"plan around + schedule/constraint","example":"We planned the trip around the school holidays","note":"around mostra que outra condição determina a organização"}
+    ],
+    "prefer": [
+      {"particle":"to","form":"prefer A to B","meaning":"preferir uma opção em relação a outra","pattern":"prefer + A + to + B","example":"I prefer tea to coffee in the morning","note":"Com prefer, use to em comparações, não than"},
+      {"particle":"over","form":"prefer A over B","meaning":"preferir uma opção em vez de outra","pattern":"prefer + A + over + B","example":"Some customers prefer online support over phone calls","note":"over é comum, especialmente em inglês americano"}
+    ],
+    "protect": [
+      {"particle":"from","form":"protect from","meaning":"proteger de causa, perigo ou dano direto","pattern":"protect + person/thing + from + danger/cause","example":"The cover protects the screen from scratches","note":"from é muito comum com fontes concretas de dano"},
+      {"particle":"against","form":"protect against","meaning":"proteger contra risco, ameaça ou possibilidade","pattern":"protect + person/thing + against + risk/threat","example":"The vaccine helps protect against severe illness","note":"against é frequente com risco, doença e ameaça"}
+    ],
+    "provide": [
+      {"particle":"with","form":"provide with","meaning":"fornecer algo a alguém","pattern":"provide + person/group + with + thing","example":"The company provides employees with free training","note":"A pessoa vem antes de with"},
+      {"particle":"for","form":"provide for","meaning":"prover necessidades; também prever algo","pattern":"provide for + person/need/possibility","example":"He works hard to provide for his family","note":"provide for someone = sustentar; também pode significar prever em regra/contrato"},
+      {"particle":"to","form":"provide to","meaning":"fornecer algo a alguém ou organização","pattern":"provide + thing + to + person/group","example":"The data was provided to the research team","note":"Estrutura alternativa muito comum em textos formais"}
+    ]
+  }
+}

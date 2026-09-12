@@ -1,0 +1,40 @@
+{
+  "version": 16,
+  "language": "en-US",
+  "status": "approved",
+  "source": "editorial-audit-2026-09-11",
+  "counts": {
+    "B2": 220,
+    "C1-C2": 213,
+    "cumulative": 433
+  },
+  "audioBase": "audio/advanced",
+  "polysemyFile": "data/polysemy.json",
+  "secondaryExamplesFile": "data/secondary-examples.json",
+  "chunks": [
+    "data/verbs-b2-01.json",
+    "data/verbs-b2-02.json",
+    "data/verbs-b2-03.json",
+    "data/verbs-b2-04.json",
+    "data/verbs-c1-01.json",
+    "data/verbs-c1-02.json",
+    "data/verbs-c1-03.json",
+    "data/verbs-c1-04.json"
+  ],
+  "extrasChunks": [
+    "data/extras-b2-01.json",
+    "data/extras-b2-02.json",
+    "data/extras-b2-03.json",
+    "data/extras-b2-04.json",
+    "data/extras-c1-01.json",
+    "data/extras-c1-02.json",
+    "data/extras-c1-03.json",
+    "data/extras-c1-04.json",
+    "data/extras-editorial-overrides.json",
+    "data/extras-editorial-overrides-c1.json"
+  ],
+  "extrasOverrideChunks": [
+    "data/extras-editorial-overrides.json",
+    "data/extras-editorial-overrides-c1.json"
+  ]
+}

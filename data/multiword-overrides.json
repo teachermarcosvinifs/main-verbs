@@ -1,0 +1,154 @@
+{
+  "version": 5,
+  "verbs": {
+    "get": [
+      {"particle":"up","form":"get up","meaning":"levantar-se","pattern":"get up","example":"I usually get up around seven on weekdays","note":"Normalmente não leva objeto"},
+      {"particle":"back","form":"get back","meaning":"voltar; recuperar algo","pattern":"get back / get + object + back","example":"What time did you get back last night?","note":"Com objeto: get your money back"},
+      {"particle":"in","form":"get in","meaning":"entrar ou chegar","pattern":"get in / get into + place","example":"We got in just before the rain started","note":"Para carro pequeno ou táxi, get in / get into é muito comum"},
+      {"particle":"out","form":"get out","meaning":"sair; livrar-se de uma situação","pattern":"get out / get out of + place or obligation","example":"We need to get out of the building now","note":"get out of também pode significar escapar de uma obrigação"},
+      {"particle":"over","form":"get over","meaning":"superar ou se recuperar","pattern":"get over + problem / illness / person","example":"It took her a week to get over the flu","note":"Não é separável: get over it"},
+      {"particle":"off","form":"get off","meaning":"sair de transporte; terminar o trabalho","pattern":"get off + transport / get off work","example":"We got off the train at the next stop","note":"Também: get off work at six"}
+    ],
+    "go": [
+      {"particle":"back","form":"go back","meaning":"voltar; retomar algo anterior","pattern":"go back to + place / topic / situation","example":"I need to go back to the office for my keys","note":"go back to a topic = retomar um assunto"},
+      {"particle":"down","form":"go down","meaning":"descer; diminuir; parar de funcionar","pattern":"go down / price or level + go down","example":"Gas prices went down again this week","note":"Para sistemas e internet, go down pode significar ficar indisponível"},
+      {"particle":"around","form":"go around","meaning":"circular; espalhar-se; contornar","pattern":"go around / go around + place","example":"There's a cold going around the office","note":"Também pode significar circular por um lugar ou contornar algo"},
+      {"particle":"on","form":"go on","meaning":"continuar; acontecer","pattern":"go on / go on + -ing","example":"She went on talking even after the meeting had ended","note":"What's going on? = O que está acontecendo?"},
+      {"particle":"out","form":"go out","meaning":"sair; apagar-se","pattern":"go out","example":"We went out for dinner after work","note":"Para luz ou fogo: The lights went out"},
+      {"particle":"over","form":"go over","meaning":"revisar ou examinar","pattern":"go over + material / details","example":"Let's go over the numbers one more time","note":"Muito útil para revisão de informações e documentos"}
+    ],
+    "look": [
+      {"particle":"for","form":"look for","meaning":"procurar","pattern":"look for + person / thing","example":"I'm looking for my keys","note":"Não é separável"},
+      {"particle":"like","form":"look like","meaning":"parecer-se; ter determinada aparência","pattern":"look like + noun / clause","example":"It looks like we're going to need more time","note":"look like pode introduzir um substantivo ou uma ideia completa"},
+      {"particle":"back","form":"look back","meaning":"olhar para trás; recordar o passado","pattern":"look back / look back on + period or experience","example":"She looks back on those years with a lot of affection","note":"look back on é muito comum para recordar experiências"},
+      {"particle":"after","form":"look after","meaning":"cuidar de","pattern":"look after + person / thing","example":"Can you look after the kids for an hour?","note":"Não é separável"},
+      {"particle":"into","form":"look into","meaning":"investigar ou examinar","pattern":"look into + problem / possibility","example":"The company is looking into the complaint","note":"Não é separável"},
+      {"particle":"up","form":"look up","meaning":"procurar informação; melhorar","pattern":"look + information + up / situation + look up","example":"I looked the address up online","note":"Com pronome: look it up; Things are looking up = a situação está melhorando"}
+    ],
+    "put": [
+      {"particle":"down","form":"put down","meaning":"colocar em uma superfície; abaixar","pattern":"put + object + down","example":"Put the box down next to the door","note":"Com pronome: put it down, não put down it"},
+      {"particle":"away","form":"put away","meaning":"guardar ou colocar de volta no lugar","pattern":"put + object + away","example":"Please put the dishes away after dinner","note":"Com pronome: put them away"},
+      {"particle":"in","form":"put in","meaning":"inserir, instalar ou dedicar tempo e esforço","pattern":"put in + object / time / effort","example":"She put in three hours of overtime yesterday","note":"Muito comum com time, effort, work e instalações"},
+      {"particle":"on","form":"put on","meaning":"vestir; colocar; ligar ou reproduzir algo","pattern":"put + object + on","example":"Put your jacket on before you go outside","note":"Com pronome: put it on; também pode ser usado com música ou aparelhos"},
+      {"particle":"off","form":"put off","meaning":"adiar; causar rejeição ou desânimo","pattern":"put + object + off","example":"They put the meeting off until Friday","note":"Com pronome: put it off; put someone off = desanimar ou causar rejeição"},
+      {"particle":"out","form":"put out","meaning":"apagar; disponibilizar ou publicar","pattern":"put + object + out","example":"Please put the candle out before you leave","note":"Com pronome: put it out"}
+    ],
+    "take": [
+      {"particle":"off","form":"take off","meaning":"tirar roupa/acessório; também decolar","pattern":"take + object + off / take off","example":"Take your shoes off before you come in","note":"Com pronome: take them off; para avião: The plane took off"},
+      {"particle":"on","form":"take on","meaning":"assumir responsabilidade, trabalho ou desafio","pattern":"take on + role / work / challenge","example":"She took on more responsibility after the promotion","note":"Não se separa nesse sentido"},
+      {"particle":"over","form":"take over","meaning":"assumir controle ou responsabilidade","pattern":"take over / take over + noun","example":"A new manager took over the team in June","note":"take over from someone = substituir alguém"},
+      {"particle":"up","form":"take up","meaning":"começar atividade; ocupar espaço ou tempo","pattern":"take up + hobby / space / time","example":"He took up cycling after moving to the city","note":"Também: This table takes up too much space"},
+      {"particle":"back","form":"take back","meaning":"devolver; retirar o que foi dito","pattern":"take + object + back","example":"I need to take this shirt back to the store","note":"Com pronome: take it back"},
+      {"particle":"in","form":"take in","meaning":"absorver, compreender ou acolher","pattern":"take in + information / person","example":"There was so much information that I couldn't take it all in","note":"Com pronome: take it in"}
+    ],
+    "turn": [
+      {"particle":"on","form":"turn on","meaning":"ligar","pattern":"turn + device + on","example":"Turn the lights on when it gets dark","note":"Com pronome: turn them on"},
+      {"particle":"off","form":"turn off","meaning":"desligar; causar perda de interesse","pattern":"turn + object + off","example":"Please turn the TV off before you leave","note":"Com pronome: turn it off; turn someone off = causar rejeição"},
+      {"particle":"up","form":"turn up","meaning":"aumentar intensidade; aparecer","pattern":"turn + object + up / turn up","example":"Can you turn the volume up a little?","note":"Também: He turned up late = ele apareceu tarde"},
+      {"particle":"down","form":"turn down","meaning":"diminuir; recusar","pattern":"turn + object + down","example":"She turned the job offer down","note":"Com pronome: turn it down"},
+      {"particle":"out","form":"turn out","meaning":"acabar sendo; produzir resultado","pattern":"turn out + adjective / to be","example":"The event turned out better than we expected","note":"Também pode indicar produção ou comparecimento em outros contextos"},
+      {"particle":"into","form":"turn into","meaning":"transformar-se em","pattern":"turn into + noun","example":"The conversation turned into an argument","note":"Não é separável"}
+    ],
+    "appeal": [
+      {"particle":"to","form":"appeal to","meaning":"atrair, agradar ou fazer um apelo a alguém","pattern":"appeal to + person/group","example":"The idea appeals to younger customers","note":"Também pode significar fazer um apelo direto"},
+      {"particle":"for","form":"appeal for","meaning":"pedir publicamente ajuda, informação ou recurso","pattern":"appeal for + help/information/funds","example":"The organization appealed for more volunteers","note":"for apresenta aquilo que está sendo solicitado"}
+    ],
+    "assure": [
+      {"particle":"of","form":"assure ... of","meaning":"assegurar a alguém um fato, condição ou apoio","pattern":"assure + person + of + noun","example":"They assured us of their full support","note":"assure normalmente recebe a pessoa antes de of"}
+    ],
+    "clarify": [
+      {"particle":"with","form":"clarify with","meaning":"confirmar ou esclarecer diretamente com alguém","pattern":"clarify + point + with + person","example":"I'll clarify the deadline with the client","note":"with identifica quem pode confirmar a informação"},
+      {"particle":"for","form":"clarify ... for","meaning":"tornar um ponto ou questão mais claro para alguém","pattern":"clarify + point/issue + for + person","example":"Could you clarify that point for me?","note":"for identifica a pessoa que precisa do esclarecimento"}
+    ],
+    "incorporate": [
+      {"particle":"into","form":"incorporate into","meaning":"incorporar como parte de sistema, plano ou estrutura","pattern":"incorporate + thing + into + system/plan","example":"We incorporated the feedback into the final design","note":"into destaca integração ao todo"}
+    ],
+    "infer": [
+      {"particle":"from","form":"infer from","meaning":"deduzir algo a partir de evidência ou indício","pattern":"infer + thing + from + evidence/context","example":"What can we infer from her response?","note":"from apresenta a evidência usada para chegar à inferência"}
+    ],
+    "influence": [
+      {"particle":"by","form":"influenced by","meaning":"ser influenciado por pessoa, fator ou contexto","pattern":"be influenced by + person/factor/context","example":"Consumer choices are influenced by price and convenience","note":"Como verbo ativo, influence normalmente recebe objeto direto: influence a decision"}
+    ],
+    "complete": [
+      {"particle":"by","form":"complete by","meaning":"concluir algo até determinado prazo","pattern":"complete + task/form/process + by + deadline","example":"Please complete the form by Friday","note":"by marca o prazo limite para a conclusão"}
+    ],
+    "deliver": [
+      {"particle":"to","form":"deliver to","meaning":"entregar algo a uma pessoa ou destino","pattern":"deliver + thing + to + person/place","example":"The package was delivered to the wrong address","note":"to marca quem recebe ou o destino da entrega"},
+      {"particle":"by","form":"deliver by","meaning":"entregar até determinado prazo ou por determinado meio","pattern":"deliver + thing + by + deadline/method","example":"They promised to deliver the parts by Tuesday","note":"by frequentemente marca o prazo final"}
+    ],
+    "fit": [
+      {"particle":"into","form":"fit into","meaning":"caber fisicamente; encaixar-se em grupo, plano ou contexto","pattern":"fit into + place/group/schedule","example":"I don't think another meeting will fit into the schedule","note":"Pode ser literal ou abstrato"},
+      {"particle":"in","form":"fit in","meaning":"encaixar-se socialmente ou encontrar espaço/tempo","pattern":"fit in / fit in with + group/plan","example":"She fit in quickly with the new team","note":"No inglês americano, fit é muito comum também como passado de fit"},
+      {"particle":"with","form":"fit with","meaning":"combinar ou ser compatível com algo","pattern":"fit with + plan/style/requirement","example":"That option doesn't fit with our budget","note":"with enfatiza compatibilidade"}
+    ],
+    "follow": [
+      {"particle":"up","form":"follow up","meaning":"dar continuidade, verificar ou retomar algo","pattern":"follow up / follow up on + topic/request","example":"I'll follow up on the request tomorrow","note":"Muito comum em trabalho, atendimento e saúde"},
+      {"particle":"through","form":"follow through","meaning":"levar um plano, promessa ou ação até o fim","pattern":"follow through / follow through on + promise/plan","example":"She followed through on everything she promised","note":"follow through on destaca execução real depois da intenção"}
+    ],
+    "matter": [
+      {"particle":"to","form":"matter to","meaning":"ser importante para alguém","pattern":"matter to + person/group","example":"What matters most to you right now?","note":"to identifica para quem aquilo tem importância"}
+    ],
+    "meet": [
+      {"particle":"with","form":"meet with","meaning":"reunir-se com alguém","pattern":"meet with + person/group","example":"I'm meeting with the client tomorrow morning","note":"with enfatiza uma reunião, muitas vezes planejada"},
+      {"particle":"at","form":"meet at","meaning":"encontrar-se em local ou horário específico","pattern":"meet at + place/time","example":"Let's meet at the entrance at six","note":"at marca um ponto específico de encontro"}
+    ],
+    "report": [
+      {"particle":"to","form":"report to","meaning":"reportar-se a alguém ou comunicar algo a uma autoridade","pattern":"report to + person/authority","example":"She reports directly to the department manager","note":"Também pode indicar relação hierárquica"},
+      {"particle":"on","form":"report on","meaning":"relatar ou apresentar informação sobre um assunto","pattern":"report on + topic/event","example":"The journalist reported on the election results","note":"on apresenta o assunto do relatório"}
+    ],
+    "ride": [
+      {"particle":"on","form":"ride on","meaning":"depender de um resultado, decisão ou situação","pattern":"something + rides on + result/decision","example":"A lot rides on the outcome of this meeting","note":"Nesse sentido figurado, ride on significa depender de; para transporte, normalmente dizemos ride a bike ou ride a motorcycle sem on"},
+      {"particle":"in","form":"ride in","meaning":"viajar dentro de carro, táxi ou veículo fechado","pattern":"ride in + car/taxi/vehicle","example":"We rode in the back seat all the way home","note":"in destaca estar dentro do veículo"},
+      {"particle":"through","form":"ride through","meaning":"atravessar uma área viajando de bicicleta, moto ou animal","pattern":"ride through + place/area","example":"They rode through the park before sunset","note":"through enfatiza atravessar uma área"}
+    ],
+    "share": [
+      {"particle":"with","form":"share with","meaning":"compartilhar algo com alguém","pattern":"share + thing + with + person/group","example":"She shared the document with the whole team","note":"with identifica quem recebe ou participa"},
+      {"particle":"among","form":"share among","meaning":"dividir algo entre os membros de um grupo","pattern":"share + thing + among + group","example":"The workload was shared among the four team members","note":"among é natural quando algo é distribuído dentro de um grupo"},
+      {"particle":"on","form":"share on","meaning":"compartilhar em plataforma, canal ou mídia","pattern":"share + thing + on + platform","example":"He shared the update on LinkedIn","note":"on marca a plataforma"}
+    ],
+    "use": [
+      {"particle":"for","form":"use for","meaning":"usar algo para finalidade específica","pattern":"use + thing + for + noun/-ing","example":"We use this room for training","note":"for apresenta a finalidade"},
+      {"particle":"as","form":"use as","meaning":"usar algo no papel ou função de outra coisa","pattern":"use + thing + as + noun","example":"You can use this box as a small table","note":"as apresenta a função atribuída"},
+      {"particle":"by","form":"be used by","meaning":"ser usado por determinada pessoa, grupo ou sistema","pattern":"be used by + person/group/system","example":"The system is used by more than fifty employees","note":"Na voz passiva, by identifica quem usa"}
+    ],
+    "win": [
+      {"particle":"by","form":"win by","meaning":"vencer por determinada margem","pattern":"win by + amount/margin","example":"She won by just two votes","note":"by marca a margem da vitória"},
+      {"particle":"over","form":"win over","meaning":"conquistar apoio ou simpatia","pattern":"win + person/group + over","example":"Her calm explanation won the audience over","note":"Com pronome: win them over"}
+    ],
+    "wonder": [
+      {"particle":"about","form":"wonder about","meaning":"ficar curioso ou pensar sobre algo","pattern":"wonder about + person/topic/possibility","example":"I often wonder about what happened to that old place","note":"about introduz o assunto da curiosidade"}
+    ],
+    "prepare": [
+      {"particle":"for","form":"prepare for","meaning":"preparar-se para evento, situação ou tarefa","pattern":"prepare for + event/situation","example":"We're preparing for a very busy weekend","note":"for apresenta aquilo que está por vir"},
+      {"particle":"by","form":"prepare by","meaning":"preparar-se fazendo determinada ação","pattern":"prepare by + -ing","example":"She prepared by reviewing all the previous reports","note":"by + -ing explica o método de preparação"}
+    ],
+    "remember": [
+      {"particle":"to","form":"remember to","meaning":"lembrar de fazer algo que ainda precisa acontecer","pattern":"remember to + base verb","example":"Remember to send the invoice before lunch","note":"Compare com remember + -ing, que normalmente se refere à memória de algo já vivido"},
+      {"particle":"from","form":"remember from","meaning":"lembrar alguém ou algo de determinado período ou contexto","pattern":"remember + person/thing + from + time/place","example":"I remember him from high school","note":"from identifica o contexto da memória"}
+    ],
+    "wake": [
+      {"particle":"up","form":"wake up","meaning":"acordar ou fazer alguém acordar","pattern":"wake up / wake + person + up","example":"I woke up before the alarm","note":"Com pronome: wake him up"},
+      {"particle":"to","form":"wake up to","meaning":"perceber finalmente uma realidade","pattern":"wake up to + fact/problem","example":"The company finally woke up to the seriousness of the issue","note":"Uso figurado: become aware of something"},
+      {"particle":"from","form":"wake up from","meaning":"acordar depois de sonho ou período de sono","pattern":"wake up from + dream/sleep","example":"She woke up from a strange dream just before dawn","note":"wake up from é mais natural na conversa do que wake from"}
+    ],
+    "ask": [
+      {"particle":"for","form":"ask for","meaning":"pedir algo","pattern":"ask for + thing/help/person","example":"She asked for a glass of water","note":"Não é separável"},
+      {"particle":"out","form":"ask out","meaning":"convidar alguém para sair romanticamente ou socialmente","pattern":"ask + person + out","example":"He asked her out for dinner","note":"Com pronome: ask her out"},
+      {"particle":"around","form":"ask around","meaning":"perguntar a várias pessoas","pattern":"ask around","example":"I'll ask around and see if anyone knows a good plumber","note":"Normalmente sem objeto direto"},
+      {"particle":"about","form":"ask about","meaning":"perguntar sobre uma pessoa, assunto ou situação","pattern":"ask about + person/topic/situation","example":"She asked about your mother when I saw her","note":"about introduz aquilo sobre o qual se quer informação"}
+    ],
+    "carry": [
+      {"particle":"around","form":"carry around","meaning":"carregar ou levar algo consigo regularmente","pattern":"carry + object + around","example":"I carry a small notebook around with me","note":"Com pronome: carry it around"},
+      {"particle":"out","form":"carry out","meaning":"realizar ou executar","pattern":"carry out + task/plan/research","example":"The team carried out a safety inspection","note":"Com pronome: carry it out"},
+      {"particle":"over","form":"carry over","meaning":"transferir ou continuar para outro período","pattern":"carry + amount/issue + over","example":"Unused vacation days can be carried over to next year","note":"Com pronome: carry it over"},
+      {"particle":"through","form":"carry through","meaning":"levar algo até o fim ou cumprir","pattern":"carry + plan/project + through","example":"She carried the project through despite the delays","note":"Útil quando o foco está em concluir apesar das dificuldades"}
+    ],
+    "fall": [
+      {"particle":"apart","form":"fall apart","meaning":"desmontar-se; entrar em colapso","pattern":"fall apart","example":"The old chair is starting to fall apart","note":"Também usado para planos, relações e estado emocional"},
+      {"particle":"behind","form":"fall behind","meaning":"ficar para trás ou atrasado","pattern":"fall behind / fall behind on + work/payments","example":"I fell behind on my emails while I was away","note":"Muito comum com work, payments e schedule"},
+      {"particle":"for","form":"fall for","meaning":"apaixonar-se por; cair em engano","pattern":"fall for + person/trick","example":"He fell for the scam and lost some money","note":"O contexto distingue paixão de ser enganado"},
+      {"particle":"out","form":"fall out","meaning":"cair, soltar-se ou sair do lugar","pattern":"fall out / fall out of + place","example":"One of my fillings fell out last night","note":"Para briga entre pessoas, no inglês americano é mais natural dizer argue ou have a falling-out"},
+      {"particle":"through","form":"fall through","meaning":"não acontecer como planejado","pattern":"plan/deal + fall through","example":"The deal fell through at the last minute","note":"Normalmente o plano ou acordo é o sujeito"}
+    ]
+  }
+}

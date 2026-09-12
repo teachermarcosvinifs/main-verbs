@@ -1,0 +1,24 @@
+{
+  "version": 5,
+  "status": "editorial-audit",
+  "selectionRule": "Painel interativo para combinações verbo + partícula/preposição de alta utilidade pedagógica; auditar os 433 verbos e mostrar somente relações reais e úteis, com 1 a 6 opções por verbo e sem preencher quantidade artificialmente",
+  "counts": {
+    "coreVerbs": 53,
+    "relationVerbs": 175,
+    "effectiveVerbs": 228
+  },
+  "chunks": [
+    "data/multiword-01.json",
+    "data/multiword-02.json",
+    "data/multiword-03.json",
+    "data/multiword-04.json"
+  ],
+  "relationChunks": [
+    "data/relations-b2-01.json",
+    "data/relations-b2-02.json",
+    "data/relations-b2-03.json",
+    "data/relations-c1-01.json",
+    "data/relations-c1-02.json"
+  ],
+  "overridesFile": "data/multiword-overrides.json"
+}
