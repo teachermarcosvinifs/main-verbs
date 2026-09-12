@@ -7,6 +7,7 @@
   if (!body || !loader || !list) return;
 
   let relationsReady = document.documentElement.dataset.multiwordReady === 'true';
+  let fallbackExpired = false;
   let revealed = false;
 
   const contentReady = () => Boolean(list.querySelector('.advanced-verb, .empty-state'));
@@ -32,14 +33,17 @@
   });
 
   const observer = new MutationObserver(() => {
-    if (relationsReady) window.requestAnimationFrame(() => reveal());
+    window.requestAnimationFrame(() => reveal(fallbackExpired));
   });
   observer.observe(list, { childList: true });
 
   window.addEventListener('load', () => {
-    if (relationsReady) window.requestAnimationFrame(() => reveal());
+    window.requestAnimationFrame(() => reveal(fallbackExpired));
   });
 
-  // Se a camada de relações falhar, a lista principal ou a mensagem de erro ainda deve ficar utilizável
-  window.setTimeout(() => reveal(true), 5000);
+  // Depois de 5 s, corpus ou mensagem de erro podem aparecer mesmo que a camada de relações falhe ou ainda não esteja pronta
+  window.setTimeout(() => {
+    fallbackExpired = true;
+    reveal(true);
+  }, 5000);
 })();
