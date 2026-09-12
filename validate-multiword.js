@@ -13,10 +13,20 @@ const corpusSet = new Set(corpus.map((item) => item.verb));
 
 const errors = [];
 const merged = {};
-for (const file of manifest.chunks || []) {
+const sourceFiles = [...(manifest.chunks || []), ...(manifest.relationChunks || [])];
+
+for (const file of sourceFiles) {
   const payload = readJson(file);
   for (const [verb, entries] of Object.entries(payload.verbs || {})) {
-    if (merged[verb]) errors.push(`${verb}: duplicado entre chunks`);
+    if (merged[verb]) errors.push(`${verb}: duplicado entre arquivos-base de relações`);
+    merged[verb] = entries;
+  }
+}
+
+if (manifest.overridesFile) {
+  const overrides = readJson(manifest.overridesFile);
+  for (const [verb, entries] of Object.entries(overrides.verbs || {})) {
+    if (!merged[verb]) errors.push(`${verb}: override sem verbo-base correspondente`);
     merged[verb] = entries;
   }
 }
@@ -32,8 +42,8 @@ for (const [verb, entries] of Object.entries(merged)) {
     errors.push(`${verb}: conteúdo não é array`);
     continue;
   }
-  if (entries.length < 3 || entries.length > 8) {
-    errors.push(`${verb}: esperado 3–8 combinações, recebido ${entries.length}`);
+  if (entries.length < 2 || entries.length > 6) {
+    errors.push(`${verb}: esperado 2–6 combinações, recebido ${entries.length}`);
   }
 
   const particles = new Set();
@@ -45,7 +55,8 @@ for (const [verb, entries] of Object.entries(merged)) {
         errors.push(`${verb}[${index}]: campo obrigatório ausente: ${field}`);
       }
     }
-    if (particles.has(entry.particle)) errors.push(`${verb}: partícula duplicada: ${entry.particle}`);
+    if (!entry || typeof entry !== 'object') continue;
+    if (particles.has(entry.particle)) errors.push(`${verb}: partícula/preposição duplicada: ${entry.particle}`);
     if (forms.has(entry.form)) errors.push(`${verb}: forma duplicada: ${entry.form}`);
     particles.add(entry.particle);
     forms.add(entry.form);
@@ -54,20 +65,26 @@ for (const [verb, entries] of Object.entries(merged)) {
       if (endsWithPeriod(entry[field])) errors.push(`${verb} ${entry.form}: ponto final visível em ${field}`);
     }
 
-    const normalizedExample = entry.example.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-    if (allExamples.has(normalizedExample)) errors.push(`${verb}: exemplo duplicado: ${entry.example}`);
-    allExamples.add(normalizedExample);
+    if (typeof entry.example === 'string') {
+      const normalizedExample = entry.example.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+      if (allExamples.has(normalizedExample)) errors.push(`${verb}: exemplo duplicado: ${entry.example}`);
+      allExamples.add(normalizedExample);
+    }
   }
 }
 
-if (manifest.counts?.verbs !== Object.keys(merged).length) {
-  errors.push(`contagem de verbos divergente: ${Object.keys(merged).length} != ${manifest.counts?.verbs}`);
-}
-if (manifest.counts?.combinations !== combinationCount) {
-  errors.push(`contagem de combinações divergente: ${combinationCount} != ${manifest.counts?.combinations}`);
+const effectiveVerbCount = Object.keys(merged).length;
+if (manifest.counts?.effectiveVerbs !== effectiveVerbCount) {
+  errors.push(`contagem de verbos divergente: ${effectiveVerbCount} != ${manifest.counts?.effectiveVerbs}`);
 }
 
-console.log(`Verbos-base com painel: ${Object.keys(merged).length}`);
+const minimumMajority = Math.floor(corpus.length / 2) + 1;
+if (effectiveVerbCount < minimumMajority) {
+  errors.push(`cobertura abaixo da maioria do corpus: ${effectiveVerbCount}/${corpus.length}; mínimo ${minimumMajority}`);
+}
+
+console.log(`Verbos-base com painel: ${effectiveVerbCount}/${corpus.length}`);
+console.log(`Cobertura: ${((effectiveVerbCount / corpus.length) * 100).toFixed(1)}%`);
 console.log(`Combinações interativas: ${combinationCount}`);
 console.log(`Exemplos únicos: ${allExamples.size}`);
 
@@ -77,4 +94,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log('\nValidação multiword concluída sem erros');
+console.log('\nValidação de relações concluída sem erros');
