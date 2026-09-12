@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "verbs": {
+    "decline": [
+      {"particle":"by","form":"decline by","meaning":"diminuir em determinada quantidade","pattern":"decline by + amount/percentage","example":"Sales declined by twelve percent in the final quarter","note":"by indica o tamanho da queda"},
+      {"particle":"to","form":"decline to","meaning":"diminuir até determinado nível final","pattern":"decline to + final level/amount","example":"The rate declined to its lowest level in three years","note":"to marca o valor final"},
+      {"particle":"from","form":"decline from","meaning":"cair a partir de um nível inicial","pattern":"decline from + start + to + end","example":"Attendance declined from 80 to 65 percent","note":"from costuma aparecer com to para mostrar a mudança completa"}
+    ],
+    "demonstrate": [
+      {"particle":"to","form":"demonstrate to","meaning":"mostrar ou provar algo a alguém","pattern":"demonstrate + thing + to + person/group","example":"The trainer demonstrated the procedure to the new staff","note":"to identifica quem recebe a demonstração"},
+      {"particle":"against","form":"demonstrate against","meaning":"protestar publicamente contra algo","pattern":"demonstrate against + policy/decision","example":"Thousands demonstrated against the proposed law","note":"Aqui demonstrate significa protestar, não mostrar"}
+    ],
+    "detect": [
+      {"particle":"in","form":"detect in","meaning":"detectar algo em pessoa, amostra, sistema ou ambiente","pattern":"detect + thing + in + sample/system/person","example":"The test detected traces of the substance in the water","note":"in identifica onde o sinal foi encontrado"},
+      {"particle":"by","form":"detected by","meaning":"ser detectado por método, sensor ou pessoa","pattern":"be detected by + method/device/person","example":"The fault was detected by an automated check","note":"Forma passiva comum em contexto técnico"}
+    ],
+    "determine": [
+      {"particle":"by","form":"determined by","meaning":"ser determinado por fator, regra ou condição","pattern":"be determined by + factor/rule","example":"The final price is determined by demand","note":"by identifica o fator que decide o resultado"},
+      {"particle":"from","form":"determine from","meaning":"determinar algo a partir de evidência ou dados","pattern":"determine + result + from + evidence/data","example":"We can determine the cause from the error logs","note":"from apresenta a base usada na conclusão"}
+    ],
+    "differentiate": [
+      {"particle":"between","form":"differentiate between","meaning":"distinguir entre duas ou mais categorias","pattern":"differentiate between + A + and + B","example":"The test helps differentiate between the two conditions","note":"between introduz os itens comparados"},
+      {"particle":"from","form":"differentiate from","meaning":"distinguir algo de outra coisa","pattern":"differentiate + A + from + B","example":"The new feature differentiates the product from its competitors","note":"from marca aquilo de que algo se diferencia"}
+    ],
+    "disagree": [
+      {"particle":"with","form":"disagree with","meaning":"discordar de pessoa, opinião ou decisão","pattern":"disagree with + person/view","example":"I disagree with the conclusion in the report","note":"with liga disagree à pessoa ou posição"},
+      {"particle":"about","form":"disagree about","meaning":"discordar a respeito de um assunto","pattern":"disagree about + topic","example":"They disagree about how the budget should be used","note":"about apresenta o tema da discordância"},
+      {"particle":"on","form":"disagree on","meaning":"não chegar a acordo sobre ponto específico","pattern":"disagree on + issue/detail","example":"The teams disagreed on the final timeline","note":"on enfatiza o ponto exato em disputa"}
+    ],
+    "distinguish": [
+      {"particle":"between","form":"distinguish between","meaning":"distinguir entre categorias ou opções","pattern":"distinguish between + A + and + B","example":"It's important to distinguish between correlation and cause","note":"between apresenta os elementos diferenciados"},
+      {"particle":"from","form":"distinguish from","meaning":"diferenciar algo de outra coisa","pattern":"distinguish + A + from + B","example":"What distinguishes this model from the previous one?","note":"from marca a referência de comparação"},
+      {"particle":"by","form":"distinguish by","meaning":"distinguir usando característica específica","pattern":"distinguish + thing + by + feature","example":"The species can be distinguished by the shape of its leaves","note":"by apresenta o critério de identificação"}
+    ],
+    "distribute": [
+      {"particle":"to","form":"distribute to","meaning":"distribuir para pessoas, locais ou grupos","pattern":"distribute + thing + to + recipients","example":"The guide was distributed to all participants","note":"to identifica quem recebe"},
+      {"particle":"among","form":"distribute among","meaning":"dividir entre membros de um grupo","pattern":"distribute + thing + among + group","example":"The tasks were distributed among the team members","note":"among é natural quando há vários participantes"},
+      {"particle":"by","form":"distributed by","meaning":"ser distribuído por agente, canal ou método","pattern":"be distributed by + company/channel","example":"The product is distributed by several regional partners","note":"Forma passiva comum em logística e publicação"}
+    ],
+    "emerge": [
+      {"particle":"from","form":"emerge from","meaning":"surgir de situação, processo ou lugar","pattern":"emerge from + source/process","example":"Several problems emerged from the rushed launch","note":"from marca a origem"},
+      {"particle":"as","form":"emerge as","meaning":"surgir ou consolidar-se como algo","pattern":"emerge as + role/leader/trend","example":"The company emerged as a major competitor","note":"as apresenta o status adquirido"}
+    ],
+    "engage": [
+      {"particle":"in","form":"engage in","meaning":"participar ativamente de atividade ou comportamento","pattern":"engage in + activity/behavior","example":"Students engaged in a long discussion after the lecture","note":"in apresenta a atividade"},
+      {"particle":"with","form":"engage with","meaning":"interagir, lidar ou envolver-se com pessoa, ideia ou conteúdo","pattern":"engage with + person/idea/content","example":"The campaign encouraged voters to engage with the issue","note":"with enfatiza interação"}
+    ],
+    "escape": [
+      {"particle":"from","form":"escape from","meaning":"escapar de lugar, perigo ou condição","pattern":"escape from + place/danger/situation","example":"The dog escaped from the yard again","note":"from marca aquilo de que se escapa"},
+      {"particle":"into","form":"escape into","meaning":"refugiar-se ou escapar para outro lugar/atividade","pattern":"escape into + place/activity","example":"She escaped into books whenever life became stressful","note":"into pode ser literal ou figurado"}
+    ],
+    "establish": [
+      {"particle":"as","form":"establish as","meaning":"estabelecer ou consolidar como","pattern":"establish + person/thing + as + role/status","example":"The brand established itself as a reliable option","note":"as apresenta a posição conquistada"},
+      {"particle":"in","form":"establish in","meaning":"estabelecer-se em lugar, área ou mercado","pattern":"establish + business/presence + in + place/field","example":"The company established a strong presence in Asia","note":"in apresenta o contexto ou mercado"}
+    ],
+    "estimate": [
+      {"particle":"at","form":"estimate at","meaning":"estimar em determinado valor, número ou nível","pattern":"estimate + thing + at + amount","example":"The damage was estimated at over $20,000","note":"at introduz o valor estimado"},
+      {"particle":"by","form":"estimate by","meaning":"estimar usando método, indicador ou cálculo","pattern":"estimate + result + by + method/-ing","example":"Demand was estimated by comparing previous launches","note":"by explica como a estimativa foi feita"}
+    ],
+    "evaluate": [
+      {"particle":"against","form":"evaluate against","meaning":"avaliar comparando com critério, meta ou referência","pattern":"evaluate + thing + against + criteria/benchmark","example":"The proposals were evaluated against the same criteria","note":"against apresenta a referência da avaliação"},
+      {"particle":"for","form":"evaluate for","meaning":"avaliar buscando adequação, risco ou condição","pattern":"evaluate + person/thing + for + purpose/risk","example":"The software was evaluated for security weaknesses","note":"for apresenta aquilo que se quer verificar"}
+    ],
+    "examine": [
+      {"particle":"for","form":"examine for","meaning":"examinar procurando sinal, condição ou problema","pattern":"examine + person/thing + for + sign/problem","example":"The mechanic examined the engine for signs of damage","note":"for apresenta aquilo que está sendo procurado"},
+      {"particle":"by","form":"examined by","meaning":"ser examinado por pessoa, equipe ou método","pattern":"be examined by + person/team/method","example":"The samples were examined by two independent labs","note":"Forma passiva muito comum em contexto técnico"}
+    ],
+    "exchange": [
+      {"particle":"for","form":"exchange for","meaning":"trocar algo por outra coisa","pattern":"exchange + A + for + B","example":"You can exchange the item for a different size","note":"for apresenta aquilo que se recebe na troca"},
+      {"particle":"with","form":"exchange with","meaning":"trocar informações, objetos ou ideias com alguém","pattern":"exchange + thing + with + person/group","example":"The teams exchanged data with each other","note":"with identifica a outra parte da troca"}
+    ],
+    "expand": [
+      {"particle":"into","form":"expand into","meaning":"expandir para nova área, mercado ou atividade","pattern":"expand into + market/area/business","example":"The company expanded into South America last year","note":"into marca a nova área de atuação"},
+      {"particle":"by","form":"expand by","meaning":"aumentar em determinada quantidade ou por determinado método","pattern":"expand by + amount / expand by + -ing","example":"The team expanded by twenty people in one year","note":"by pode indicar quantidade ou método"},
+      {"particle":"on","form":"expand on","meaning":"desenvolver uma ideia com mais detalhes","pattern":"expand on + point/idea","example":"Could you expand on what you meant by that?","note":"Muito útil em reuniões e apresentações"}
+    ],
+    "expose": [
+      {"particle":"to","form":"expose to","meaning":"expor alguém/algo a condição, risco ou experiência","pattern":"expose + person/thing + to + risk/idea/environment","example":"The training exposed students to several new methods","note":"to apresenta aquilo a que há exposição"},
+      {"particle":"as","form":"expose as","meaning":"revelar alguém/algo como sendo algo negativo ou falso","pattern":"expose + person/thing + as + noun/adjective","example":"The investigation exposed the claim as false","note":"as apresenta aquilo que foi revelado"}
+    ],
+    "extend": [
+      {"particle":"to","form":"extend to","meaning":"estender alcance, benefício ou regra a alguém/algo","pattern":"extend + thing + to + person/group","example":"The discount was extended to all employees","note":"to identifica quem passa a ser incluído"},
+      {"particle":"by","form":"extend by","meaning":"prolongar em determinada quantidade de tempo","pattern":"extend + period/deadline + by + amount","example":"They extended the deadline by three days","note":"by indica quanto foi acrescentado"},
+      {"particle":"into","form":"extend into","meaning":"estender-se para área, período ou espaço","pattern":"extend into + area/time","example":"The meeting extended into the afternoon","note":"into marca o ponto para onde algo se prolonga"}
+    ],
+    "filter": [
+      {"particle":"out","form":"filter out","meaning":"remover elementos indesejados ou irrelevantes","pattern":"filter + thing + out","example":"The system filters duplicate entries out automatically","note":"Com pronome: filter them out"},
+      {"particle":"through","form":"filter through","meaning":"passar gradualmente por grupo, material ou sistema","pattern":"filter through + material/group","example":"The information slowly filtered through the organization","note":"Pode ser literal ou figurado"},
+      {"particle":"by","form":"filter by","meaning":"filtrar segundo critério","pattern":"filter + results + by + category/criterion","example":"You can filter the results by date","note":"by apresenta o critério do filtro"}
+    ],
+    "flow": [
+      {"particle":"from","form":"flow from","meaning":"fluir ou resultar de uma origem","pattern":"flow from + source/cause","example":"Most of the benefits flow from better planning","note":"from pode ser literal ou figurado"},
+      {"particle":"to","form":"flow to","meaning":"fluir ou ser direcionado para destino","pattern":"flow to + place/person","example":"More funding now flows to local programs","note":"to marca o destino"},
+      {"particle":"through","form":"flow through","meaning":"passar através de espaço, sistema ou processo","pattern":"flow through + place/system","example":"Air flows through the vents continuously","note":"through enfatiza percurso interno"}
+    ],
+    "gain": [
+      {"particle":"from","form":"gain from","meaning":"obter benefício, conhecimento ou vantagem de algo","pattern":"gain + benefit/knowledge + from + source","example":"She gained a lot of confidence from the experience","note":"from apresenta a fonte do ganho"},
+      {"particle":"in","form":"gain in","meaning":"aumentar em qualidade, força ou característica","pattern":"gain in + quality/importance/strength","example":"The proposal gained in credibility after the revision","note":"in apresenta a dimensão em que houve aumento"},
+      {"particle":"on","form":"gain on","meaning":"aproximar-se de alguém/algo em distância ou vantagem","pattern":"gain on + competitor/vehicle","example":"The second runner was gaining on the leader","note":"on sugere reduzir a distância"}
+    ],
+    "gather": [
+      {"particle":"from","form":"gather from","meaning":"concluir ou obter informação a partir de fonte","pattern":"gather + information/idea + from + source","example":"From what I gathered from the report, the launch went well","note":"from identifica a fonte da informação"},
+      {"particle":"around","form":"gather around","meaning":"reunir-se ao redor de alguém ou algo","pattern":"gather around + person/thing","example":"Everyone gathered around the table","note":"around indica posição em torno de um ponto"}
+    ],
+    "generate": [
+      {"particle":"from","form":"generate from","meaning":"gerar a partir de fonte ou processo","pattern":"generate + result/energy/data + from + source","example":"The system generates reports from live data","note":"from apresenta a origem"},
+      {"particle":"by","form":"generated by","meaning":"ser gerado por causa, sistema ou agente","pattern":"be generated by + source/process","example":"Most of the heat is generated by the engine","note":"Forma passiva muito comum em tecnologia e ciência"}
+    ],
+    "grant": [
+      {"particle":"to","form":"grant to","meaning":"conceder direito, recurso ou permissão a alguém","pattern":"grant + thing + to + person/group","example":"Access was granted to all registered users","note":"to identifica quem recebe"},
+      {"particle":"for","form":"grant for","meaning":"conceder recurso ou autorização para finalidade específica","pattern":"grant + funding/permission + for + purpose","example":"Funding was granted for the pilot program","note":"for apresenta a finalidade"}
+    ],
+    "hide": [
+      {"particle":"from","form":"hide from","meaning":"esconder-se ou esconder algo de alguém","pattern":"hide + thing/self + from + person/view","example":"He hid the letter from his family","note":"from identifica de quem ou de quê algo é escondido"},
+      {"particle":"behind","form":"hide behind","meaning":"esconder-se fisicamente ou usar algo como desculpa/proteção","pattern":"hide behind + object/excuse","example":"You can't hide behind that excuse forever","note":"Uso figurado muito comum"}
+    ],
+    "impose": [
+      {"particle":"on","form":"impose on","meaning":"impor regra, custo ou obrigação a alguém","pattern":"impose + rule/cost + on + person/group","example":"The new fee was imposed on all users","note":"on identifica quem recebe a imposição"},
+      {"particle":"upon","form":"impose upon","meaning":"impor sobre; variante mais formal","pattern":"impose + burden/duty + upon + person/group","example":"The policy imposes additional duties upon employers","note":"upon é mais formal; on é normalmente mais natural"}
+    ],
+    "incorporate": [
+      {"particle":"into","form":"incorporate into","meaning":"incorporar como parte de sistema, plano ou estrutura","pattern":"incorporate + thing + into + system/plan","example":"We incorporated the feedback into the final design","note":"into destaca integração ao todo"},
+      {"particle":"with","form":"incorporate with","meaning":"combinar ou integrar com outro elemento","pattern":"incorporate + thing + with + component","example":"The new module was incorporated with the existing workflow","note":"into costuma ser mais idiomático quando há integração completa"}
+    ],
+    "infer": [
+      {"particle":"from","form":"infer from","meaning":"inferir conclusão a partir de evidência","pattern":"infer + conclusion + from + evidence","example":"What can we infer from her response?","note":"from apresenta a evidência usada"},
+      {"particle":"by","form":"infer by","meaning":"inferir usando determinado indício ou método","pattern":"infer + result + by + method/observation","example":"The researchers inferred the pattern by comparing the samples","note":"by explica o método de inferência"}
+    ],
+    "influence": [
+      {"particle":"by","form":"influenced by","meaning":"ser influenciado por pessoa, fator ou contexto","pattern":"be influenced by + person/factor","example":"Consumer choices are influenced by price and convenience","note":"Forma passiva muito frequente"},
+      {"particle":"on","form":"influence on","meaning":"exercer influência sobre algo; estrutura costuma aparecer com noun influence","pattern":"influence + outcome / have influence on + outcome","example":"Her experience influenced how the team approached the problem","note":"Como verbo, influence normalmente recebe objeto direto; on é mais comum com o substantivo influence"}
+    ],
+    "install": [
+      {"particle":"on","form":"install on","meaning":"instalar software ou componente em dispositivo/sistema","pattern":"install + software + on + device/system","example":"Install the update on all company laptops","note":"on identifica o dispositivo ou sistema de destino"},
+      {"particle":"in","form":"install in","meaning":"instalar equipamento ou componente dentro de local/sistema","pattern":"install + equipment + in + place/system","example":"They installed new sensors in the warehouse","note":"in marca o local físico ou sistema"}
+    ],
+    "intend": [
+      {"particle":"for","form":"intend for","meaning":"destinar algo a pessoa, público ou finalidade","pattern":"intend + thing + for + person/purpose","example":"The guide is intended for new employees","note":"Muito comum na voz passiva: be intended for"},
+      {"particle":"as","form":"intend as","meaning":"pretender algo como determinada função ou interpretação","pattern":"intend + thing + as + noun","example":"The comment was intended as a joke","note":"as apresenta a função pretendida"}
+    ],
+    "interpret": [
+      {"particle":"as","form":"interpret as","meaning":"interpretar algo como tendo determinado significado","pattern":"interpret + thing + as + meaning/action","example":"She interpreted his silence as agreement","note":"as apresenta a interpretação atribuída"},
+      {"particle":"through","form":"interpret through","meaning":"interpretar por meio de perspectiva, teoria ou lente","pattern":"interpret + thing + through + lens/framework","example":"The findings can be interpreted through several different models","note":"Uso acadêmico/analítico; through apresenta a lente usada"}
+    ],
+    "introduce": [
+      {"particle":"to","form":"introduce to","meaning":"apresentar pessoa/coisa a outra pessoa, grupo ou ambiente","pattern":"introduce + person/thing + to + person/group","example":"She introduced me to the rest of the team","note":"to identifica quem recebe a apresentação"},
+      {"particle":"as","form":"introduce as","meaning":"apresentar alguém em determinada função","pattern":"introduce + person + as + role","example":"He was introduced as the new project lead","note":"as apresenta o papel"},
+      {"particle":"into","form":"introduce into","meaning":"introduzir elemento em sistema, ambiente ou processo","pattern":"introduce + thing + into + system/environment","example":"The update introduced several changes into the workflow","note":"into enfatiza entrada em um sistema"}
+    ],
+    "involve": [
+      {"particle":"in","form":"involve in","meaning":"envolver alguém em atividade, situação ou processo","pattern":"involve + person + in + activity/process","example":"She was involved in planning the event","note":"Muito comum na voz passiva"},
+      {"particle":"with","form":"involve with","meaning":"envolver-se com pessoa, organização ou assunto","pattern":"be involved with + person/group/project","example":"He became involved with a local charity","note":"with destaca a relação ou associação"}
+    ]
+  }
+}
