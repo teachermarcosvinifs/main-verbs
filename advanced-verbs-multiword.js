@@ -55,10 +55,10 @@
     panel.innerHTML = `
       <div class="multiword-heading">
         <div>
-          <span class="multiword-kicker">VERBO + PARTÍCULA</span>
+          <span class="multiword-kicker">COMBINAÇÕES COM O VERBO</span>
           <h4>${escapeHtml(verb)} + ...</h4>
         </div>
-        <p>Escolha uma opção para ver o significado, a estrutura e um uso real</p>
+        <p>Escolha uma opção para ver significado, estrutura, exemplo e um detalhe importante</p>
       </div>
 
       <div class="multiword-tabs" role="tablist" aria-label="Combinações com ${escapeHtml(verb)}">
