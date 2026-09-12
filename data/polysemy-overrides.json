@@ -1,0 +1,25 @@
+{
+  "get": [
+    {"label":"conseguir / obter","pattern":"get + noun","examples":["get a ticket","get permission","get a better price"]},
+    {"label":"receber","pattern":"get + noun / get + noun + from","examples":["get a message","get a phone call","get news from someone"]},
+    {"label":"chegar","pattern":"get + place / get to + place","examples":["get home","get there","get to the station"]},
+    {"label":"ficar / passar a estar","pattern":"get + adjective","examples":["get tired","get nervous","get cold"]}
+  ],
+  "go": [
+    {"label":"ir / deslocar-se","pattern":"go + place / go to + place","examples":["go home","go to work"]},
+    {"label":"ir embora / sair","pattern":"go / have to go","examples":["I have to go","What time does the last train go?"]},
+    {"label":"ficar / tornar-se","pattern":"go + adjective","examples":["go quiet","go wrong","go bad"]},
+    {"label":"fazer uma atividade","pattern":"go + -ing","examples":["go shopping","go swimming"]}
+  ],
+  "cover": [
+    {"label":"cobrir fisicamente","pattern":"cover + object / surface","examples":["cover the table","cover the wound"]},
+    {"label":"abranger / tratar","pattern":"cover + topic / area","examples":["cover the main points","The course covers four topics"]},
+    {"label":"cobrir um custo","pattern":"cover + cost / expense","examples":["The fee covers breakfast","Insurance covers the repairs"]},
+    {"label":"substituir temporariamente","pattern":"cover for + person","examples":["cover for a coworker","Can you cover for me tomorrow?"]}
+  ],
+  "deal": [
+    {"label":"lidar","pattern":"deal with + noun","examples":["deal with a complaint","deal with stress"]},
+    {"label":"dar / distribuir cartas","pattern":"deal + cards","examples":["deal the cards","deal five cards to each player"]},
+    {"label":"comercializar / negociar","pattern":"deal in + goods / products","examples":["deal in antiques","deal in commercial property"]}
+  ]
+}
