@@ -1,0 +1,50 @@
+{
+  "accept": [
+    {"type":"structure","title":"Estrutura","items":["accept + noun","accept that + clause","accept something as + noun/adjective"]},
+    {"type":"combinations","title":"Combinações","items":["accept an offer","accept responsibility","accept payment"]},
+    {"type":"prepositions","title":"Preposições","items":["accept something from + person/source","accept something as + noun/adjective"]},
+    {"type":"contrast","title":"Contraste","items":["accept = say yes to an offer, condition or responsibility, or receive something willingly","agree needs its own pattern: agree with someone, agree on a decision, agree to a proposal"]}
+  ],
+  "achieve": [
+    {"type":"structure","title":"Estrutura","items":["achieve + noun"]},
+    {"type":"combinations","title":"Combinações","items":["achieve a goal","achieve success","achieve results"]},
+    {"type":"contrast","title":"Contraste","items":["achieve + goal/result/success = accomplish something, often through effort","reach + place/point/level/decision/agreement = arrive at an endpoint"]}
+  ],
+  "adjust": [
+    {"type":"structure","title":"Estrutura","items":["adjust + noun","adjust to + noun / -ing"]},
+    {"type":"combinations","title":"Combinações","items":["adjust the settings","adjust the temperature","adjust gradually"]},
+    {"type":"prepositions","title":"Preposições","items":["adjust to + situation"]},
+    {"type":"contrast","title":"Contraste","items":["adjust something = make a small practical change to improve fit, function or accuracy","adjust to something = become comfortable with new conditions","adapt to something = change behavior or method more broadly to suit a new situation"]}
+  ],
+  "affect": [
+    {"type":"structure","title":"Estrutura","items":["affect + noun / pronoun","be affected by + noun"]},
+    {"type":"combinations","title":"Combinações","items":["affect performance","affect health","directly affect"]},
+    {"type":"prepositions","title":"Preposições","items":["be affected by + cause"]},
+    {"type":"contrast","title":"Contraste","items":["affect = usually a verb: influence or change something","effect = usually a noun: the result or consequence","effect can also be a formal verb meaning bring about, as in effect change"]}
+  ],
+  "allow": [
+    {"type":"structure","title":"Estrutura","items":["allow + noun","allow someone to + verb","allow + -ing"]},
+    {"type":"combinations","title":"Combinações","items":["allow access","allow time","allow flexibility"]},
+    {"type":"contrast","title":"Contraste","items":["allow someone to do = neutral and works in passive forms: We were allowed to leave","let someone do = more conversational and uses the verb without to: They let us leave","For permission in the passive, use be allowed to, not be let to"]}
+  ],
+  "answer": [
+    {"type":"structure","title":"Estrutura","items":["answer + noun","answer someone's question"]},
+    {"type":"combinations","title":"Combinações","items":["answer a question","answer the phone","answer honestly"]},
+    {"type":"contrast","title":"Contraste","items":["answer + question/call/email takes the object directly","respond to + question/comment/request uses to and is often slightly more formal","A response can be a reaction; an answer usually addresses the question or message directly"]}
+  ],
+  "attend": [
+    {"type":"structure","title":"Estrutura","items":["attend + event/place","attend + class/meeting"]},
+    {"type":"combinations","title":"Combinações","items":["attend a meeting","attend class","attend regularly"]},
+    {"type":"contrast","title":"Contraste","items":["attend + meeting/class/event = be present at it","assist + person = help someone; it is not the normal English equivalent of Portuguese assistir"]}
+  ],
+  "cause": [
+    {"type":"structure","title":"Estrutura","items":["cause + noun","cause someone to + verb"]},
+    {"type":"combinations","title":"Combinações","items":["cause damage","cause problems","cause a delay"]},
+    {"type":"contrast","title":"Contraste","items":["cause someone to do = neutral or formal and focuses on the result: The delay caused us to miss the flight","make someone do = more direct and uses no to before the verb: They made us wait"]}
+  ],
+  "control": [
+    {"type":"structure","title":"Estrutura","items":["control + noun","control how/what + clause"]},
+    {"type":"combinations","title":"Combinações","items":["control costs","control access","control the temperature"]},
+    {"type":"contrast","title":"Contraste","items":["control = directly determine or limit behavior, access, movement or level","manage = organize, run or handle something; it does not necessarily mean having full control","manage to + verb = succeed in doing something, a separate meaning"]}
+  ]
+}

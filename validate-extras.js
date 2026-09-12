@@ -23,8 +23,26 @@ const allowedTypes = new Set([
 const errors = [];
 const extrasByVerb = {};
 const sourceByVerb = new Map();
+const extrasChunks = manifest.extrasChunks || [];
+const overrideChunks = new Set(manifest.extrasOverrideChunks || []);
 
-for (const filePath of manifest.extrasChunks || []) {
+for (const overrideFile of overrideChunks) {
+  if (!extrasChunks.includes(overrideFile)) {
+    errors.push(`${overrideFile}: override declarado mas ausente de extrasChunks`);
+  }
+}
+
+let overridePhaseStarted = false;
+let overriddenVerbs = 0;
+
+for (const filePath of extrasChunks) {
+  const isOverride = overrideChunks.has(filePath);
+
+  if (isOverride) overridePhaseStarted = true;
+  else if (overridePhaseStarted) {
+    errors.push(`${filePath}: chunk-base aparece depois de um chunk de override`);
+  }
+
   const payload = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   if (!payload || Array.isArray(payload) || typeof payload !== 'object') {
     errors.push(`${filePath}: suplemento precisa ser um objeto verbo -> módulos`);
@@ -33,9 +51,15 @@ for (const filePath of manifest.extrasChunks || []) {
 
   for (const [verb, blocks] of Object.entries(payload)) {
     if (sourceByVerb.has(verb)) {
-      errors.push(`${verb}: duplicado em ${sourceByVerb.get(verb)} e ${filePath}`);
-      continue;
+      if (!isOverride) {
+        errors.push(`${verb}: duplicado em ${sourceByVerb.get(verb)} e ${filePath}`);
+        continue;
+      }
+      overriddenVerbs += 1;
+    } else if (isOverride) {
+      errors.push(`${verb}: override sem entrada-base anterior em ${filePath}`);
     }
+
     sourceByVerb.set(verb, filePath);
     extrasByVerb[verb] = blocks;
   }
@@ -114,6 +138,7 @@ if (actualVerbs.size !== expectedTotal) {
 
 console.log(`Verbos no corpus: ${verbs.length}`);
 console.log(`Verbos com extras: ${actualVerbs.size}/${expectedTotal}`);
+console.log(`Overrides editoriais aplicados: ${overriddenVerbs}`);
 console.log(`Módulos totais: ${totalModules}`);
 console.log(`Com Preposições: ${withPrepositions}`);
 console.log(`Com Contraste: ${withContrast}`);

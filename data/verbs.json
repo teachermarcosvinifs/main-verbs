@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "language": "en-US",
   "status": "approved",
   "source": "editorial-audit-2026-09-11",
@@ -29,6 +29,10 @@
     "data/extras-c1-01.json",
     "data/extras-c1-02.json",
     "data/extras-c1-03.json",
-    "data/extras-c1-04.json"
+    "data/extras-c1-04.json",
+    "data/extras-editorial-overrides.json"
+  ],
+  "extrasOverrideChunks": [
+    "data/extras-editorial-overrides.json"
   ]
 }
