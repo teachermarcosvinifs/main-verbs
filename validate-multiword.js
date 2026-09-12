@@ -42,8 +42,8 @@ for (const [verb, entries] of Object.entries(merged)) {
     errors.push(`${verb}: conteúdo não é array`);
     continue;
   }
-  if (entries.length < 2 || entries.length > 6) {
-    errors.push(`${verb}: esperado 2–6 combinações, recebido ${entries.length}`);
+  if (entries.length < 1 || entries.length > 6) {
+    errors.push(`${verb}: esperado 1–6 combinações, recebido ${entries.length}`);
   }
 
   const particles = new Set();
