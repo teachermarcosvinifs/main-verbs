@@ -4,7 +4,10 @@
   const listEl = document.querySelector('[data-verbs-list]');
   if (!listEl) return;
 
+  const MAX_OPTIONS = 6;
   let data = {};
+  let ready = false;
+  let enhanceQueued = false;
   const selectedByVerb = new Map();
 
   const escapeHtml = (value = '') => String(value)
@@ -20,10 +23,29 @@
     return response.json();
   };
 
+  const normalizeEntries = (entries) => {
+    if (!Array.isArray(entries)) return [];
+    const seen = new Set();
+    return entries
+      .filter((entry) => entry && entry.particle && entry.form && entry.meaning && entry.pattern && entry.example && entry.note)
+      .filter((entry) => {
+        const key = String(entry.particle).toLowerCase();
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      })
+      .slice(0, MAX_OPTIONS);
+  };
+
   const loadData = async () => {
     const manifest = await fetchJson('data/multiword.json');
     const chunks = await Promise.all((manifest.chunks || []).map(fetchJson));
-    data = Object.assign({}, ...chunks.map((chunk) => chunk.verbs || {}));
+    const merged = Object.assign({}, ...chunks.map((chunk) => chunk.verbs || {}));
+    data = Object.fromEntries(
+      Object.entries(merged)
+        .map(([verb, entries]) => [verb, normalizeEntries(entries)])
+        .filter(([, entries]) => entries.length)
+    );
   };
 
   const findEntry = (verb, particle) => {
@@ -46,12 +68,14 @@
     const entry = findEntry(verb, selected);
     if (!entry) return;
 
-    const old = expandedContent.querySelector('[data-multiword-panel]');
-    if (old) old.remove();
+    let panel = expandedContent.querySelector('[data-multiword-panel]');
+    if (!panel) {
+      panel = document.createElement('section');
+      panel.className = 'multiword-panel';
+      panel.dataset.multiwordPanel = verb;
+      expandedContent.prepend(panel);
+    }
 
-    const panel = document.createElement('section');
-    panel.className = 'multiword-panel';
-    panel.dataset.multiwordPanel = verb;
     panel.innerHTML = `
       <div class="multiword-heading">
         <div>
@@ -96,34 +120,57 @@
         </div>
       </div>
     `;
-
-    expandedContent.prepend(panel);
   };
 
   const enhanceVisiblePanels = () => {
+    if (!ready) return;
     listEl.querySelectorAll('.advanced-verb.is-expanded').forEach(renderPanel);
+  };
+
+  const scheduleEnhance = () => {
+    if (!ready || enhanceQueued) return;
+    enhanceQueued = true;
+    window.requestAnimationFrame(() => {
+      enhanceQueued = false;
+      enhanceVisiblePanels();
+    });
   };
 
   document.addEventListener('click', (event) => {
     const button = event.target.closest('[data-multiword-particle]');
-    if (!button) return;
+    if (button) {
+      const verb = button.dataset.multiwordVerb;
+      const particle = button.dataset.multiwordParticle;
+      if (!verb || !particle) return;
+      selectedByVerb.set(verb, particle);
+      const article = button.closest('.advanced-verb');
+      if (article) renderPanel(article);
+      return;
+    }
 
-    const verb = button.dataset.multiwordVerb;
-    const particle = button.dataset.multiwordParticle;
-    if (!verb || !particle) return;
-
-    selectedByVerb.set(verb, particle);
-    const article = button.closest('.advanced-verb');
-    if (article) renderPanel(article);
+    if (event.target.closest('[data-expand], [data-favorite], [data-filter], [data-go-verb], [data-letter]')) {
+      scheduleEnhance();
+    }
   });
 
-  const observer = new MutationObserver(() => enhanceVisiblePanels());
-  observer.observe(listEl, { childList: true, subtree: true });
+  document.addEventListener('input', (event) => {
+    if (event.target.matches('[data-verb-search]')) scheduleEnhance();
+  });
+
+  document.addEventListener('change', (event) => {
+    if (event.target.matches('[data-preposition-filter]')) scheduleEnhance();
+  });
+
+  // Observe apenas substituições diretas da lista. O observador anterior assistia
+  // toda a subárvore e reagia às próprias inserções do painel, criando um loop de DOM.
+  const observer = new MutationObserver(scheduleEnhance);
+  observer.observe(listEl, { childList: true });
 
   loadData()
     .then(() => {
-      enhanceVisiblePanels();
+      ready = true;
       document.documentElement.dataset.multiwordReady = 'true';
+      scheduleEnhance();
     })
     .catch((error) => console.error('Erro ao carregar combinações multiword:', error));
 })();
