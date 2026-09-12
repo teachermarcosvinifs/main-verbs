@@ -96,7 +96,7 @@
       panel = document.createElement('section');
       panel.className = 'multiword-panel';
       panel.dataset.multiwordPanel = verb;
-      expandedContent.prepend(panel);
+      expandedContent.append(panel);
     }
 
     panel.innerHTML = `
@@ -105,7 +105,6 @@
           <span class="multiword-kicker">COMBINAÇÕES COM O VERBO</span>
           <h4>${escapeHtml(verb)} + ...</h4>
         </div>
-        <p>Escolha uma opção para ver significado, estrutura, exemplo e um detalhe importante</p>
       </div>
 
       <div class="multiword-tabs" role="tablist" aria-label="Combinações com ${escapeHtml(verb)}">
@@ -231,8 +230,6 @@
     scheduleEnhance();
   });
 
-  // Observa só a substituição das linhas da lista. Não observa a subárvore,
-  // portanto o painel interativo nunca reage às próprias inserções no DOM.
   const observer = new MutationObserver(scheduleEnhance);
   observer.observe(listEl, { childList: true });
 
