@@ -1,7 +1,7 @@
 {
-  "version": 2,
+  "version": 3,
   "status": "editorial-audit",
-  "selectionRule": "Mostrar painel interativo apenas quando o verbo-base tiver pelo menos 3 combinações multiword/phrasal de alta utilidade pedagógica; padrões preposicionais isolados continuam no módulo Preposições",
+  "selectionRule": "Painel interativo para combinações verbo + partícula/preposição de alta utilidade pedagógica; auditar os 433 verbos e mostrar somente relações reais e úteis, com no máximo 6 opções por verbo",
   "counts": {
     "verbs": 53,
     "combinations": 230
@@ -11,5 +11,6 @@
     "data/multiword-02.json",
     "data/multiword-03.json",
     "data/multiword-04.json"
-  ]
+  ],
+  "overridesFile": "data/multiword-overrides.json"
 }
