@@ -4,7 +4,20 @@
   const body = document.body;
   const loader = document.querySelector('[data-site-loader]');
   const list = document.querySelector('[data-verbs-list]');
+  const controls = document.querySelector('.advanced-controls');
+  const alphabet = document.querySelector('[data-alphabet-index]');
   if (!body || !loader || !list) return;
+
+  // Keep the search/filter bar and A–Z index in the same sticky flow.
+  // Two independent sticky siblings can collide when the controls change height
+  // (for example, when C1–C2 filters wrap). The wrapper makes the browser lay
+  // them out vertically first and then sticks the whole stack as one unit.
+  if (controls && alphabet && controls.parentElement === alphabet.parentElement) {
+    const stickyStack = document.createElement('div');
+    stickyStack.className = 'advanced-navigation-stack';
+    controls.before(stickyStack);
+    stickyStack.append(controls, alphabet);
+  }
 
   let relationsReady = document.documentElement.dataset.multiwordReady === 'true';
   let fallbackExpired = false;
