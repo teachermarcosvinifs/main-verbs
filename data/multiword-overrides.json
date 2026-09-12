@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "verbs": {
     "get": [
       {"particle":"up","form":"get up","meaning":"levantar-se","pattern":"get up","example":"I usually get up around seven on weekdays","note":"Normalmente não leva objeto"},
@@ -130,6 +130,25 @@
       {"particle":"up","form":"wake up","meaning":"acordar ou fazer alguém acordar","pattern":"wake up / wake + person + up","example":"I woke up before the alarm","note":"Com pronome: wake him up"},
       {"particle":"to","form":"wake up to","meaning":"perceber finalmente uma realidade","pattern":"wake up to + fact/problem","example":"The company finally woke up to the seriousness of the issue","note":"Uso figurado: become aware of something"},
       {"particle":"from","form":"wake up from","meaning":"acordar depois de sonho ou período de sono","pattern":"wake up from + dream/sleep","example":"She woke up from a strange dream just before dawn","note":"wake up from é mais natural na conversa do que wake from"}
+    ],
+    "ask": [
+      {"particle":"for","form":"ask for","meaning":"pedir algo","pattern":"ask for + thing/help/person","example":"She asked for a glass of water","note":"Não é separável"},
+      {"particle":"out","form":"ask out","meaning":"convidar alguém para sair romanticamente ou socialmente","pattern":"ask + person + out","example":"He asked her out for dinner","note":"Com pronome: ask her out"},
+      {"particle":"around","form":"ask around","meaning":"perguntar a várias pessoas","pattern":"ask around","example":"I'll ask around and see if anyone knows a good plumber","note":"Normalmente sem objeto direto"},
+      {"particle":"about","form":"ask about","meaning":"perguntar sobre uma pessoa, assunto ou situação","pattern":"ask about + person/topic/situation","example":"She asked about your mother when I saw her","note":"about introduz aquilo sobre o qual se quer informação"}
+    ],
+    "carry": [
+      {"particle":"around","form":"carry around","meaning":"carregar ou levar algo consigo regularmente","pattern":"carry + object + around","example":"I carry a small notebook around with me","note":"Com pronome: carry it around"},
+      {"particle":"out","form":"carry out","meaning":"realizar ou executar","pattern":"carry out + task/plan/research","example":"The team carried out a safety inspection","note":"Com pronome: carry it out"},
+      {"particle":"over","form":"carry over","meaning":"transferir ou continuar para outro período","pattern":"carry + amount/issue + over","example":"Unused vacation days can be carried over to next year","note":"Com pronome: carry it over"},
+      {"particle":"through","form":"carry through","meaning":"levar algo até o fim ou cumprir","pattern":"carry + plan/project + through","example":"She carried the project through despite the delays","note":"Útil quando o foco está em concluir apesar das dificuldades"}
+    ],
+    "fall": [
+      {"particle":"apart","form":"fall apart","meaning":"desmontar-se; entrar em colapso","pattern":"fall apart","example":"The old chair is starting to fall apart","note":"Também usado para planos, relações e estado emocional"},
+      {"particle":"behind","form":"fall behind","meaning":"ficar para trás ou atrasado","pattern":"fall behind / fall behind on + work/payments","example":"I fell behind on my emails while I was away","note":"Muito comum com work, payments e schedule"},
+      {"particle":"for","form":"fall for","meaning":"apaixonar-se por; cair em engano","pattern":"fall for + person/trick","example":"He fell for the scam and lost some money","note":"O contexto distingue paixão de ser enganado"},
+      {"particle":"out","form":"fall out","meaning":"cair, soltar-se ou sair do lugar","pattern":"fall out / fall out of + place","example":"One of my fillings fell out last night","note":"Para briga entre pessoas, no inglês americano é mais natural dizer argue ou have a falling-out"},
+      {"particle":"through","form":"fall through","meaning":"não acontecer como planejado","pattern":"plan/deal + fall through","example":"The deal fell through at the last minute","note":"Normalmente o plano ou acordo é o sujeito"}
     ]
   }
 }
