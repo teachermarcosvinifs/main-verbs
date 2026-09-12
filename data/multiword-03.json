@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "verbs": {
+    "run": [
+      {"particle":"into","form":"run into","meaning":"encontrar por acaso; colidir com","pattern":"run into + person/problem","example":"I ran into an old friend at the supermarket","note":"Não é separável"},
+      {"particle":"out","form":"run out","meaning":"acabar, ficar sem","pattern":"run out of + noun","example":"We've run out of milk","note":"Use run out of quando vier o objeto"},
+      {"particle":"over","form":"run over","meaning":"atropelar; revisar rapidamente","pattern":"run over + noun","example":"Let's run over the plan before the meeting","note":"O contexto distingue revisar de atropelar"},
+      {"particle":"through","form":"run through","meaning":"revisar, ensaiar ou percorrer rapidamente","pattern":"run through + list / plan / rehearsal","example":"Can we run through the presentation once more?","note":"Não é separável na maioria desses usos"},
+      {"particle":"away","form":"run away","meaning":"fugir","pattern":"run away / run away from + noun","example":"The dog ran away when the gate was left open","note":"Normalmente sem objeto direto"},
+      {"particle":"by","form":"run by","meaning":"mostrar uma ideia a alguém para obter opinião","pattern":"run + idea + by + person","example":"Can I run an idea by you?","note":"Padrão muito útil: run something by someone"}
+    ],
+    "set": [
+      {"particle":"up","form":"set up","meaning":"montar, configurar ou criar","pattern":"set + object + up","example":"They set up a new account for me","note":"Com pronome: set it up"},
+      {"particle":"off","form":"set off","meaning":"partir; acionar algo","pattern":"set off / set + object + off","example":"We set off early to avoid traffic","note":"Também: set off an alarm = acionar um alarme"},
+      {"particle":"out","form":"set out","meaning":"partir; apresentar ou organizar claramente","pattern":"set out / set out + information","example":"The report sets out the main recommendations","note":"Também: set out on a trip"},
+      {"particle":"aside","form":"set aside","meaning":"reservar ou separar","pattern":"set + object + aside","example":"Try to set aside some money every month","note":"Com pronome: set it aside"},
+      {"particle":"back","form":"set back","meaning":"atrasar; custar uma quantia","pattern":"set + person/project + back","example":"The delay set the project back by two weeks","note":"Também: It set me back $200 = custou $200"}
+    ],
+    "settle": [
+      {"particle":"down","form":"settle down","meaning":"acalmar-se; estabelecer vida mais estável","pattern":"settle down","example":"It took the children a while to settle down","note":"Também pode falar de vida estável/família"},
+      {"particle":"in","form":"settle in","meaning":"adaptar-se a um novo lugar ou rotina","pattern":"settle in / settle into + place/routine","example":"She's settling in well at her new job","note":"settle into a routine = adaptar-se a uma rotina"},
+      {"particle":"for","form":"settle for","meaning":"aceitar menos do que se queria","pattern":"settle for + noun","example":"Don't settle for the first option if it doesn't suit you","note":"Não é separável"},
+      {"particle":"on","form":"settle on","meaning":"decidir-se por uma opção","pattern":"settle on + choice/date/plan","example":"We finally settled on a date for the meeting","note":"Não é separável"}
+    ],
+    "show": [
+      {"particle":"up","form":"show up","meaning":"aparecer ou chegar","pattern":"show up","example":"He showed up twenty minutes late","note":"Normalmente sem objeto"},
+      {"particle":"off","form":"show off","meaning":"exibir-se; mostrar algo com orgulho","pattern":"show off / show + object + off","example":"He loves showing off his new car","note":"Com objeto, pode ser separável: show it off"},
+      {"particle":"around","form":"show around","meaning":"mostrar um lugar a alguém","pattern":"show + person + around","example":"She showed us around the new office","note":"Com pronome: show us around"}
+    ],
+    "stand": [
+      {"particle":"out","form":"stand out","meaning":"destacar-se","pattern":"stand out / stand out from + group","example":"Her application stood out from the others","note":"Não é separável"},
+      {"particle":"for","form":"stand for","meaning":"significar; defender um princípio","pattern":"stand for + idea/abbreviation","example":"What does this abbreviation stand for?","note":"Não é separável"},
+      {"particle":"by","form":"stand by","meaning":"apoiar; ficar pronto/aguardar","pattern":"stand by + person/decision / stand by","example":"She stood by her decision despite the criticism","note":"Também: Please stand by = aguarde"},
+      {"particle":"up","form":"stand up","meaning":"levantar-se","pattern":"stand up","example":"Everyone stood up when the judge entered","note":"Com defesa: stand up for someone = defender alguém"}
+    ],
+    "stay": [
+      {"particle":"up","form":"stay up","meaning":"ficar acordado","pattern":"stay up","example":"I stayed up too late last night","note":"Normalmente sem objeto"},
+      {"particle":"in","form":"stay in","meaning":"ficar em casa/dentro","pattern":"stay in","example":"We're staying in tonight and watching a movie","note":"Oposto comum de go out"},
+      {"particle":"out","form":"stay out","meaning":"ficar fora","pattern":"stay out / stay out of + noun","example":"The kids stayed out until dark","note":"stay out of trouble = evitar problemas"},
+      {"particle":"away","form":"stay away","meaning":"manter distância ou não ir","pattern":"stay away from + noun","example":"Stay away from that broken step","note":"Não é separável"}
+    ],
+    "take": [
+      {"particle":"off","form":"take off","meaning":"tirar roupa/acessório; também decolar","pattern":"take + object + off / take off","example":"Take your shoes off before you come in","note":"Com pronome: take them off; para avião: The plane took off"},
+      {"particle":"on","form":"take on","meaning":"assumir responsabilidade, trabalho ou desafio","pattern":"take on + role / work / challenge","example":"She took on more responsibility after the promotion","note":"Não se separa nesse sentido"},
+      {"particle":"over","form":"take over","meaning":"assumir controle ou responsabilidade","pattern":"take over / take over + noun","example":"A new manager took over the team in June","note":"take over from someone = substituir alguém"},
+      {"particle":"up","form":"take up","meaning":"começar atividade; ocupar espaço ou tempo","pattern":"take up + hobby / space / time","example":"He took up cycling after moving to the city","note":"Também: This table takes up too much space"},
+      {"particle":"back","form":"take back","meaning":"devolver; retirar o que foi dito","pattern":"take + object + back","example":"I need to take this shirt back to the store","note":"Com pronome: take it back"},
+      {"particle":"in","form":"take in","meaning":"absorver, compreender ou acolher","pattern":"take in + information / person","example":"There was so much information that I couldn't take it all in","note":"Com pronome: take it in"},
+      {"particle":"out","form":"take out","meaning":"retirar, levar para fora ou convidar para sair","pattern":"take + object/person + out","example":"Can you take the trash out before you leave?","note":"take someone out = levar alguém para comer ou passear"},
+      {"particle":"away","form":"take away","meaning":"remover; levar consigo; extrair uma ideia principal","pattern":"take + object + away","example":"Please take these empty boxes away","note":"takeaway também pode ser a principal conclusão de algo"}
+    ],
+    "talk": [
+      {"particle":"over","form":"talk over","meaning":"discutir algo para decidir ou entender melhor","pattern":"talk + issue + over","example":"We need to talk the options over before deciding","note":"Com pronome: talk it over"},
+      {"particle":"into","form":"talk into","meaning":"convencer alguém a fazer algo","pattern":"talk + person + into + -ing","example":"She talked me into applying for the job","note":"Padrão fixo: talk someone into doing something"},
+      {"particle":"out of","form":"talk out of","meaning":"convencer alguém a não fazer algo","pattern":"talk + person + out of + -ing","example":"He talked me out of buying a new phone","note":"É o contraste direto de talk someone into"},
+      {"particle":"through","form":"talk through","meaning":"explicar ou discutir passo a passo","pattern":"talk + person + through + noun/process","example":"She talked me through the setup process","note":"Muito útil em instruções e suporte"}
+    ],
+    "think": [
+      {"particle":"over","form":"think over","meaning":"pensar cuidadosamente antes de decidir","pattern":"think + option/decision + over","example":"Take a day to think the offer over","note":"Com pronome: think it over"},
+      {"particle":"through","form":"think through","meaning":"analisar todas as etapas ou consequências","pattern":"think + plan/problem + through","example":"We need to think the plan through before we commit","note":"Com pronome: think it through"},
+      {"particle":"of","form":"think of","meaning":"lembrar, imaginar ou ter opinião sobre","pattern":"think of + person/idea","example":"Can you think of a better solution?","note":"Não é separável"},
+      {"particle":"about","form":"think about","meaning":"considerar ou refletir sobre","pattern":"think about + noun/-ing","example":"I'm thinking about changing jobs","note":"Não é separável"}
+    ],
+    "throw": [
+      {"particle":"away","form":"throw away","meaning":"jogar fora","pattern":"throw + object + away","example":"Don't throw the receipt away","note":"Com pronome: throw it away"},
+      {"particle":"out","form":"throw out","meaning":"jogar fora; expulsar; rejeitar uma ideia","pattern":"throw + object/person + out","example":"We threw out a lot of old paperwork","note":"Com pronome: throw it out"},
+      {"particle":"up","form":"throw up","meaning":"vomitar","pattern":"throw up","example":"He felt sick and threw up after dinner","note":"Uso informal e comum"},
+      {"particle":"in","form":"throw in","meaning":"incluir algo extra","pattern":"throw + object + in","example":"They threw in free delivery with the purchase","note":"Com pronome: throw it in"}
+    ],
+    "turn": [
+      {"particle":"on","form":"turn on","meaning":"ligar","pattern":"turn + device + on","example":"Turn the lights on when it gets dark","note":"Com pronome: turn them on"},
+      {"particle":"off","form":"turn off","meaning":"desligar; causar perda de interesse","pattern":"turn + object + off","example":"Please turn the TV off before you leave","note":"Com pronome: turn it off; turn someone off = causar rejeição"},
+      {"particle":"up","form":"turn up","meaning":"aumentar intensidade; aparecer","pattern":"turn + object + up / turn up","example":"Can you turn the volume up a little?","note":"Também: He turned up late = ele apareceu tarde"},
+      {"particle":"down","form":"turn down","meaning":"diminuir; recusar","pattern":"turn + object + down","example":"She turned the job offer down","note":"Com pronome: turn it down"},
+      {"particle":"out","form":"turn out","meaning":"acabar sendo; produzir resultado","pattern":"turn out + adjective / to be","example":"The event turned out better than we expected","note":"Também pode significar apagar uma luz em alguns usos"},
+      {"particle":"into","form":"turn into","meaning":"transformar-se em","pattern":"turn into + noun","example":"The conversation turned into an argument","note":"Não é separável"},
+      {"particle":"over","form":"turn over","meaning":"virar; entregar controle ou posse","pattern":"turn + object + over","example":"Turn the paper over and read the other side","note":"Com pronome: turn it over"},
+      {"particle":"around","form":"turn around","meaning":"virar-se; reverter uma situação","pattern":"turn around / turn + situation + around","example":"The new manager turned the business around","note":"Com objeto, pode ser separável"}
+    ],
+    "work": [
+      {"particle":"out","form":"work out","meaning":"resolver; dar certo; fazer exercício","pattern":"work out / work + problem + out","example":"We finally worked out what was causing the problem","note":"Também: work out at the gym; com pronome: work it out"},
+      {"particle":"on","form":"work on","meaning":"trabalhar em algo ou tentar melhorar","pattern":"work on + task/skill","example":"I'm working on the report this afternoon","note":"Não é separável"},
+      {"particle":"through","form":"work through","meaning":"resolver ou processar passo a passo","pattern":"work through + problem/list/process","example":"Let's work through the issues one at a time","note":"Não é separável"},
+      {"particle":"around","form":"work around","meaning":"contornar um problema ou limitação","pattern":"work around + problem/limitation","example":"We found a way to work around the software limitation","note":"Não é separável"}
+    ],
+    "write": [
+      {"particle":"down","form":"write down","meaning":"anotar","pattern":"write + information + down","example":"Write the address down so you don't forget it","note":"Com pronome: write it down"},
+      {"particle":"up","form":"write up","meaning":"redigir formalmente ou transformar notas em texto","pattern":"write + report/notes + up","example":"She wrote up the meeting notes that afternoon","note":"Com pronome: write them up"},
+      {"particle":"off","form":"write off","meaning":"dar como perdido; desconsiderar","pattern":"write + loss/person/idea + off","example":"The company wrote off the damaged equipment","note":"Também: don't write him off = não o descarte"}
+    ]
+  }
+}
