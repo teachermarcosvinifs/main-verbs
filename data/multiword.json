@@ -1,14 +1,15 @@
 {
-  "version": 1,
+  "version": 2,
   "status": "editorial-audit",
   "selectionRule": "Mostrar painel interativo apenas quando o verbo-base tiver pelo menos 3 combinações multiword/phrasal de alta utilidade pedagógica; padrões preposicionais isolados continuam no módulo Preposições",
   "counts": {
-    "verbs": 37,
-    "combinations": 179
+    "verbs": 53,
+    "combinations": 230
   },
   "chunks": [
     "data/multiword-01.json",
     "data/multiword-02.json",
-    "data/multiword-03.json"
+    "data/multiword-03.json",
+    "data/multiword-04.json"
   ]
 }
