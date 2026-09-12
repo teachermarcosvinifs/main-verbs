@@ -1,0 +1,61 @@
+/* Mobile/tablet QA refinements. Loaded last so these rules only adjust touch layouts. */
+
+@media (max-width:1080px){
+  /* Prevent mobile Safari from zooming the page when a field receives focus. */
+  .jump-box input,
+  .search-box input,
+  .preposition-filter select{font-size:16px!important}
+
+  /* Touch targets: keep dense desktop controls, but make tablet/mobile controls easier to hit. */
+  .alphabet-letter{width:36px;height:36px;flex:0 0 36px;font-size:12px}
+  .favorite-button{width:34px;height:34px;flex-basis:34px}
+  .expand-button{width:40px;height:40px}
+  .inline-audio-button--verb,
+  .inline-audio-button--example{width:36px;height:36px;flex-basis:36px}
+  .inline-audio-button--form{width:32px;height:32px;flex-basis:32px;border-radius:8px}
+  .inline-audio-button--form svg{width:14px;height:14px}
+  .form-value{min-height:38px}
+
+  /* Give the A–Z rail a little more breathing room for touch scrolling. */
+  .alphabet-index{-webkit-overflow-scrolling:touch;scroll-padding-inline:8px}
+}
+
+@media (max-width:720px){
+  /* Long verbs must never push the audio/favorite controls into the expand button. */
+  .verb-title-line{flex-wrap:wrap;row-gap:6px}
+  .verb-title-line>span:first-child{min-width:0;overflow-wrap:anywhere}
+
+  /* Recover useful text width on narrow phones. */
+  .advanced-row{column-gap:9px!important}
+
+  /* Form variants can be longer than the available column width. */
+  .form-audio-text{white-space:normal;overflow-wrap:anywhere}
+  .form-audio-chip{min-height:40px}
+
+  /* Do not truncate grammar patterns in expanded content on phones. */
+  .polysemy-use code{width:100%;max-width:100%;overflow:visible;text-overflow:clip;white-space:normal;overflow-wrap:anywhere}
+  .secondary-example-panel strong,
+  .secondary-example-panel p,
+  .multiword-info-card code,
+  .multiword-form{overflow-wrap:anywhere}
+
+  /* The three hero stats otherwise leave an awkward empty fourth cell. */
+  .hero-stat:last-child{grid-column:1/-1}
+
+  /* Slightly larger high-frequency touch targets on phones. */
+  .alphabet-letter{width:38px;height:38px;flex-basis:38px}
+  .inline-audio-button--form{width:34px;height:34px;flex-basis:34px}
+  .inline-audio-button--verb,
+  .inline-audio-button--example{width:38px;height:38px;flex-basis:38px}
+  .favorite-button{width:36px;height:36px;flex-basis:36px}
+  .expand-button{width:40px;height:40px}
+}
+
+@media (max-width:420px){
+  /* Preserve room for content on 320–420 px phones without shrinking text. */
+  .advanced-row{grid-template-columns:38px minmax(0,1fr) 38px!important;padding:13px 10px!important;column-gap:8px!important}
+  .verb-index{width:36px;height:36px}
+  .advanced-title-row{gap:10px}
+  .level-badge{min-height:40px;padding:0 14px;font-size:16px}
+  .advanced-table{border-radius:20px}
+}
