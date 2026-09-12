@@ -41,6 +41,12 @@
     const manifest = await fetchJson('data/multiword.json');
     const chunks = await Promise.all((manifest.chunks || []).map(fetchJson));
     const merged = Object.assign({}, ...chunks.map((chunk) => chunk.verbs || {}));
+
+    if (manifest.overridesFile) {
+      const overrides = await fetchJson(manifest.overridesFile);
+      Object.assign(merged, overrides.verbs || {});
+    }
+
     data = Object.fromEntries(
       Object.entries(merged)
         .map(([verb, entries]) => [verb, normalizeEntries(entries)])
@@ -161,8 +167,8 @@
     if (event.target.matches('[data-preposition-filter]')) scheduleEnhance();
   });
 
-  // Observe apenas substituições diretas da lista. O observador anterior assistia
-  // toda a subárvore e reagia às próprias inserções do painel, criando um loop de DOM.
+  // Observa apenas substituições diretas da lista. Não acompanha a subárvore,
+  // portanto a inserção do próprio painel não dispara uma cadeia infinita de mutações.
   const observer = new MutationObserver(scheduleEnhance);
   observer.observe(listEl, { childList: true });
 
