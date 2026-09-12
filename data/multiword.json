@@ -1,7 +1,7 @@
 {
-  "version": 4,
+  "version": 5,
   "status": "editorial-audit",
-  "selectionRule": "Painel interativo para combinações verbo + partícula/preposição de alta utilidade pedagógica; auditar os 433 verbos e mostrar somente relações reais e úteis, com no máximo 6 opções por verbo",
+  "selectionRule": "Painel interativo para combinações verbo + partícula/preposição de alta utilidade pedagógica; auditar os 433 verbos e mostrar somente relações reais e úteis, com 1 a 6 opções por verbo e sem preencher quantidade artificialmente",
   "counts": {
     "coreVerbs": 53,
     "relationVerbs": 175,
