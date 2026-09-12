@@ -4,10 +4,15 @@
   const listEl = document.querySelector('[data-verbs-list]');
   if (!listEl) return;
 
+  const relationFilterEl = document.querySelector('[data-relation-filter]');
+  const resultsCountEl = document.querySelector('[data-results-count]');
+  const pageSummaryEl = document.querySelector('[data-page-summary]');
   const MAX_OPTIONS = 6;
+
   let data = {};
   let ready = false;
   let enhanceQueued = false;
+  let relationOptionsPopulated = false;
   const selectedByVerb = new Map();
 
   const escapeHtml = (value = '') => String(value)
@@ -71,6 +76,7 @@
   };
 
   const renderPanel = (article) => {
+    if (article.hidden) return;
     const verb = article.dataset.verbName;
     const entries = data[verb];
     const expandedContent = article.querySelector('.expanded-content');
@@ -139,9 +145,55 @@
     `;
   };
 
+  const currentRows = () => [...listEl.querySelectorAll('.advanced-verb')];
+
+  const populateRelationFilter = () => {
+    if (!relationFilterEl || relationOptionsPopulated || !ready) return;
+    const rows = currentRows();
+    if (!rows.length) return;
+
+    const counts = new Map();
+    rows.forEach((row) => {
+      const verb = row.dataset.verbName;
+      const unique = new Set((data[verb] || []).map((entry) => entry.particle));
+      unique.forEach((particle) => counts.set(particle, (counts.get(particle) || 0) + 1));
+    });
+
+    const options = [...counts.entries()]
+      .filter(([, count]) => count >= 2)
+      .sort(([a], [b]) => a.localeCompare(b, 'en'));
+
+    relationFilterEl.innerHTML = '<option value="">Todas</option>'
+      + options.map(([particle, count]) => `<option value="${escapeHtml(particle)}">${escapeHtml(particle)} · ${count}</option>`).join('');
+    relationOptionsPopulated = true;
+  };
+
+  const applyRelationFilter = () => {
+    if (!ready) return;
+    const selected = relationFilterEl?.value || '';
+    const rows = currentRows();
+    let visibleCount = 0;
+
+    rows.forEach((row) => {
+      const verb = row.dataset.verbName;
+      const matches = !selected || (data[verb] || []).some((entry) => entry.particle === selected);
+      row.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+
+    if (resultsCountEl) resultsCountEl.textContent = String(visibleCount);
+    if (pageSummaryEl) {
+      pageSummaryEl.textContent = visibleCount === 1
+        ? '1 verbo nesta página'
+        : `${visibleCount} verbos nesta página`;
+    }
+  };
+
   const enhanceVisiblePanels = () => {
     if (!ready) return;
-    listEl.querySelectorAll('.advanced-verb.is-expanded').forEach(renderPanel);
+    populateRelationFilter();
+    applyRelationFilter();
+    listEl.querySelectorAll('.advanced-verb.is-expanded:not([hidden])').forEach(renderPanel);
   };
 
   const scheduleEnhance = () => {
@@ -174,12 +226,13 @@
     if (event.target.matches('[data-verb-search]')) scheduleEnhance();
   });
 
-  document.addEventListener('change', (event) => {
-    if (event.target.matches('[data-preposition-filter]')) scheduleEnhance();
+  relationFilterEl?.addEventListener('change', () => {
+    applyRelationFilter();
+    scheduleEnhance();
   });
 
   // Observa só a substituição das linhas da lista. Não observa a subárvore,
-  // então inserir o próprio painel não dispara outro ciclo de renderização.
+  // portanto o painel interativo nunca reage às próprias inserções no DOM.
   const observer = new MutationObserver(scheduleEnhance);
   observer.observe(listEl, { childList: true });
 
