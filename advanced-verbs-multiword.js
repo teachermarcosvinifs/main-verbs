@@ -39,8 +39,13 @@
 
   const loadData = async () => {
     const manifest = await fetchJson('data/multiword.json');
-    const chunks = await Promise.all((manifest.chunks || []).map(fetchJson));
-    const merged = Object.assign({}, ...chunks.map((chunk) => chunk.verbs || {}));
+    const coreChunks = await Promise.all((manifest.chunks || []).map(fetchJson));
+    const relationChunks = await Promise.all((manifest.relationChunks || []).map(fetchJson));
+    const merged = Object.assign(
+      {},
+      ...coreChunks.map((chunk) => chunk.verbs || {}),
+      ...relationChunks.map((chunk) => chunk.verbs || {})
+    );
 
     if (manifest.overridesFile) {
       const overrides = await fetchJson(manifest.overridesFile);
@@ -52,6 +57,12 @@
         .map(([verb, entries]) => [verb, normalizeEntries(entries)])
         .filter(([, entries]) => entries.length)
     );
+
+    window.AdvancedVerbRelations = Object.freeze({
+      has: (verb) => Boolean(data[verb]?.length),
+      particlesFor: (verb) => (data[verb] || []).map((entry) => entry.particle),
+      count: () => Object.keys(data).length,
+    });
   };
 
   const findEntry = (verb, particle) => {
@@ -167,8 +178,8 @@
     if (event.target.matches('[data-preposition-filter]')) scheduleEnhance();
   });
 
-  // Observa apenas substituições diretas da lista. Não acompanha a subárvore,
-  // portanto a inserção do próprio painel não dispara uma cadeia infinita de mutações.
+  // Observa só a substituição das linhas da lista. Não observa a subárvore,
+  // então inserir o próprio painel não dispara outro ciclo de renderização.
   const observer = new MutationObserver(scheduleEnhance);
   observer.observe(listEl, { childList: true });
 
@@ -176,6 +187,7 @@
     .then(() => {
       ready = true;
       document.documentElement.dataset.multiwordReady = 'true';
+      document.dispatchEvent(new CustomEvent('advanced-relations-ready'));
       scheduleEnhance();
     })
     .catch((error) => console.error('Erro ao carregar combinações multiword:', error));
