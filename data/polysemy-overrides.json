@@ -11,6 +11,22 @@
     {"label":"ficar / tornar-se","pattern":"go + adjective","examples":["go quiet","go wrong","go bad"]},
     {"label":"fazer uma atividade","pattern":"go + -ing","examples":["go shopping","go swimming"]}
   ],
+  "take": [
+    {"sense":"CARRY / MOVE","definition":"to move someone or something from one place to another","label":"pegar / levar","pattern":"take + noun","examples":["take the keys","take the kids to school"]},
+    {"sense":"REQUIRE TIME","definition":"to require a particular amount of time","label":"levar tempo","pattern":"take + time","examples":["It takes twenty minutes","The repair took two hours"]},
+    {"sense":"USE / CHOOSE","definition":"to use or choose a route, form of transport, method, or medicine","label":"usar / escolher","pattern":"take + route / transport / medicine","examples":["take the stairs","take the bus","take medication"]}
+  ],
+  "turn": [
+    {"sense":"MOVE / ROTATE","definition":"to move or rotate in a different direction","label":"virar","pattern":"turn + direction / object","examples":["turn left","turn the handle"]},
+    {"sense":"BECOME","definition":"to become a particular color, age, or condition","label":"ficar / tornar-se","pattern":"turn + adjective / age","examples":["turn red","turn 30"]},
+    {"sense":"CHANGE","definition":"to cause something to become a different state or condition","label":"transformar / mudar","pattern":"turn + noun + adjective","examples":["turn the room blue"]},
+    {"sense":"SWITCH ON / OFF","definition":"to start or stop a device, system, or service by using its controls","label":"ligar / desligar","pattern":"turn + device + on / off","examples":["turn the heating on","turn the lights off"]}
+  ],
+  "treat": [
+    {"sense":"BEHAVE TOWARD","definition":"to behave toward a person in a particular way","label":"tratar uma pessoa","pattern":"treat + person + adverb / as + noun","examples":["treat people fairly","treat him as an equal"]},
+    {"sense":"GIVE MEDICAL CARE","definition":"to give medical care for an illness, injury, or condition","label":"tratar uma condição","pattern":"treat + illness / injury","examples":["treat an infection","treat the injury"]},
+    {"sense":"DO SOMETHING SPECIAL","definition":"to give yourself or another person something enjoyable or special","label":"dar-se / dar um agrado","pattern":"treat yourself / someone to + noun","examples":["treat yourself to dinner","treat yourself to a long bath"]}
+  ],
   "cover": [
     {"label":"cobrir fisicamente","pattern":"cover + object / surface","examples":["cover the table","cover the wound"]},
     {"label":"abranger / tratar","pattern":"cover + topic / area","examples":["cover the main points","The course covers four topics"]},
