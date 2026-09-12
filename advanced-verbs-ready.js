@@ -21,20 +21,24 @@
     body.classList.add('is-ready');
     loader.setAttribute('aria-hidden', 'true');
 
-    window.setTimeout(() => {
-      loader.remove();
-    }, 460);
+    window.setTimeout(() => loader.remove(), 460);
   };
 
   document.addEventListener('advanced-relations-ready', () => {
     relationsReady = true;
-    reveal();
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => reveal());
+    });
   });
 
-  const observer = new MutationObserver(() => reveal());
+  const observer = new MutationObserver(() => {
+    if (relationsReady) window.requestAnimationFrame(() => reveal());
+  });
   observer.observe(list, { childList: true });
 
-  window.addEventListener('load', () => reveal());
+  window.addEventListener('load', () => {
+    if (relationsReady) window.requestAnimationFrame(() => reveal());
+  });
 
   // Se a camada de relações falhar, a lista principal ainda deve ficar utilizável
   window.setTimeout(() => reveal(true), 5000);
