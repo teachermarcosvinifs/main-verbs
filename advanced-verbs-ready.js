@@ -9,11 +9,11 @@
   let relationsReady = document.documentElement.dataset.multiwordReady === 'true';
   let revealed = false;
 
-  const corpusReady = () => Boolean(list.querySelector('.advanced-verb'));
+  const contentReady = () => Boolean(list.querySelector('.advanced-verb, .empty-state'));
 
   const reveal = (force = false) => {
     if (revealed) return;
-    if (!corpusReady()) return;
+    if (!contentReady()) return;
     if (!relationsReady && !force) return;
 
     revealed = true;
@@ -40,6 +40,6 @@
     if (relationsReady) window.requestAnimationFrame(() => reveal());
   });
 
-  // Se a camada de relações falhar, a lista principal ainda deve ficar utilizável
+  // Se a camada de relações falhar, a lista principal ou a mensagem de erro ainda deve ficar utilizável
   window.setTimeout(() => reveal(true), 5000);
 })();
