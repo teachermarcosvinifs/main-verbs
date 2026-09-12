@@ -9,6 +9,10 @@
     "cumulative": 433
   },
   "audioBase": "audio/advanced",
+  "definitionFiles": [
+    "data/definitions-b2.json",
+    "data/definitions-c1.json"
+  ],
   "polysemyFile": "data/polysemy.json",
   "polysemyOverridesFile": "data/polysemy-overrides.json",
   "polysemyDefinitionsFile": "data/polysemy-definitions.json",
