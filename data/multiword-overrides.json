@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "verbs": {
     "get": [
       {"particle":"up","form":"get up","meaning":"levantar-se","pattern":"get up","example":"I usually get up around seven on weekdays","note":"Normalmente não leva objeto"},
@@ -32,6 +32,22 @@
       {"particle":"on","form":"put on","meaning":"vestir; colocar; ligar ou reproduzir algo","pattern":"put + object + on","example":"Put your jacket on before you go outside","note":"Com pronome: put it on; também pode ser usado com música ou aparelhos"},
       {"particle":"off","form":"put off","meaning":"adiar; causar rejeição ou desânimo","pattern":"put + object + off","example":"They put the meeting off until Friday","note":"Com pronome: put it off; put someone off = desanimar ou causar rejeição"},
       {"particle":"out","form":"put out","meaning":"apagar; disponibilizar ou publicar","pattern":"put + object + out","example":"Please put the candle out before you leave","note":"Com pronome: put it out"}
+    ],
+    "take": [
+      {"particle":"off","form":"take off","meaning":"tirar roupa/acessório; também decolar","pattern":"take + object + off / take off","example":"Take your shoes off before you come in","note":"Com pronome: take them off; para avião: The plane took off"},
+      {"particle":"on","form":"take on","meaning":"assumir responsabilidade, trabalho ou desafio","pattern":"take on + role / work / challenge","example":"She took on more responsibility after the promotion","note":"Não se separa nesse sentido"},
+      {"particle":"over","form":"take over","meaning":"assumir controle ou responsabilidade","pattern":"take over / take over + noun","example":"A new manager took over the team in June","note":"take over from someone = substituir alguém"},
+      {"particle":"up","form":"take up","meaning":"começar atividade; ocupar espaço ou tempo","pattern":"take up + hobby / space / time","example":"He took up cycling after moving to the city","note":"Também: This table takes up too much space"},
+      {"particle":"back","form":"take back","meaning":"devolver; retirar o que foi dito","pattern":"take + object + back","example":"I need to take this shirt back to the store","note":"Com pronome: take it back"},
+      {"particle":"in","form":"take in","meaning":"absorver, compreender ou acolher","pattern":"take in + information / person","example":"There was so much information that I couldn't take it all in","note":"Com pronome: take it in"}
+    ],
+    "turn": [
+      {"particle":"on","form":"turn on","meaning":"ligar","pattern":"turn + device + on","example":"Turn the lights on when it gets dark","note":"Com pronome: turn them on"},
+      {"particle":"off","form":"turn off","meaning":"desligar; causar perda de interesse","pattern":"turn + object + off","example":"Please turn the TV off before you leave","note":"Com pronome: turn it off; turn someone off = causar rejeição"},
+      {"particle":"up","form":"turn up","meaning":"aumentar intensidade; aparecer","pattern":"turn + object + up / turn up","example":"Can you turn the volume up a little?","note":"Também: He turned up late = ele apareceu tarde"},
+      {"particle":"down","form":"turn down","meaning":"diminuir; recusar","pattern":"turn + object + down","example":"She turned the job offer down","note":"Com pronome: turn it down"},
+      {"particle":"out","form":"turn out","meaning":"acabar sendo; produzir resultado","pattern":"turn out + adjective / to be","example":"The event turned out better than we expected","note":"Também pode indicar produção ou comparecimento em outros contextos"},
+      {"particle":"into","form":"turn into","meaning":"transformar-se em","pattern":"turn into + noun","example":"The conversation turned into an argument","note":"Não é separável"}
     ]
   }
 }
