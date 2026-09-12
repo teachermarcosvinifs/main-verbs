@@ -147,6 +147,22 @@
 
   const currentRows = () => [...listEl.querySelectorAll('.advanced-verb')];
 
+  const removeUnavailableVerbLinks = () => {
+    const available = new Set(
+      [...document.querySelectorAll('[data-verb-options] option')]
+        .map((option) => String(option.value || '').trim().toLowerCase())
+        .filter(Boolean)
+    );
+    if (!available.size) return;
+
+    listEl.querySelectorAll('[data-go-verb]').forEach((link) => {
+      const target = String(link.dataset.goVerb || '').trim().toLowerCase();
+      if (target && !available.has(target)) {
+        link.replaceWith(document.createTextNode(link.textContent || target));
+      }
+    });
+  };
+
   const populateRelationFilter = () => {
     if (!relationFilterEl || relationOptionsPopulated || !ready) return;
     const rows = currentRows();
@@ -197,6 +213,7 @@
 
   const enhanceVisiblePanels = () => {
     if (!ready) return;
+    removeUnavailableVerbLinks();
     populateRelationFilter();
     applyRelationFilter();
     listEl.querySelectorAll('.advanced-verb.is-expanded:not([hidden])').forEach(renderPanel);
