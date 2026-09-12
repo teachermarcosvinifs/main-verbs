@@ -5,6 +5,7 @@
   if (!listEl) return;
 
   let senseMap = {};
+  let rowSenseMap = {};
   let ready = false;
 
   const fetchJson = async (path) => {
@@ -60,16 +61,23 @@
     if (!ready || !(article instanceof Element)) return;
     const verbName = article.dataset.verbName || '';
     const uses = senseMap[verbName] || [];
+    const rowSense = rowSenseMap[verbName] || null;
     const row = article.querySelector('.advanced-row');
     if (!row) return;
 
     const meaningCell = row.querySelector('.meaning-cell');
     if (meaningCell && meaningCell.dataset.senseEnhanced !== 'true') {
       const rawMeaning = meaningCell.textContent.trim();
-      meaningCell.replaceChildren(make('span', 'meaning-primary', rawMeaning || '—'));
-      if (uses.length) {
-        meaningCell.appendChild(make('span', 'meaning-depth', `${uses.length} ${uses.length === 1 ? 'sentido' : 'sentidos'}`));
+      const contextualMeaning = rowSense?.meaning || rawMeaning || '—';
+      meaningCell.replaceChildren(make('span', 'meaning-primary', contextualMeaning));
+
+      if (rowSense?.tag || uses.length) {
+        const meta = make('span', 'meaning-meta');
+        if (rowSense?.tag) meta.appendChild(make('span', 'meaning-depth', rowSense.tag));
+        if (uses.length) meta.appendChild(make('span', 'meaning-count', `${uses.length} ${uses.length === 1 ? 'sentido' : 'sentidos'}`));
+        meaningCell.appendChild(meta);
       }
+
       meaningCell.dataset.senseEnhanced = 'true';
       meaningCell.dataset.label = 'Sentido';
     }
@@ -103,11 +111,12 @@
       const base = manifest.polysemyFile ? await fetchJson(manifest.polysemyFile) : {};
       const overrides = manifest.polysemyOverridesFile ? await fetchJson(manifest.polysemyOverridesFile) : {};
       const definitions = manifest.polysemyDefinitionsFile ? await fetchJson(manifest.polysemyDefinitionsFile) : {};
+      rowSenseMap = manifest.rowSenseOverridesFile ? await fetchJson(manifest.rowSenseOverridesFile) : {};
 
       const mergedBase = { ...base, ...overrides };
       senseMap = Object.fromEntries(Object.entries(mergedBase).map(([verb, uses]) => {
         const defs = Array.isArray(definitions[verb]) ? definitions[verb] : [];
-        return [verb, (Array.isArray(uses) ? uses : []).map((use, index) => ({ ...use, ...(defs[index] || {}) }))];
+        return [verb, (Array.isArray(uses) ? uses : []).map((use, index) => ({ ...(defs[index] || {}), ...use }))];
       }));
 
       ready = true;
